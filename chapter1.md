@@ -1,6 +1,6 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Getting Start with R
+description : This section will be cover how to get started in R. 
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
@@ -9,6 +9,44 @@ attachments :
 
 *** =video_link
 //player.vimeo.com/video/154783078
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+##Practicing Basic R
+
+*** =instructions
+You can run R code with this. Place the solution under the commented section and hit run.
+
+*** =hint
+
+Here is a hint: use `<-` for assignment
+
+*** =sample-code
+
+```{r}
+# Create a variable a, equal to 5
+
+
+# Square a
+
+```
+
+*** =solution
+
+```{r}
+# Create a variable a, equal to 5
+a <- 5
+
+# Square a
+a^2
+```
+
+*** =sct
+```{r}
+test_object("a")
+test_output_contains("25", incorrect_msg = "Make sure to print `a`")
+success_msg("Great!")
+```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:ce4473e57d
 ## A really bad movie
@@ -54,7 +92,12 @@ msg_success <- "Exactly! There seems to be a very bad action movie in the datase
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad)) 
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:6cc4f72d41
+--- type:NormalExercise lang:r xp:100 skills:1
+
+
+
+
+
 ## More movies
 
 In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
