@@ -130,3 +130,18 @@ success_msg("Great job!")
 
 
 //player.vimeo.com/video/168247352
+
+
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1    
+## Vectors in R
+
+*** =video_link
+
+
+
+//player.vimeo.com/video/168261729
+
