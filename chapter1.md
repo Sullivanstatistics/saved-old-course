@@ -1,14 +1,14 @@
 ---
-title       : Getting Start with R
+title       : Data in R
 description : This section will be cover how to get started in R. 
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:VideoExercise lang:r xp:50 skills:1 key:1ee3f6290a
-## Analyze movie ratings
+## Getting Start in R
 
 *** =video_link
-//player.vimeo.com/video/154783078
+https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4353799b-d70f-4d78-8b0a-dbdf39b3a994
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
