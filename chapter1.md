@@ -11,7 +11,7 @@ attachments :
 //player.vimeo.com/video/154783078
 
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Practicing Basic R
 
 *** =instructions
@@ -92,7 +92,7 @@ msg_success <- "Exactly! There seems to be a very bad action movie in the datase
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad)) 
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:6cc4f72d41
 
 
 
