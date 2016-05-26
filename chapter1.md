@@ -136,7 +136,7 @@ success_msg("Great job!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1    
+--- type:VideoExercise lang:r xp:25 skills:1     key:78f70d2224
 ## Vectors in R
 
 *** =video_link
