@@ -9,8 +9,9 @@ attachments :
 
 *** =video_link
 
+http://www.youtube.com/embed/dP15zlyra3c?html5=1
 
-//player.vimeo.com/video/168224745
+
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
