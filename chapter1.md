@@ -66,6 +66,11 @@ success_msg("Great!")
 
 ## Basic Procedures in R
 
+*** =pre_exercise_code
+```{r}
+b <- NA
+```
+
 *** =sample_code
 
 ```{r}
@@ -105,7 +110,7 @@ test_function("log", args = "x")
 test_output_contains("1", incorrect_msg = "Make sure you closed all Parenthsis.")
 test_error()
 success_msg("Great job!")
-}
+
 
 ```
 
