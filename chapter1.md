@@ -4,7 +4,7 @@ description : This section will be cover how to get started in R.
 attachments :
 
 
---- type:VideoExercise lang:r xp:50 skills:1  
+--- type:VideoExercise lang:r xp:50 skills:1   key:1ee3f6290a
 ## Getting Start in R
 
 *** =video_link
