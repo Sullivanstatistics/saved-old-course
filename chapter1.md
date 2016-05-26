@@ -9,7 +9,9 @@ attachments :
 
 *** =video_link
 
-http://www.youtube.com/embed/dP15zlyra3c?html5=1
+//brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7072dc8c-0de9-4ea7-9b28-6d08a16255ea&v=1
+
+
 
 
 
