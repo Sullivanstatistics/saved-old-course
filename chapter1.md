@@ -104,7 +104,9 @@ exp(log(b))
 ```{r}
 test_object("b")
 test_function("log", args = "x") 
-test_function("exp", args="x")
+test_function("exp", args="x")1.386
+test_output_contains("1.386", incorrect_msg = "Did you take the logarithm of b?")
+test_output_contains("4", incorrect_msg = "Did you take theexponential of the logarithm of b?")
 test_error()
 success_msg("Great job!")
 
