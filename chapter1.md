@@ -9,8 +9,7 @@ attachments :
 
 *** =video_link
 
-//brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7072dc8c-0de9-4ea7-9b28-6d08a16255ea&v=1
-
+//player.vimeo.com/video/168224745
 
 
 
