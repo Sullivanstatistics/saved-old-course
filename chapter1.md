@@ -8,6 +8,7 @@ attachments :
 ## Getting Start in R
 
 *** =video_link
+
 https://www.youtube.com/watch?v=VNlZubFL5jo
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
