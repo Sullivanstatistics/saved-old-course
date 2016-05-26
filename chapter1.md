@@ -1,6 +1,6 @@
 ---
 title       : Data in R
-description : This section will be cover how to get started in R. 
+description : In this Section we will begin to explore R and learn how it handles data. We will focus on major data types that we use frequently in statistics and the basics of how we use them. As we move forward these data types will be key to analyzing statistics.  
 attachments :
 
 
