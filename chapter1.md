@@ -53,12 +53,63 @@ success_msg("Great!")
 ```
 
 
---- type:VideoExercise lang:r xp:25 skills:1   key:7fb790f570
+--- type:VideoExercise lang:r xp:25 skills:1  
 ## Simple Procedures in R
 
 *** =video_link
 
 //player.vimeo.com/video/168226884
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+
+## Basic Procedures in R
+
+*** =sample_code
+
+```{r}
+# Create a variable b, equal to 4
+
+
+
+# What is the log of b?
+
+
+# what is the exponential of the log of b?
+
+```
+
+*** =solution
+
+```{r}
+# Create a variable b, equal to 4
+b = 4
+
+
+# What is the log of b?
+ log(b)
+
+# what is the exponential of the log of b?
+
+exp(log(b))
+```
+*** =sct
+
+```{r}
+test_object("b")
+}
+test_function("log", args = "x") 
+})
+
+test_output_contains("1", incorrect_msg = "Make sure you closed all Parenthsis.")
+test_error()
+success_msg("Great job!")
+}
+
+```
+
+
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:ce4473e57d
 ## A really bad movie
