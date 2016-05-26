@@ -9,7 +9,7 @@ attachments :
 
 *** =video_link
 
-https://www.youtube.com/watch?v=VNlZubFL5jo
+//vimeo.com/168224745
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Practicing Basic R
