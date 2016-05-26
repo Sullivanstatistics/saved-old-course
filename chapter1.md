@@ -145,3 +145,42 @@ success_msg("Great job!")
 
 //player.vimeo.com/video/168261729
 
+--- type:VideoExercise lang:r xp:25 skills:1     
+## Arrays in R
+
+*** =video_link
+
+
+
+//player.vimeo.com/video/168265628
+
+
+--- type:VideoExercise lang:r xp:25 skills:1     
+## Matrices in R
+
+*** =video_link
+
+
+
+//player.vimeo.com/video/
+
+
+--- type:VideoExercise lang:r xp:25 skills:1     
+## Lists in R
+
+*** =video_link
+
+
+
+//player.vimeo.com/video/
+
+--- type:VideoExercise lang:r xp:25 skills:1     
+## Dataframes in R
+
+*** =video_link
+
+
+
+//player.vimeo.com/video/
+
+
