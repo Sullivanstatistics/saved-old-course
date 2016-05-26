@@ -103,11 +103,8 @@ exp(log(b))
 
 ```{r}
 test_object("b")
-
 test_function("log", args = "x") 
-
-
-test_output_contains("1", incorrect_msg = "Make sure you closed all Parenthsis.")
+test_function("exp", args="x")
 test_error()
 success_msg("Great job!")
 
