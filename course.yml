@@ -1,7 +1,7 @@
-title            : Brown PHP 2560: Statistical Computing
-author_field     : Adam J Sullivan
-description      : This course is hosted on DataCamp but will be run for students at Brown University. 
-author_bio       : Dr. Sullivan is an Assistant Professor of Bioststistics at Brown University
-university       : Brown
+title            : Template R DataCamp Course
+author_field     : mathpants
+description      : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
+author_bio       : mathpants is an awesome DataCamp course creator.<br>You can tell something about yourself <strong>here</strong>.
+university       : DataCamp
 difficulty_level : 2
 time_needed      : 1 hour
