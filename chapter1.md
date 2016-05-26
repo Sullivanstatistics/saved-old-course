@@ -9,7 +9,9 @@ attachments :
 
 *** =video_link
 
-//vimeo.com/168224745
+
+//player.vimeo.com/video/168224745
+
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Practicing Basic R
