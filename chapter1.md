@@ -4,7 +4,7 @@ description : This section will be cover how to get started in R.
 attachments :
 
 
---- type:VideoExercise lang:r xp:50 skills:1   key:1ee3f6290a
+--- type:VideoExercise lang:r xp:25 skills:1   key:1ee3f6290a
 ## Getting Start in R
 
 *** =video_link
@@ -51,6 +51,14 @@ test_object("a")
 test_output_contains("25", incorrect_msg = "Make sure to print `a`")
 success_msg("Great!")
 ```
+
+
+--- type:VideoExercise lang:r xp:25 skills:1   key:1ee3f6290a
+## Simple Procedures in R
+
+*** =video_link
+
+//player.vimeo.com/video/168226884
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:ce4473e57d
 ## A really bad movie
