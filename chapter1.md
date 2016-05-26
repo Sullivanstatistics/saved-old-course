@@ -21,7 +21,7 @@ You can run R code with this. Place the solution under the commented section and
 
 Here is a hint: use `<-` for assignment
 
-*** =sample-code
+*** =sample_code
 
 ```{r}
 # Create a variable a, equal to 5
