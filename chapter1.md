@@ -4,12 +4,11 @@ description : This section will be cover how to get started in R.
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
---- type:VideoExercise lang:r xp:50 skills:1 key:1ee3f6290a
+--- type:VideoExercise lang:r xp:50 skills:1 
 ## Getting Start in R
 
 *** =video_link
-https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4353799b-d70f-4d78-8b0a-dbdf39b3a994
-
+<iframe src="https://brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=4353799b-d70f-4d78-8b0a-dbdf39b3a994&v=1" width="720" height="480" style="padding: 0px; border: 1px solid #464646;" frameborder="0"></iframe>
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Practicing Basic R
