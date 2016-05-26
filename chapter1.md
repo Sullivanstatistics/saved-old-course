@@ -53,7 +53,7 @@ success_msg("Great!")
 ```
 
 
---- type:VideoExercise lang:r xp:25 skills:1  
+--- type:VideoExercise lang:r xp:25 skills:1   key:7fb790f570
 ## Simple Procedures in R
 
 *** =video_link
@@ -62,7 +62,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:5a54b078aa
 
 ## Basic Procedures in R
 
