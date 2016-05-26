@@ -113,7 +113,7 @@ success_msg("Great job!")
 
 ```
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:d1e309b772
 ## Getting Help in R
 
 *** =video_link
@@ -122,7 +122,7 @@ success_msg("Great job!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:c1c4a17c89
 ## R for Simple Procedures
 
 *** =video_link
