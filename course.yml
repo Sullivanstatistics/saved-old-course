@@ -1,7 +1,7 @@
-title            : Template R DataCamp Course
-author_field     : mathpants
-description      : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
-author_bio       : mathpants is an awesome DataCamp course creator.<br>You can tell something about yourself <strong>here</strong>.
-university       : DataCamp
+title            : PHP 2560 - Statistical Computing
+author_field     : Adam J Sullivan, PhD
+description      : This is the course page for PHP 2560. It is not a MOOC but will be avaialable for all to use.
+author_bio       : Adam J Sullivan, PhD is an Assistant Professor of Biostatistics at Brown University. During his time at Brown University he has successfully designed and created master’s Level courses in Statistical Inference and Statistical Computing in R. In his first year at Brown University he won the 2016 Dean’s Award for Excellence in Classroom Teaching. He also successfully designed and flipped an introductory level biostatistics course at Harvard University. This was the first time SPH allowed a PhD student to be an instructor for a graduate level course.
+university       : Brown University School of Pulic Health
 difficulty_level : 2
-time_needed      : 1 hour
+time_needed      : 1 semester
