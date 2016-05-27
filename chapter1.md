@@ -339,7 +339,7 @@ test_output_contains("2.07")
 test_function("min", args="x")
 test_output_contains("1.0")
 test_function("max", args="x")
-test_output_contains("7.99"
+test_output_contains("7.99")
 success_msg("Great Job")
 ```
 
