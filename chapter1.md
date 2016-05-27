@@ -192,6 +192,79 @@ test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 
 
 
+--- type:NormalExercise lang:r  xp:100 skills:1
+## Vectors in R
+
+This exercise will allow you to look further into vectors. 
+
+*** =instructions
+Use R to answer the following questions. 
+
+1. What is the length of x?
+2. How many values in your vector x are below 2?
+3. How many values in your vector x are above 7?
+4. How many values in your vector x are below 3 or above 8?
+
+
+*** =hint
+Use your knowledge of indexing and functions that return Booleans.
+
+*** =pre_exercise_code
+```{r}
+#You will find out more about the runif command in a few weeks.
+set.seed(1234)
+x = runif(5000, 1, 8)
+```
+
+*** =sample_code
+```{r}
+# Do Not Print X as it is a long vector
+# 1. What is the length of x?
+
+# 2. How many values in your vector x are below 2?
+
+
+# 3. How many values in your vector x are above 7?
+
+
+# 4. How many values in your vector x are below 3 or above 8?
+
+
+```
+
+*** =solution
+```{r}
+# Do Not Print X as it is a long vector
+# 1. What is the length of x?
+length(x)
+
+# 2. How many values in your vector x are below 2?
+length(which(x<2))
+
+# 3. How many values in your vector x are above 7?
+length(which(x>7))
+
+# 4. How many values in your vector x are below 3 or above 8?
+length(which(x>7 | x>8))
+
+```
+
+*** =sct
+```{r}
+test_error()
+test_output_contains("5000")
+test_function("which", args="x")
+test_output_contains("696")
+test_function("which", args="x")
+test_output_contains("729")
+test_function("which", args="x")
+test_output_contains("1411")
+success_msg("Great Job")
+```
+
+
+
+
 //player.vimeo.com/video/168261729
 
 --- type:VideoExercise lang:r xp:25 skills:1      key:fb0dfd78e7
