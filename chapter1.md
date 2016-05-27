@@ -505,7 +505,7 @@ test_mc(correct=2, feedback_msg=c(msg1, msg2, msg1))
 
 
 
---- type:NormalExercise lang:r  xp:75 skills:1  key:db1296791c
+--- type:NormalExercise lang:r  xp:75 skills:1  
 ## Lists in R Practice
 
 This exercise will allow you to explore lists.  A simple Regression has been stored for you it is called `model`.
