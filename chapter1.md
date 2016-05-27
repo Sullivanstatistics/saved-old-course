@@ -192,7 +192,7 @@ test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 
 
 
---- type:NormalExercise lang:r  xp:100 skills:1 key:770d89a78d
+--- type:NormalExercise lang:r  xp:75 skills:1 key:770d89a78d
 ## Vectors in R Exercise 1
 
 This exercise will allow you to look further into vectors. 
@@ -263,6 +263,85 @@ success_msg("Great Job")
 ```
 
 
+--- type:NormalExercise lang:r  xp:75 skills:1 
+## Vectors in R Exercise 2
+
+This exercise will allow you to look further into vectors. 
+
+*** =instructions
+Use R to answer the following questions. Given `x` from before:
+
+1. How many times does the value 2 occur?
+2. What are the 3400th - 3402th elements in your vector?
+3. What is the smallest value in x?
+4. What is the largest value in x?
+
+
+
+*** =hint
+Use your knowledge of indexing and functions that return Booleans.
+
+*** =pre_exercise_code
+```{r}
+#You will find out more about the runif command in a few weeks.
+set.seed(1234)
+x = runif(5000, 1, 8)
+```
+
+*** =sample_code
+```{r}
+# Do Not Print X as it is a long vector
+# 1. How many times does the value 2 occur?
+
+
+
+# 2. What are the 3400th - 3402th elements in your vector?
+
+
+# 3. What is the smallest value in x?
+
+
+# 4. What is the largest value in x?
+
+
+```
+
+*** =solution
+```{r}
+# Do Not Print X as it is a long vector
+# 1. How many times does the value 2 occur?
+length(which(x==2))
+
+
+# 2. What are the 3400th - 3402th elements in your vector?
+x[3400:3402]
+
+# 3. What is the smallest value in x?
+min(x)
+
+# 4. What is the largest value in x?
+max(x)
+
+```
+
+*** =sct
+```{r}
+test_error()
+test_function("length", args="x")
+test_function("which", args="x")
+test_output_contains("0")
+test_output_contains("696")
+test_output_contains("3400")
+test_output_contains("3402")
+test_output_contains("7.47")
+test_output_contains("3.28")
+test_output_contains("2.07")
+test_function("min", args="x")
+test_output_contains("1.0")
+test_function("max", args="x")
+test_output_contains("7.99"
+success_msg("Great Job")
+```
 
 
 //player.vimeo.com/video/168261729
