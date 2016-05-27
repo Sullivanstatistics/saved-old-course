@@ -133,7 +133,6 @@ success_msg("Great job!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1  key:c91902c328
 
 
 
@@ -142,11 +141,22 @@ success_msg("Great job!")
 ## Practicing with Data Objects in R
 
 
-Consider the functions on the right. What are the boolean values for them. 
+Consider the functions Below. What are the boolean values for them. 
+
+```
+#The First
+
+0 == 4/3*3 - 1
+
+The Second
+
+all.equal(0, 4/3*3 - 1)
+```
+
 
 *** =instructions
 - Both False
-- True
+- Both True
 - First False and Second True
 - First True and Second True
 
@@ -154,27 +164,13 @@ Consider the functions on the right. What are the boolean values for them.
 *** =hint
 If you cannot figure this out try and run them. 
 
-*** =pre_exercise_code
-```
-#The First
-
-0 == 4-4
-
-The Second
-
-all.equal(0, 4-4)
-```
-
 *** =sct
 ```{r}
 
-msg_bad = "That is not correct!"
-msg_success = "Exactly! "
-
-# Use test_mc() to grade multiple choice exercises. 
-# Pass the correct option (Action, option 2 in the instructions) to correct.
-# Pass the feedback messages, both positive and negative, to feedback_msgs in the appropriate order.
-test_mc(4, [msg_bad, msg_bad, msg_success,  msg_bad]) 
+msg1 = "That is not correct!"
+msg2 = "Exactly! "
+msg3 = "Ask yourself if we perform an operation on anything of the numbers"
+tst_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3)
 ```
 
 
