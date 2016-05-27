@@ -160,6 +160,11 @@ all.equal(0, 4/3*3 - 1)
 - First False and Second True
 - First True and Second True
 
+*** =pre_exercise_code
+
+```{r}
+# no pec
+```
 
 *** =hint
 If you cannot figure this out try and run them. 
