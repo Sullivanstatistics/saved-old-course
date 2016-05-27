@@ -133,11 +133,11 @@ success_msg("Great job!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 
+--- type:NormalExercise lang:r xp:25 skills:1  key:c91902c328
 
 
 
---- type:MultipleChoiceExercise lang:r xp:25 skills:1 
+--- type:MultipleChoiceExercise lang:r xp:25 skills:1  key:be0cd6ce2a
 
 ## Practicing with Data Objects in R
 
