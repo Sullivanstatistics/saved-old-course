@@ -263,7 +263,7 @@ success_msg("Great Job")
 ```
 
 
---- type:NormalExercise lang:r  xp:75 skills:1 
+--- type:NormalExercise lang:r  xp:75 skills:1  key:0cd0b2c4e3
 ## Vectors in R Exercise 2
 
 This exercise will allow you to look further into vectors. 
