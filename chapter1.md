@@ -192,8 +192,8 @@ test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 
 
 
---- type:NormalExercise lang:r  xp:100 skills:1 key:78f70d2224
-## Vectors in R
+--- type:NormalExercise lang:r  xp:100 skills:1
+## Vectors in R Exercise 1
 
 This exercise will allow you to look further into vectors. 
 
