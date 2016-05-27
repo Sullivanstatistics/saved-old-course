@@ -245,7 +245,7 @@ length(which(x<2))
 length(which(x>7))
 
 # 4. How many values in your vector x are below 3 or above 8?
-length(which(x>7 | x>8))
+length(which(x<3 | x>8))
 
 ```
 
