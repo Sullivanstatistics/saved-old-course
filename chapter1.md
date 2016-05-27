@@ -367,7 +367,7 @@ success_msg("Great Job")
 --- type:NormalExercise lang:r  xp:75 skills:1   key:2c0f7cc31b
 ## Matrices in R Practice
 
-This exercise will allow you to look Explore Matrices. 
+This exercise will allow you to explore Matrices. 
 
 *** =instructions
 Use R to complete the tasks on the right and answer the following questions. 
@@ -451,7 +451,7 @@ success_msg("Great Job")
 ## Central Limit Theorem
 
 
-The ploton the right is a histogram of the column means of a matrix created like we did in the last problem. This is a representation of the central limit theorem. What distribution are the means of the columns? 
+The plot on the right is a histogram of the column means of a matrix created like we did in the last problem. This is a representation of the central limit theorem. What distribution are the means of the columns? 
 
 
 
@@ -501,6 +501,92 @@ test_mc(correct=2, feedback_msg=c(msg1, msg2, msg1))
 
 //player.vimeo.com/video/168275483
 
+
+
+
+
+--- type:NormalExercise lang:r  xp:75 skills:1 
+## Lists in R Practice
+
+This exercise will allow you to explore lists.  A simple Regression has been stored for you it is called `model`.
+
+*** =instructions
+Use R to complete the tasks on the right.
+
+
+*** =hint
+Use your knowledge of lists to answer these questions. 
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+x = rnorm(500, 10, 3)
+y = runif(1)*x + rnorm(500,0,3.4)
+model = lm(y~x)
+```
+
+*** =sample_code
+```{r}
+# 1.  What does list model contain?
+
+# 2. Extract the coefficients of model and assign this as coeff. 
+
+# 3. Print coeff.
+
+
+# 4. What is the class of coeff?
+
+
+# 5. From coeff extract the column of p-values. 
+
+```
+
+*** =solution
+```{r}
+
+# 1. Find the summary of model and assign it as summary. 
+summary = summary(model)
+
+# 2.  What does list summary contain?
+
+names(summary)
+
+# 2. Extract the coefficients summary and assign this as coeff. 
+
+coeff = summary$coefficients
+
+# 3. Print coeff.
+
+coeff
+
+
+# 4. What is the class of coeff?
+typeof(coeff)
+
+# 5. From coeff extract the column of p-values. 
+
+coeff[,4]
+
+
+```
+
+*** =sct
+```{r}
+test_error()
+test_correct({
+test_object("summary")
+}, {
+  test_function("summary", args = "x") 
+})
+test_function("names")
+test_output_contains("terms")
+test_object("coeff")
+test_output_contains("t value")
+test_function("typeof")
+test_output_contains("coeff")
+test_output_contains("1.05")
+success_msg("Great Job")
+```
 
 
 
