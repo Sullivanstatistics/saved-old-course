@@ -361,9 +361,88 @@ success_msg("Great Job")
 
 *** =video_link
 
-
-
 //player.vimeo.com/video/168271916
+
+
+--- type:NormalExercise lang:r  xp:75 skills:1  
+## Matrices in R Practice
+
+This exercise will allow you to look Explore Matrices. 
+
+*** =instructions
+Use R to complete the tasks on the right and answer the following questions. 
+
+1. Find the row sums of c. 
+2. Find the column sums of c. 
+3. What is the value of the 3rd column and 98th row?
+
+
+*** =hint
+Use your knowledge of Matrices to answer these questions. 
+
+*** =pre_exercise_code
+```{r}
+#You will find out more about the runif command in a few weeks.
+set.seed(1234)
+x = runif(5000, 1, 8)
+```
+
+*** =sample_code
+```{r}
+# Do Not Print X as it is a long vector
+# Create a matrix of x with 100 columns and fill it by row
+# Label this matrix c
+
+
+# 1. Find the row means of c. 
+
+
+# 2. Find the column means of c. 
+
+
+# 3. What is the value of the 3rd column and 98th row?
+
+
+```
+
+*** =solution
+```{r}
+# Do Not Print X as it is a long vector
+# Create a matrix of x with 100 columns and fill it by row
+# Label this matrix c
+b <- matrix(x, ncol=100, byrow=TRUE)
+
+# 1. Find the row means of c. 
+apply(b, 1, mean)
+
+
+# 2. Find the column means of c. 
+apply(b, 2, mean)
+
+# 3. What is the value of the 3rd column and 98th row?
+b[3,98]
+```
+
+*** =sct
+```{r}
+test_error()
+test_object("b")
+}, {
+  test_function("matrix", args = "byrow") 
+})
+test_object("b")
+}, {
+  test_function("matrix", args = "ncol") 
+})
+test_function("apply")
+test_output_contains("4.614700")
+test_function("apply")
+test_output_contains("4.483649")
+text_object("b")
+test_output_contains("1.80")
+success_msg("Great Job")
+```
+
 
 
 --- type:VideoExercise lang:r xp:25 skills:1      key:7317839f79
