@@ -426,10 +426,12 @@ b[3,98]
 *** =sct
 ```{r}
 test_error()
+test_correct({
 test_object("b")
 }, {
   test_function("matrix", args = "byrow") 
 })
+test_correct({
 test_object("b")
 }, {
   test_function("matrix", args = "ncol") 
