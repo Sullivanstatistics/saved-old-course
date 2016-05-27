@@ -169,7 +169,7 @@ If you cannot figure this out try and run them.
 msg1 = "That is not correct!"
 msg2 = "Exactly! "
 msg3 = "Ask yourself if we perform an operation on anything of the numbers"
-test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3)
+test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 ```
 
 
