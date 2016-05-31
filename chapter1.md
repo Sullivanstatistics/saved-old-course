@@ -599,6 +599,15 @@ success_msg("Great Job")
 
 
 
+//player.vimeo.com/video/168861291
+
+--- type:VideoExercise lang:r xp:25 skills:1      
+## Merging Dataframes in R
+
+*** =video_link
+
+
+
 //player.vimeo.com/video/
 
 
