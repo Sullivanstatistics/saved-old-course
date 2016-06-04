@@ -4,7 +4,7 @@ description : In this Section we will begin to explore Julia and learn how it ha
 attachments :
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:8164d3d037
 ## Getting Start in Julia
 
 *** =video_link
@@ -13,7 +13,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 
+--- type:NormalExercise lang:r xp:25 skills:1  key:d4bdee1c7f
 ##Practicing Basic Julia
 
 *** =instructions
@@ -58,7 +58,7 @@ success_msg("Great!")
 ```
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:b29f203e7b
 ## Simple Procedures in Julia
 
 *** =video_link
@@ -68,7 +68,7 @@ success_msg("Great!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:c4dd2f996d
 ## Data Objects in Julia
 
 *** =video_link
@@ -76,7 +76,7 @@ success_msg("Great!")
 //player.vimeo.com/video/
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:b62fd8174d
 ## Arrays in Julia
 
 *** =video_link
@@ -84,7 +84,7 @@ success_msg("Great!")
 //player.vimeo.com/video/
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:22254b93ba
 ## Working with Arrays in Julia
 
 *** =video_link
