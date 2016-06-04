@@ -679,7 +679,7 @@ dim(example[example$c1>0.2 & example$c3<0.5,])[1]
 test_error()
 test_function("dim")
 test_output_contains("[1]")
-test_output_contains("43")
+test_output_contains("50")
 success_msg("Great Job")
 ```
 
