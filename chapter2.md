@@ -53,7 +53,7 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_output_contains("julia", incorrect_msg = "Make sure to print `a`")
+test_output_contains("julia>", incorrect_msg = "Make sure to print `a`")
 success_msg("Great!")
 ```
 
