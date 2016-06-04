@@ -680,7 +680,7 @@ test_function("dim")
 test_output_contains("3")
 test_function("names")
 test_object("c1_gr_02", incorrect_msg = "Did you remember to name the new dataframe?")
-text_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?")
+test_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?")
 success_msg("Great Job")
 ```
 
