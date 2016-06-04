@@ -682,7 +682,7 @@ test_output_contains("c1")
 test_output_contains("c2")
 test_output_contains("c3")
 test_object("c1_gr_02", incorrect_msg = "Did you remember to name the new dataframe?")
-text_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?"))
+text_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?")
 success_msg("Great Job")
 ```
 
