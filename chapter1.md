@@ -660,11 +660,11 @@ names(example)
 
 # 4.  Create a dataframe with only observations where c1 > 0.2? Name this c1_gr_02.
 
-c1_gr_02 <- example[example$c1>0.2,])
+c1_gr_02 <- example[example$c1>0.2,]
 
 # 5.  Create a dataframe with only observations where c1 > 0.2 and c2 > 0.2? Name this c1_c2_gr_02.
 
-c1_c2_gr_02 <- example[example$c1>0.2 & example$c2>0.2,])
+c1_c2_gr_02 <- example[example$c1>0.2 & example$c2>0.2,]
 
 
 
