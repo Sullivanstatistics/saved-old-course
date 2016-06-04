@@ -13,7 +13,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1   key:d4bdee1c7f
+--- type:NormalExercise lang:r xp:25 skills:1 
 ##Practicing Basic Julia
 
 *** =instructions
@@ -53,8 +53,8 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("#julia> 5+5", incorrect_msg = "Make sure there is no space between the # and julia")
-test_student_typed("#10", incorrect_msg = "Make sure there is no space between the # and 10")
+test_student_typed("#julia> 5+5", not_typed_msg = = "Make sure there is no space between the # and julia")
+test_student_typed("#10", not_typed_msg = = "Make sure there is no space between the # and 10")
 success_msg("Great!")
 ```
 
