@@ -13,7 +13,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1  key:d4bdee1c7f
+--- type:NormalExercise lang:r xp:25 skills:1  
 ##Practicing Basic Julia
 
 *** =instructions
