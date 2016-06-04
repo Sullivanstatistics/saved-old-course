@@ -53,7 +53,7 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("#julia> 5+5", not_typed_msg = = "Make sure there is no space between the # and julia")
+test_student_typed("#julia> 5+5", not_typed_msg =  "Make sure there is no space between the # and julia")
 test_student_typed("#10", not_typed_msg = = "Make sure there is no space between the # and 10")
 success_msg("Great!")
 ```
