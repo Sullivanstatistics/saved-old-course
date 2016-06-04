@@ -602,7 +602,7 @@ success_msg("Great Job")
 //player.vimeo.com/video/168861291
 
 
---- type:NormalExercise lang:r  xp:75 skills:1    key:6dcea07fc0
+--- type:NormalExercise lang:r  xp:75 skills:1   
 ## Dataframes in R Practice
 
 This exercise will allow you to explore dataframes.  A dataframe has been stored for you called `example`.
