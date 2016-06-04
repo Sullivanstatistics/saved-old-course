@@ -622,33 +622,35 @@ example = data.frame(c1=runif(50), c2=rnorm(50), c3=runif(50))
 
 *** =sample_code
 ```{r}
-# 1.  How many observations are there in example? (Display only the number of observations)
+# 1.  How many observations are there in example? 
 
-# 2. How many variables are there in example? (Display only the number of variables)
+
+
+# 2. How many variables are there in example? 
+
+
 
 # 3. What are the names of the variables in example?
 
-# 4.  How many observations in example are there where c1 > 0.2? (Display only the number of observations)
 
 
-# 5.  How many observations in example are there where c1 > 0.2 and c2 > 0.2? (Display only the number of observations)
+# 4.  Create a dataframe with only observations where c1 > 0.2? Name this c1_gr_02.
 
 
-# 6.  How many observations in example are there where c1 > 0.2 and c2 > 0.2 and c3 > 0.2? (Display only the number of observations)
 
+# 5.  Create a dataframe with only observations where c1 > 0.2 and c2 > 0.2? Name this c1_c2_gr_02.
 
-# 7.  How many observations in example are there where c1 > 0.2 or c3 < 0.5?  (Display only the number of observations)
 
 ```
 
 *** =solution
 ```{r}
 
-# 1.  How many observations are there in example? (Display only the number of observations)
+# 1.  How many observations are there in example? 
 
 dim(example)[1]
 
-# 2. How many variables are there in example? (Display only the number of variables)
+# 2. How many variables are there in example? 
 
 dim(example)[2]
 
@@ -656,21 +658,15 @@ dim(example)[2]
 
 names(example)
 
-# 4.  How many observations in example are there where c1 > 0.2? (Display only the number of observations)
+# 4.  Create a dataframe with only observations where c1 > 0.2? Name this c1_gr_02.
 
-dim(example[example$c1>0.2,])[1]
+c1_gr_02 <- example[example$c1>0.2,])
 
-# 5.  How many observations in example are there where c1 > 0.2 and c2 > 0.2? (Display only the number of observations)
+# 5.  Create a dataframe with only observations where c1 > 0.2 and c2 > 0.2? Name this c1_c2_gr_02.
 
-dim(example[example$c1>0.2 & example$c2>0.2,])[1]
+c1_c2_gr_02 <- example[example$c1>0.2 & example$c2>0.2,])
 
-# 6.  How many observations in example are there where c1 > 0.2 and c2 > 0.2 and c3 > 0.2? (Display only the number of observations)
 
-dim(example[example$c1>0.2 & example$c2>0.2 & example$c3 >0.2,])[1]
-
-# 7.  How many observations in example are there where c1 > 0.2 or c3 < 0.5?  (Display only the number of observations)
-
-dim(example[example$c1>0.2 & example$c3<0.5,])[1]
 
 ```
 
@@ -678,8 +674,15 @@ dim(example[example$c1>0.2 & example$c3<0.5,])[1]
 ```{r}
 test_error()
 test_function("dim")
-test_output_contains("[1]")
 test_output_contains("50")
+test_function("dim")
+test_output_contains("3")
+test_function("names")
+test_output_contains("c1")
+test_output_contains("c2")
+test_output_contains("c3")
+test_object("c1_gr_02", incorrect_msg = "Did you remember to name the new dataframe?")
+text_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?"))
 success_msg("Great Job")
 ```
 
