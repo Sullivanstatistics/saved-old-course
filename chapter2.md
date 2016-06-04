@@ -47,13 +47,14 @@ Here is a hint: Remember to use # for comments
 
 ```{r}
 # Copy the code in as a comment
-"julia> 5+5
-10"
+#julia> 5+5
+#10
 ```
 
 *** =sct
 ```{r}
-test_output_contains("julia>", incorrect_msg = "Make sure to print `a`")
+test_student_typed("#julia> 5+5", incorrect_msg = "Make sure there is no space between the # and julia")
+test_student_typed("#10", incorrect_msg = "Make sure there is no space between the # and 10")
 success_msg("Great!")
 ```
 
