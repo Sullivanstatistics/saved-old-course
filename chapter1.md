@@ -601,13 +601,86 @@ success_msg("Great Job")
 
 //player.vimeo.com/video/168861291
 
---- type:VideoExercise lang:r xp:25 skills:1       key:bba6397c79
-## Merging Dataframes in R
 
-*** =video_link
+--- type:NormalExercise lang:r  xp:75 skills:1   
+## Dataframes in R Practice
+
+This exercise will allow you to explore dataframes.  A dataframe has been stored for you called `example`.
+
+*** =instructions
+Use R to complete the tasks on the right.
 
 
+*** =hint
+Use your knowledge of dataframes to answer these questions. 
 
-//player.vimeo.com/video/
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+example = data.frame(c1=runif(50), c2=rnorm(50), c3=runif(50))
+```
+
+*** =sample_code
+```{r}
+# 1.  How many observations are there in example? (Display only the number of observations)
+
+# 2. How many variables are there in example? (Display only the number of variables)
+
+# 3. What are the names of the variables in example?
+
+# 4.  How many observations in example are there where c1 > 0.2? (Display only the number of observations)
+
+
+# 5.  How many observations in example are there where c1 > 0.2 and c2 > 0.2? (Display only the number of observations)
+
+
+# 6.  How many observations in example are there where c1 > 0.2 and c2 > 0.2 and c3 > 0.2? (Display only the number of observations)
+
+
+# 7.  How many observations in example are there where c1 > 0.2 or c3 < 0.5?  (Display only the number of observations)
+
+```
+
+*** =solution
+```{r}
+
+# 1.  How many observations are there in example? (Display only the number of observations)
+
+dim(example)[1]
+
+# 2. How many variables are there in example? (Display only the number of variables)
+
+dim(example)[2]
+
+# 3. What are the names of the variables in example?
+
+names(example)
+
+# 4.  How many observations in example are there where c1 > 0.2? (Display only the number of observations)
+
+dim(example[example$c1>0.2,])[1]
+
+# 5.  How many observations in example are there where c1 > 0.2 and c2 > 0.2? (Display only the number of observations)
+
+dim(example[example$c1>0.2 & example$c2>0.2,])[1]
+
+# 6.  How many observations in example are there where c1 > 0.2 and c2 > 0.2 and c3 > 0.2? (Display only the number of observations)
+
+dim(example[example$c1>0.2 & example$c2>0.2 & example$c3 >0.2,])[1]
+
+# 7.  How many observations in example are there where c1 > 0.2 or c3 < 0.5?  (Display only the number of observations)
+
+dim(example[example$c1>0.2 & example$c3<0.5,])[1]
+
+```
+
+*** =sct
+```{r}
+test_error()
+test_function("dim")
+test_output_contains("[1]")
+test_output_contains("43")
+success_msg("Great Job")
+```
 
 
