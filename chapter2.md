@@ -47,8 +47,8 @@ Here is a hint: Remember to use # for comments
 
 ```{r}
 # Copy the code in as a comment
-#julia> 5+5
-#10
+"julia> 5+5
+10"
 ```
 
 *** =sct
