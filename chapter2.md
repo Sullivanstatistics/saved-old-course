@@ -9,7 +9,7 @@ attachments :
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/173632704
 
 
 
@@ -59,13 +59,25 @@ success_msg("Great!")
 ```
 
 
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1    key:b29f203e7b
 ## Simple Procedures in Julia
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/173640734
 
+
+
+--- type:VideoExercise lang:r xp:25 skills:1   
+## Getting Help in Julia
+
+*** =video_link
+
+//player.vimeo.com/video/173643609
 
 
 
@@ -74,7 +86,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/173648225
 
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:b62fd8174d
@@ -82,7 +94,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/173651431
 
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:22254b93ba
