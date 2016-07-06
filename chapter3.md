@@ -20,7 +20,7 @@ attachments :
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/173693951
 
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:00141dac01
