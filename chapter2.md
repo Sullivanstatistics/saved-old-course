@@ -72,7 +72,7 @@ success_msg("Great!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1   
+--- type:VideoExercise lang:r xp:25 skills:1    key:3ff42236f6
 ## Getting Help in Julia
 
 *** =video_link
