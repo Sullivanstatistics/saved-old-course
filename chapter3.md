@@ -37,7 +37,7 @@ attachments :
 
 *** =video_link
 
-//player.vimeo.com/video/73807748
+//player.vimeo.com/video/173807748
 
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:a92891b2e1
