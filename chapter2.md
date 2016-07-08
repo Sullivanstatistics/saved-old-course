@@ -163,6 +163,83 @@ success_msg("Great!")
 //player.vimeo.com/video/173651431
 
 
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1    
+##Practicing Arrays in Julia 1
+
+*** =instructions
+
+This course site is only equipped to handle either R or Python, because of this you will need to run the code for all Julia exercises on your own computer and copy the answers into R as a comment. 
+
+In this exercise we will focus on arrays in Julia. 
+
+*** =hint
+
+Here is a hint: Remember to use # for comments
+
+*** =sample_code
+
+```{r}
+# Define a = [ 1, 2, 3, 4]
+
+
+
+# redefine a without using commas
+
+
+
+# Add a semi-colon in your above definition of a to make it a 2x2 matrix.
+
+
+
+
+
+```
+
+*** =solution
+
+```{r}
+# Define a = [ 1, 2, 3, 4]
+
+#julia> a = [1,2,3,4]
+#4-element Array{Int64,1}:
+# 1
+# 2
+# 3
+# 4
+
+# redefine a without using commas
+
+# julia> a = [1 2 3 4 ]
+# 1x4 Array{Int64,2}:
+# 1  2  3  4
+
+
+# Add a semi-colon in your above definition of a to make it a 2x2 matrix.
+
+# julia> a = [1 2; 3 4]
+# 2x2 Array{Int64,2}:
+# 1  2
+# 3  4
+
+```
+
+*** =sct
+```{r}
+test_student_typed("#1", not_typed_msg =  "Make sure to copy the julia output.")
+test_student_typed("#2", not_typed_msg =  "Make sure to copy the julia output.")
+test_student_typed("#3", not_typed_msg =  "Make sure to copy the julia output.")
+test_student_typed("#4", not_typed_msg =  "Make sure to copy the julia output.")
+test_student_typed("# 1 2 3 4", not_typed_msg = "Make sure to define without commas")
+test_student_typed(" julia> a = [1 2; 3 4]", not_typed_msg = "Make sure the semi-colon is in the correct spot.")
+success_msg("Great!")
+```
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1    key:22254b93ba
 ## Working with Arrays in Julia
 
