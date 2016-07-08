@@ -166,7 +166,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    
+--- type:NormalExercise lang:r xp:25 skills:1     key:5f3b5ac010
 ##Practicing Arrays in Julia 1
 
 *** =instructions
