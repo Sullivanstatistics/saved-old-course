@@ -106,7 +106,7 @@ Here is a hint: Remember to use # for comments
 *** =sample_code
 
 ```{r}
-# Define x to be x^50
+# Define x to be 2^50
 
 
 
