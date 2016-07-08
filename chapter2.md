@@ -149,7 +149,6 @@ Here is a hint: Remember to use # for comments
 test_student_typed("julia> x = BigInt(2^50)", not_typed_msg =  "Make sure you use BigInt()")
 test_student_typed("4350/50", not_typed_msg = "You need to divide 4350 by 50")
 test_student_typed("julia> x^87", not_typed_msg = "You need to raise x to a different exponent.")
-test_student_typed("65813050322714624", not_typed_msg =  "Evaluate what 2^4350 is")
 success_msg("Great!")
 ```
 
