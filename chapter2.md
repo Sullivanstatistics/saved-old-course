@@ -240,6 +240,7 @@ success_msg("Great!")
 
 
 
+
 --- type:VideoExercise lang:r xp:25 skills:1    key:22254b93ba
 ## Working with Arrays in Julia
 
@@ -247,4 +248,96 @@ success_msg("Great!")
 
 //player.vimeo.com/video/173668768
 
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1   
+##Accessing Arrays in Julia
+
+*** =instructions
+
+This course site is only equipped to handle either R or Python, because of this you will need to run the code for all Julia exercises on your own computer and copy the answers into R as a comment. 
+
+In this exercise we will focus on arrays in Julia. 
+
+Run the following code in Julia:
+
+```julia
+
+a = reshape([1,2,3,4,5,6,7,8,9,10,11,12 ], 4, 3)
+
+```
+
+*** =hint
+
+Here is a hint: Remember to use # for comments
+
+
+
+
+
+*** =sample_code
+
+```{r}
+# What is the 7th element of a? 
+
+
+
+# What element is in the 3rd row and 3rd column of a?
+
+
+
+# What is the size of a?
+
+
+#Reshape a to be 4 columns and 3 rows. 
+
+
+
+
+
+```
+
+*** =solution
+
+```{r}
+# What is the 7th element of a? 
+
+#julia> a[7]
+#7
+
+
+# What element is in the 3rd row and 3rd column of a?
+
+#julia> a[3,3]
+#11
+
+
+
+# What is the size of a?
+
+#julia> size(a)
+#(4,3)
+
+
+#Reshape a to be 4 columns and 3 rows. 
+
+#julia> a= reshape(a, 3,4)
+#3x4 Array{Int64,2}:
+# 1  4  7  10
+# 2  5  8  11
+# 3  6  9  12
+
+
+
+```
+
+*** =sct
+```{r}
+test_student_typed("a[7]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("[a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("size(a)", not_typed_msg =  "Remember the basic commands.")
+test_student_typed("reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
+success_msg("Great!")
+```
 
