@@ -42,7 +42,7 @@ Remember the R commands for learning more about strings. They are stored in a ve
 
 *** =pre_exercise_code
 ```{r, warning=FALSE, message=FALSE}
-string_vec <- readLines("https://drive.google.com/uc?export=download&id=0B8CsRLdwqzbzbWp6X2trZzRfYTA", encoding="UTF-8")
+string_vec <- readLines("http://assets.datacamp.com/production/1118/gettysburg.txt", encoding="UTF-8")
 ```
 
 *** =sample_code
