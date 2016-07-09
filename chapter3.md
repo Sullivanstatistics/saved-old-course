@@ -159,7 +159,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    
+--- type:NormalExercise lang:r xp:25 skills:1     key:33ce09fc0e
 ##Analyzing Text from a Blog
 
 *** =instructions
