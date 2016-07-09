@@ -23,6 +23,73 @@ attachments :
 //player.vimeo.com/video/173693951
 
 
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 
+##Strings Basics in R
+
+*** =instructions
+There is a vector of strings stored in R. Answer questions about this vector. 
+
+
+*** =hint
+
+Remember the R commands for learning more about strings. They are stored in a vector called `string_vec`. 
+
+
+
+
+*** =pre_exercise_code
+```{r, warning=FALSE, message=FALSE}
+string_vec <- readLines("https://drive.google.com/uc?export=download&id=0B8CsRLdwqzbzbWp6X2trZzRfYTA", encoding="UTF-8")
+```
+
+*** =sample_code
+
+```{r}
+# How many strings are in string_vec?
+
+
+# How many characters are in each string?
+
+
+# What are the last 3 characters in each string?
+
+
+# What are the 56 and 57 characters in each string?
+
+```
+
+*** =solution
+
+```{r}
+# How many strings are in string_vec?
+
+length(string_vec)
+
+# How many characters are in each string?
+nchar(string_vec)
+
+# What are the last 3 characters in each string?
+substr(string_vec, nchar(string_vec)-2, nchar(string_vec))
+
+# What are the 56 and 57 characters in each string?
+substr(string_vec, 56,57)
+
+```
+
+*** =sct
+```{r}
+test_object("length(string_vec)", incorrect_msg="Go back to the video to see what command tells you string count.")
+test_object("nchar(string_vec)", incorrect_msg="Go back to the video to see what command counts characters.")
+test_object("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Make sure to use the substr() command.")
+test_object("substr(string_vec, 56,57)", incorrect_msg="Make sure to use the substr() command.")
+success_msg("Great!")
+```
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1    key:00141dac01
 ## Substrings in R
 
