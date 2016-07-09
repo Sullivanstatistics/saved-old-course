@@ -71,11 +71,6 @@ length(string_vec)
 # How many characters are in each string?
 nchar(string_vec)
 
-# What are the last 3 characters in each string?
-substr(string_vec, nchar(string_vec)-2, nchar(string_vec))
-
-# What are the 56 and 57 characters in each string?
-substr(string_vec, 56,57)
 
 ```
 
@@ -83,8 +78,6 @@ substr(string_vec, 56,57)
 ```{r}
 test_object("length(string_vec)", incorrect_msg="Go back to the video to see what command tells you string count.")
 test_object("nchar(string_vec)", incorrect_msg="Go back to the video to see what command counts characters.")
-test_object("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Make sure to use the substr() command.")
-test_object("substr(string_vec, 56,57)", incorrect_msg="Make sure to use the substr() command.")
 success_msg("Great!")
 ```
 
@@ -96,6 +89,63 @@ success_msg("Great!")
 *** =video_link
 
 //player.vimeo.com/video/173801171
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1  
+##Substrings in R
+
+*** =instructions
+There is a vector of strings stored in R. Answer questions about this vector. 
+
+
+*** =hint
+
+Remember the R commands for learning more about strings. They are stored in a vector called `string_vec`. 
+
+
+
+
+*** =pre_exercise_code
+```{r, warning=FALSE, message=FALSE}
+string_vec <- readLines("https://drive.google.com/uc?export=download&id=0B8CsRLdwqzbzbWp6X2trZzRfYTA", encoding="UTF-8")
+```
+
+*** =sample_code
+
+```{r}
+# What is the first character in each string?
+
+
+
+# What are the last 3 characters in each string of string_ vec?
+
+
+# What are the 56 and 57 characters in each string of string_vec?
+
+```
+
+*** =solution
+
+```{r}
+# What is the first character in each string  of string_ vec?
+substr(string_vec, 1,1)
+
+# What are the last 3 characters in each string of string_ vec?
+substr(string_vec, nchar(string_vec)-2, nchar(string_vec))
+
+# What are the 56 and 57 characters in each string of string_ vec?
+substr(string_vec, 56,57)
+
+```
+
+*** =sct
+```{r}
+test_object("substr(string_vec, 1,1)", incorrect_msg="Go back to the video to see how to use the substr() command.")
+test_object("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Make sure to use the substr() command.")
+test_object("substr(string_vec, 56,57)", incorrect_msg="Make sure to use the substr() command.")
+success_msg("Great!")
+```
 
 
 
