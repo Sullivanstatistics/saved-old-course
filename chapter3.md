@@ -92,8 +92,8 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1   key:00141dac01
-##Substrings in R
+--- type:NormalExercise lang:r xp:25 skills:1   
+##Substrings in R Exercise
 
 *** =instructions
 There is a vector of strings stored in R. Answer questions about this vector. 
