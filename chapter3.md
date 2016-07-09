@@ -92,7 +92,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1   
+--- type:NormalExercise lang:r xp:25 skills:1    key:fdee851eec
 ##Substrings in R Exercise
 
 *** =instructions
