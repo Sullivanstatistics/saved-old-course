@@ -26,7 +26,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 
+--- type:NormalExercise lang:r xp:25 skills:1  key:f863fcb9ce
 ##Strings Basics in R
 
 *** =instructions
