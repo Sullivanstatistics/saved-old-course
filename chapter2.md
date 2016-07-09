@@ -322,7 +322,7 @@ Here is a hint: Remember to use # for comments
 
 #Reshape a to be 4 columns and 3 rows. 
 
-#julia> a= reshape(a, 3,4)
+#julia> a = reshape(a, 3,4)
 #3x4 Array{Int64,2}:
 # 1  4  7  10
 # 2  5  8  11
@@ -334,10 +334,10 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("a[7]", not_typed_msg =  "Make sure to access using brackets. ")
-test_student_typed("[a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
-test_student_typed("size(a)", not_typed_msg =  "Remember the basic commands.")
-test_student_typed("reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
+test_student_typed("#julia> a[7]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("#julia> a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("#julia> size(a)", not_typed_msg =  "Remember the basic commands.")
+test_student_typed("#julia> a = reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
 success_msg("Great!")
 ```
 
