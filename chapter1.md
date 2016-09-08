@@ -342,9 +342,6 @@ success_msg("Great Job")
 ## Arrays in R
 
 *** =video_link
-
-
-
 //player.vimeo.com/video/168265628
 
 
