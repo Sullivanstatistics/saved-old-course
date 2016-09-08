@@ -185,9 +185,8 @@ test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 ## Vectors in R
 
 *** =video_link
+//player.vimeo.com/video/168261729
 
-
-*** =instructions
 
 
 
@@ -330,9 +329,8 @@ test_error()
 test_function("length", args="x")
 test_function("which", args="x")
 test_output_contains("0") 
-test_function("min", args="x")
-test_output_contains("1.0")
-test_function("max", args="x")
+test_output_contains("x[3400:3402]")
+test_output_contains("1.002393")
 test_output_contains("7.99")
 success_msg("Great Job")
 ```
