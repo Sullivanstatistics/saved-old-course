@@ -159,7 +159,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1     key:33ce09fc0e
+--- type:NormalExercise lang:r xp:25 skills:1 key:bd6a38c579
 ##Analyzing Text from a Blog
 
 *** =instructions
@@ -170,7 +170,7 @@ This problem containts a vector of strings called `julia`. Answer these question
 
 *** =pre_exercise_code
 ```{r, warning=FALSE, message=FALSE}
-julia <- readLines("http://drive.google.com/uc?export=download&id=0B8CsRLdwqzbzNXVqd0pxYmZQcTg")
+julia <- readLines("http://s3.amazonaws.com/assets.datacamp.com/production/course_1118/datasets/julia.txt")
 ```
 
 *** =sample_code
@@ -180,32 +180,33 @@ julia <- readLines("http://drive.google.com/uc?export=download&id=0B8CsRLdwqzbzN
 
 
 
-# What are the last 3 characters in each string of string_ vec?
+# Make julia one long string. 
 
 
-# What are the 56 and 57 characters in each string of string_vec?
+
+# Split julia into individual words. 
 
 ```
 
 *** =solution
 
 ```{r}
-# What is the first character in each string  of string_ vec?
-substr(string_vec, 1,1)
+# How many strings are in julia?
+length(julia)
 
-# What are the last 3 characters in each string of string_ vec?
-substr(string_vec, nchar(string_vec)-2, nchar(string_vec))
 
-# What are the 56 and 57 characters in each string of string_ vec?
-substr(string_vec, 56,57)
+# Make julia one long string. 
+julia <- paste(julia, collapse=" ")
 
+# Split julia into individual words. 
+julia <- strsplit(julia, split=" ")
 ```
 
 *** =sct
 ```{r}
-test_object("substr(string_vec, 1,1)", incorrect_msg="Go back to the video to see how to use the substr() command.")
-test_object("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Make sure to use the substr() command.")
-test_object("substr(string_vec, 56,57)", incorrect_msg="Make sure to use the substr() command.")
+test_function("length")
+test_function("paste")
+test_function("strsplit")
 success_msg("Great!")
 ```
 
@@ -226,6 +227,61 @@ success_msg("Great!")
 
 
 
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:d0c34152bb
+##Regular Expressions in a blog. 
+
+*** =instructions
+This problem containts a vector of strings called `julia`. 
+Answer these questions with this string and using the tools in the previous videos. 
+
+
+*** =hint
+
+*** =pre_exercise_code
+```{r, warning=FALSE, message=FALSE}
+julia <- readLines("http://s3.amazonaws.com/assets.datacamp.com/production/course_1118/datasets/julia.txt")
+```
+
+*** =sample_code
+
+```{r}
+#Collapse julia so that it is one string (make sure to save as julia).
+
+
+
+#Split julia by spaces (make sure to save as julia).
+
+
+#How many times does "R" appear in the blog julia?
+
+
+```
+
+*** =solution
+
+```{r}
+
+
+#Collapse julia so that it is one string (make sure to save as julia).
+
+julia <- paste(julia, collapse=" ")
+
+#Split julia by spaces (make sure to save as julia).
+julia <- strsplit(julia, sep=" ")
+
+#How many times does "R" appear in the blog julia?
+grep('R', julia)
+
+```
+
+*** =sct
+```{r}
+
+success_msg("Great!")
+```
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:9ea6818506
 ## Quantifiers and Positions in Strings
