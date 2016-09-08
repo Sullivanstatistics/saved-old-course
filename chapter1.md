@@ -389,7 +389,7 @@ x = runif(5000, 1, 8)
 # 2. Find the column means of c. 
 
 
-# 3. What is the value of the 3rd column and 98th row?
+# 3. What is the value of the 3rd row and 98th column?
 
 
 ```
@@ -408,7 +408,7 @@ apply(b, 1, mean)
 # 2. Find the column means of c. 
 apply(b, 2, mean)
 
-# 3. What is the value of the 3rd column and 98th row?
+# 3. What is the value of the3rd row and 98th column?
 b[3,98]
 ```
 
