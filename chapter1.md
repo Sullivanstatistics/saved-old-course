@@ -399,29 +399,29 @@ x = runif(5000, 1, 8)
 # Do Not Print X as it is a long vector
 # Create a matrix of x with 100 columns and fill it by row
 # Label this matrix c
-b <- matrix(x, ncol=100, byrow=TRUE)
+c <- matrix(x, ncol=100, byrow=TRUE)
 
 # 1. Find the row means of c. 
-apply(b, 1, mean)
+apply(c, 1, mean)
 
 
 # 2. Find the column means of c. 
-apply(b, 2, mean)
+apply(c, 2, mean)
 
 # 3. What is the value of the3rd row and 98th column?
-b[3,98]
+c[3,98]
 ```
 
 *** =sct
 ```{r}
 test_error()
 test_correct({
-test_object("b")
+test_object("c")
 }, {
   test_function("matrix", args = "byrow") 
 })
 test_correct({
-test_object("b")
+test_object("c")
 }, {
   test_function("matrix", args = "ncol") 
 })
@@ -429,7 +429,7 @@ test_function("apply")
 test_output_contains("4.614700")
 test_function("apply")
 test_output_contains("4.483649")
-text_object("b")
+text_object("c")
 test_output_contains("1.80")
 success_msg("Great Job")
 ```
