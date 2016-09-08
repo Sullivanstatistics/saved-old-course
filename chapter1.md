@@ -181,7 +181,7 @@ test_mc(correct=3, feedback_msg=c(msg1, msg3, msg2, msg3))
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1     key:78f70d2224
+--- type:VideoExercise lang:r xp:25 skills:1 key:70f3f253f8
 ## Vectors in R
 
 *** =video_link
