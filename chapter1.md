@@ -429,7 +429,6 @@ test_function("apply")
 test_output_contains("4.062481")
 test_function("apply")
 test_output_contains("4.058472")
-text_object("c")
 test_output_contains("1.80")
 success_msg("Great Job")
 ```
