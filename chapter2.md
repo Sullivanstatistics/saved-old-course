@@ -206,7 +206,7 @@ julia <- strsplit(julia, split=" ")[[1]]
 ```{r}
 test_function("length")
 test_function("paste")
-test_object("strsplit(julia, split=" ")[[1]]")
+test_object("julia")
 success_msg("Great!")
 ```
 
@@ -227,7 +227,57 @@ success_msg("Great!")
 
 
 
+--- type:NormalExercise lang:r xp:25 skills:1 key:33fe23b9de
+##Regular Expressions in the blog Data
 
+*** =instructions
+This problem containts a vector of strings called `julia`. Answer these questions with this string and using the tools in the previous video. 
+
+
+*** =hint
+
+*** =pre_exercise_code
+```{r, warning=FALSE, message=FALSE}
+julia <- readLines("http://s3.amazonaws.com/assets.datacamp.com/production/course_1118/datasets/julia.txt")
+julia <- paste(julia, collapse=" ")
+```
+
+*** =sample_code
+
+```{r}
+# How many strings are in julia?
+
+
+
+# Make julia one long string. 
+
+
+
+# Split julia into individual words. 
+
+```
+
+*** =solution
+
+```{r}
+# How many strings are in julia?
+length(julia)
+
+
+# Make julia one long string. 
+julia <- paste(julia, collapse=" ")
+
+# Split julia into individual words. 
+julia <- strsplit(julia, split=" ")[[1]]
+```
+
+*** =sct
+```{r}
+test_function("length")
+test_function("paste")
+test_object("julia")
+success_msg("Great!")
+```
 
 
 
@@ -245,7 +295,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/181959434
 
 
 --- type:VideoExercise lang:r xp:25 skills:1    key:16ff5be601
