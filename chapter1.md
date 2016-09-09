@@ -435,47 +435,6 @@ success_msg("Great Job")
 
 
 
---- type:MultipleChoiceExercise lang:r xp:25 skills:1   key:460fd4613d
-## Central Limit Theorem
-
-
-The plot on the right is a histogram of the column means of a matrix created like we did in the last problem. This is a representation of the central limit theorem. What distribution are the means of the columns? 
-
-
-
-*** =instructions
-- `t` distribution
-- Normal Distribution
-- Binomial Distribution
-
-*** =pre_exercise_code
-
-```{r}
-
-#You will find out more about the runif command in a few weeks.
-set.seed(1234)
-x = runif(50000, 1, 8)
-b <- matrix(x, ncol=1000, byrow=TRUE)
-c = apply(b, 2, mean)
-
-library("ggplot2")
-library("scales")
-
-df <- data.frame(c)
-p <- ggplot(df, aes(c )) + geom_histogram(colour="black", fill="#FF9999", bins = 20)
-p 
-```
-
-*** =hint
-If you cannot figure this out try and run them. 
-
-*** =sct
-```{r}
-msg1 = "That is not correct!"
-msg2 = "Exactly! "
-test_mc(correct=2, feedback_msg=c(msg1, msg2, msg1))
-```
-
 
 
 
