@@ -54,10 +54,6 @@ string_vec <- readLines("http://s3.amazonaws.com/assets.datacamp.com/production/
 # How many characters are in each string?
 
 
-# What are the last 3 characters in each string?
-
-
-# What are the 56 and 57 characters in each string?
 
 ```
 
