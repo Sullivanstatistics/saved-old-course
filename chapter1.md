@@ -493,7 +493,7 @@ test_mc(correct=2, feedback_msg=c(msg1, msg2, msg1))
 
 
 
---- type:NormalExercise lang:r  xp:75 skills:1   key:db1296791c
+--- type:NormalExercise lang:r  xp:75 skills:1 key:b5d6c5160e
 ## Lists in R Practice
 
 This exercise will allow you to explore lists.  A simple Regression has been stored for you it is called `model`.
@@ -515,9 +515,16 @@ model = lm(y~x)
 
 *** =sample_code
 ```{r}
-# 1.  What does list model contain?
+# 1. Find the summary of model and assign it as summary. 
 
-# 2. Extract the coefficients of model and assign this as coeff. 
+
+# 2.  What does list summary contain?
+
+
+
+# 2. Extract the coefficients summary and assign this as coeff. 
+
+
 
 # 3. Print coeff.
 
@@ -526,6 +533,8 @@ model = lm(y~x)
 
 
 # 5. From coeff extract the column of p-values. 
+
+
 
 ```
 
@@ -564,12 +573,11 @@ test_error()
 test_correct({
 test_object("summary")
 }, {
-  test_function("summary", args = "x") 
+  test_function("summary") 
 })
 test_function("names")
-test_output_contains("terms")
 test_object("coeff")
-test_output_contains("t value")
+test_output_contains("0.8718654")
 test_function("typeof")
 test_output_contains("coeff")
 test_output_contains("1.05")
