@@ -72,8 +72,8 @@ nchar(string_vec)
 
 *** =sct
 ```{r}
-test_object("length(string_vec)", incorrect_msg="Go back to the video to see what command tells you string count.")
-test_object("nchar(string_vec)", incorrect_msg="Go back to the video to see what command counts characters.")
+test_function("length")
+test_function("nchar")
 success_msg("Great!")
 ```
 
@@ -137,9 +137,9 @@ substr(string_vec, 56,57)
 
 *** =sct
 ```{r}
-test_object("substr(string_vec, 1,1)", incorrect_msg="Go back to the video to see how to use the substr() command.")
-test_object("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Make sure to use the substr() command.")
-test_object("substr(string_vec, 56,57)", incorrect_msg="Make sure to use the substr() command.")
+test_output_contains("substr(string_vec, 1,1)", incorrect_msg="Go back to the video to see how to use the substr() command.")
+test_output_contains("substr(string_vec, nchar(string_vec)-2, nchar(string_vec))", incorrect_msg="Go back to the video to see how to use the substr() command.")
+test_output_contains("substr(string_vec, 56,57)", incorrect_msg="Go back to the video to see how to use the substr() command.")
 success_msg("Great!")
 ```
 
