@@ -577,10 +577,8 @@ test_object("summary")
 })
 test_function("names")
 test_object("coeff")
-test_output_contains("0.8718654")
 test_function("typeof")
-test_output_contains("coeff")
-test_output_contains("1.05")
+test_output_contains("coeff[,4]")
 success_msg("Great Job")
 ```
 
@@ -671,9 +669,7 @@ c1_c2_gr_02 <- example[example$c1>0.2 & example$c2>0.2,]
 ```{r}
 test_error()
 test_function("dim")
-test_output_contains("50")
 test_function("dim")
-test_output_contains("3")
 test_function("names")
 test_object("c1_gr_02", incorrect_msg = "Did you remember to name the new dataframe?")
 test_object("c1_c2_gr_02",  incorrect_msg = "Did you remember to name the new dataframe?")
