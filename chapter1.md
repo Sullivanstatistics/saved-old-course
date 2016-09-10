@@ -146,11 +146,11 @@ Consider the functions Below. What are the boolean values for them.
 ```
 #The First
 
-0 == 4/3*3 - 1
+0 == 4/3*3 - 4
 
 The Second
 
-all.equal(0, 4/3*3 - 1)
+all.equal(0, 4/3*3 - 4)
 ```
 
 
