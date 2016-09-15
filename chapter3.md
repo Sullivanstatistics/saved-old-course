@@ -146,9 +146,9 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("julia> x = BigInt(2^50)", not_typed_msg =  "Make sure you use BigInt()")
+test_student_typed("x = BigInt(2^50)", not_typed_msg =  "Make sure you use BigInt()")
 test_student_typed("4350/50", not_typed_msg = "You need to divide 4350 by 50")
-test_student_typed("julia> x^87", not_typed_msg = "You need to raise x to a different exponent.")
+test_student_typed("x^87", not_typed_msg = "You need to raise x to a different exponent.")
 success_msg("Great!")
 ```
 
@@ -233,7 +233,7 @@ test_student_typed("#2", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("#3", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("#4", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("# 1 2 3 4", not_typed_msg = "Make sure to define without commas")
-test_student_typed(" julia> a = [1 2; 3 4]", not_typed_msg = "Make sure the semi-colon is in the correct spot.")
+test_student_typed("a = [1 2; 3 4]", not_typed_msg = "Make sure the semi-colon is in the correct spot.")
 success_msg("Great!")
 ```
 
@@ -334,10 +334,10 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("#julia> a[7]", not_typed_msg =  "Make sure to access using brackets. #1 ")
-test_student_typed("#julia> a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
-test_student_typed("#julia> size(a)", not_typed_msg =  "Remember the basic commands.")
-test_student_typed("#julia> a = reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
+test_student_typed("#a[7]", not_typed_msg =  "Make sure to access using brackets. #1 ")
+test_student_typed("#a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("#size(a)", not_typed_msg =  "Remember the basic commands.")
+test_student_typed("#a = reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
 success_msg("Great!")
 ```
 
