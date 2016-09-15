@@ -45,7 +45,7 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("julia> Char(253)", not_typed_msg =  "Make sure you use Char()")
+test_student_typed("Char(253)", not_typed_msg =  "Make sure you use Char()")
 success_msg("Great!")
 ```
 
@@ -139,7 +139,7 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("julia> 'a'")
+test_student_typed("'a'")
 test_student_typed("'b'")
 test_student_typed("ERROR: MethodError: `*` has no method matching *(::Char, ::Char)")
 test_student_typed("string[8:16]", not_typed_msg= " Did you index properly")
