@@ -232,7 +232,7 @@ test_student_typed("#1", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("#2", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("#3", not_typed_msg =  "Make sure to copy the julia output.")
 test_student_typed("#4", not_typed_msg =  "Make sure to copy the julia output.")
-test_student_typed("# 1 2 3 4", not_typed_msg = "Make sure to define without commas")
+test_student_typed("# 1 2 3 4", not_typed_msg = "Make sure to define this similar to before but with the commas removed")
 test_student_typed("a = [1 2; 3 4]", not_typed_msg = "Make sure the semi-colon is in the correct spot.")
 success_msg("Great!")
 ```
@@ -334,10 +334,10 @@ Here is a hint: Remember to use # for comments
 
 *** =sct
 ```{r}
-test_student_typed("#a[7]", not_typed_msg =  "Make sure to access using brackets. #1 ")
-test_student_typed("#a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
-test_student_typed("#size(a)", not_typed_msg =  "Remember the basic commands.")
-test_student_typed("#a = reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
+test_student_typed("a[7]", not_typed_msg =  "Make sure to access using brackets. #1 ")
+test_student_typed("a[3,3]", not_typed_msg =  "Make sure to access using brackets. ")
+test_student_typed("size(a)", not_typed_msg =  "Remember the basic commands.")
+test_student_typed("a = reshape(a, 3,4)", not_typed_msg =  "Did you reshape it?")
 success_msg("Great!")
 ```
 
