@@ -147,6 +147,66 @@ success_msg("Great!")
 ```
 
 
+--- type:NormalExercise lang:r xp:25 skills:1 key:45e09152d8
+##Practicing `if` and `else` statements
+
+We created a way to show if a `bmi` was obese. However we have done nothing for those that are not obese. We now must complete this. 
+For the purposes of this exercise you may **NOT** use the `ifelse()` function. 
+*** =instructions
+
+
+
+- Consider the variable `bmi`.
+- Write an if statement so that if `bmi` is greater than or equal to 35 it prints `Obese`. 
+- If the Boolean is not true, make sure it prints `Not Obese`. 
+
+
+*** =hint
+
+Recall with the `if` statement we need the correct boolean and then inside brackets what you want to do with that Boolean. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# bmi is defined for you
+bmi <- 35
+
+# write the if statement about bmi
+
+
+```
+
+*** =solution
+
+```{r}
+# bmi is defined for you
+bmi <- 35
+
+# write the if statement about bmi
+
+if (bmi >= 35){
+    print("Obese")
+} else {
+    print("Not Obese")
+}
+
+
+```
+
+*** =sct
+```{r}
+test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
+test_if_else(if_cond_test=test_student_typed(c("bmi >= 35", "35 <= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Not Obese") ) 
+success_msg("Great!")
+```
 
 
 
