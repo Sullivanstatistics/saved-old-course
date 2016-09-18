@@ -1,0 +1,128 @@
+---
+title       : Flow Control and Initial Functions in R
+description : In this chapter we will work on flow control as well as the start of some basic functions in R. 
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:29e3220aac
+## Conditionals in R
+
+*** =video_link
+
+//player.vimeo.com/video/182536770
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:e412be26b2
+##Basic Conditionals in R
+
+
+Our goal now is to start solving problems with what we encounter in the real world.  Before we can do this we need to understand how to evaluate some simple logical statements. 
+*** =instructions
+
+Write R expressions that deal with the last element of vector `nums`:
+
+- Define the last element of the vector.
+- Is the last element between 3 and 7
+- Is the last element less than or equal to 5 or greater than 20. 
+
+
+*** =hint
+
+Here is a hint: use `<-` for assignment
+
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+nums <- runif(10000, 1, 25)
+```
+
+
+*** =sample_code
+
+```{r}
+# nums is stored for you
+# Define last to be the last element of nums
+
+
+
+# Is last between 3 and 7
+
+
+
+# Is last less than or equal to  5 or greater than 20.  
+```
+
+*** =solution
+
+```{r}
+# nums is stored for you
+# Define last to be the last element of nums
+last <- tail(nums,1)
+
+
+# Is last between 3 and 7
+3 < last & last < 7
+
+
+# Is last less than or equal to  5 or greater than 20. 
+
+last <= 5  | last >20
+```
+
+*** =sct
+```{r}
+test_object("last")
+test_output_contains("FALSE", incorrect_msg="Make sure to define this using an & as well as correct < or >") 
+test_student_typed("<=", not_typed_msg="Make sure to define this using an & as well as correct < or >")
+test_output_contains("TRUE", incorrect_msg="Make sure to define this using an | as well as correct < or >") 
+success_msg("Great!")
+```
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:f1dc5c338b
+## Iterations in R
+
+*** =video_link
+
+//player.vimeo.com/video/182545482
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
+## Avoiding Iterations in R
+
+*** =video_link
+
+//player.vimeo.com/video/182551068
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:b330fb454f
+## Functions in R
+
+*** =video_link
+
+//player.vimeo.com/video/183148895
+
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:9b442d9826
+## Example of a Function in R
+
+*** =video_link
+
+//player.vimeo.com/video/183153604
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:d11132a233
+## What should be a function?
+
+*** =video_link
+
+//player.vimeo.com/video/183155131
