@@ -90,6 +90,65 @@ success_msg("Great!")
 
 
 
+--- type:NormalExercise lang:r xp:25 skills:1 key:2d3ff46486
+##Practicing `if` statements
+
+We will work with some simple `if` expressions in this part of the lab. 
+*** =instructions
+
+Many times with continuous random variables we wish to place them into named categories. One of the easiest ways to do this is with a simple `if` statement.
+
+- Consider the variable `bmi`.
+- Write an if statement so that if `bmi` is greater than or equal to 35 it prints `Obese`. 
+
+
+*** =hint
+
+Recall with the `if` statement we need the correct boolean and then inside brackets what you want to do with that Boolean. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# bmi is defined for you
+bmi <- 35
+
+# write the if statement about bmi
+
+
+```
+
+*** =solution
+
+```{r}
+# bmi is defined for you
+bmi <- 35
+
+# write the if statement about bmi
+
+if (bmi >= 35){
+    print("Obese")
+}
+
+```
+
+*** =sct
+```{r}
+test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
+test_if_else(if_cond_test=test_student_typed(c("bmi >= 35", "35 <= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese")) 
+success_msg("Great!")
+```
+
+
+
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
 ## Avoiding Iterations in R
