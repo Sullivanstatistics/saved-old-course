@@ -261,7 +261,7 @@ bmi <- 35
 
 ```{r}
 # bmi is defined for you
-bmi <- 35
+bmi <- 25
 
 # write the if statement about bmi
 
@@ -281,7 +281,8 @@ if (bmi <= 18.5){
 *** =sct
 ```{r}
 test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
-test_if_else(if_cond_test=test_student_typed(c("bmi >= 35", "35 <= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Not Obese") ) 
+test_if_else(if_cond_test=test_student_typed(c("bmi <= 18.5", "18.5 >= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Underweight"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese") ) 
+test_output_contains("Normal")
 success_msg("Great!")
 ```
 
