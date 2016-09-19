@@ -292,10 +292,119 @@ success_msg("Great!")
 --- type:VideoExercise lang:r xp:25 skills:1 key:64225b942f
 ## Loops and Iterations in Julia
 
+
 *** =video_link
 
 //player.vimeo.com/video/183157227
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:fb98726742
+##Basic `for()` loops in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
+
+
+For loops can be crucial for data analysis and cleaning. It is important to take time to work through some simple ones. 
+
+
+*** =instructions
+
+- Iterate through a sequence of numbers from 1 to 200 by 25
+- Print on a separate line whether or not it is prime. 
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. 
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+#Write the loop out and remember how Julia creates a sequence
+
+
+```
+
+*** =solution
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+# Write the loop below
+
+# for i in 1:25:200
+#        println(isprime(i))
+#   end
+
+```
+
+*** =sct
+```{r}
+test_student_typed("for", not_typed_msg= "Did you use a for loops?")
+test_student_typed("1:25:200", not_typed_msg="Remember how Julia creates a sequence by every 25 numbers.")
+test_student_typed("println", not_typed_msg="Did you remember to use println instead of print. ")
+test_student_typed("isprime", not_typed_msg= "Did you use the isprime function?")
+test_student_typed("end", not_typed_msg="Did you remember to end it?")
+success_msg("Great!")
+```
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:108594c0c1
+##Iterating through a string in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
+
+
+Julia allows us to easily loop through a string. 
+
+
+*** =instructions
+
+- Create a sentence
+- Iterate through this sentance using the iterator `letter`.
+- print each letter with a space after it. 
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. 
+
+
+*** =sample_code
+
+```{r}
+#Write the loop out and remember how Julia creates a sequence
+
+#My sentance:
+
+
+```
+
+*** =solution
+
+```{r}
+#Write the loop out and remember how Julia creates a sequenced
+
+#My sentance: "This is the best class ever!"
+
+# julia> for letter in "This is the best class ever!"
+#                  print(letter, " ")
+#               end
+
+
+```
+
+*** =sct
+```{r}
+test_student_typed("for", not_typed_msg= "Did you use a for loops?")
+test_student_typed("letter", not_typed_msg="Use letter as the iterator here.")
+test_student_typed("print(\"letter\"), ", not_typed_msg="Did you remember to use println instead of print. ")
+test_student_typed("end", not_typed_msg="Did you remember to end it?")
+success_msg("Great!")
+```
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:06fa978938
 ## Further Iteration in Julia

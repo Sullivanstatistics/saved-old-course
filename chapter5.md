@@ -135,7 +135,7 @@ if (bmi >= 35){
 
 *** =sct
 ```{r}
-test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
+test_object("bmi", incorrect_msg="Make sure bmi is set to its original value!")
 test_if_else(if_cond_test=test_student_typed(c("bmi >= 35", "35 <= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese")) 
 success_msg("Great!")
 ```
@@ -208,7 +208,7 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:1a76220ea7
 ##Putting all the `if` and `else` statements together. 
 
-We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
+We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. In each category the number represents an inclusive number. 
 
 | Category | BMI   |
 | -------- | ----- |
@@ -255,7 +255,7 @@ bmi <- 35
 
 ```{r}
 # bmi is defined for you
-bmi <- 25
+bmi <- 35
 
 # write the if statement about bmi
 
