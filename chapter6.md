@@ -401,7 +401,7 @@ Recall your basics of a loop and make sure all components are there.
 ```{r}
 test_student_typed("for", not_typed_msg= "Did you use a for loops?")
 test_student_typed("letter", not_typed_msg="Use letter as the iterator here.")
-test_student_typed("print(\"letter\"), ", not_typed_msg="Did you remember to use println instead of print. ")
+test_student_typed("print("letter"), ", not_typed_msg="Did you remember to use println instead of print. ")
 test_student_typed("end", not_typed_msg="Did you remember to end it?")
 success_msg("Great!")
 ```
