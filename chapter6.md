@@ -18,6 +18,53 @@ description : We will discuss flow control in Julia for this chapter.
 
 
 
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:2526ff8b47
+## Ternary Expressions in Julia
+
+
+We now are moving into flow control in Julia. What would the outcome of the following ternary expression be:
+
+```
+julia> x=1
+1
+julia> x>3 ? "False" : "True"
+```
+
+*** =instructions
+
+- Error
+- True
+- False
+- 1
+
+
+
+*** =hint
+
+Remember what Julia does here not the answer in your mind. 
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: This will run in Julia without error.", 
+                                        "Correct: Julia defaults to the second position when the statement is False. ",
+                                        "Incorrect: The outcome is mathematically False but that is not what Julia does here.",
+                                        "Incorrect: This is the value of x but not a solution here."))
+
+```
+
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:3beefa24b7
 ## Further Flow Control in Julia
 
