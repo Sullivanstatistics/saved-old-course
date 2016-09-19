@@ -81,12 +81,6 @@ success_msg("Great!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1 key:f1dc5c338b
-## Iterations in R
-
-*** =video_link
-
-//player.vimeo.com/video/182545482
 
 
 
@@ -288,6 +282,69 @@ success_msg("Great!")
 
 
 
+--- type:VideoExercise lang:r xp:25 skills:1 key:f1dc5c338b
+## Iterations in R
+
+*** =video_link
+
+//player.vimeo.com/video/182545482
+
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:fb98726742
+##Basic `for()` loops
+For loops can be crucial for data analysis and cleaning. It is important to take time to work through some simple ones. 
+
+
+*** =instructions
+
+- Consider vector `x` which is already loaded into your workspace. 
+- Write a loop that iterates through `x` and calculates the square root of each element. 
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. Please use the sqrt() function rather than an exponential argument. 
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+x <- seq(1:1000, by= 6)
+
+```
+
+
+*** =sample_code
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+# Write the loop below
+
+
+```
+
+*** =solution
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+# Write the loop below
+
+for (i in x){
+    sqrt(x)
+}
+
+
+```
+
+*** =sct
+```{r}
+test_object("x", incorrect_msg="Make sure not to change x!")
+test_for_loop(cond_test = test_student_typed("in x", not_typed_msg="For this situation you do not need to use length(x) just use for (i in x)"), expr_test= test_function=("sqrt", incorrect_msg="Make sure to use the sqrt function."))
+success_msg("Great!")
+```
+
+
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
 ## Avoiding Iterations in R
@@ -295,6 +352,84 @@ success_msg("Great!")
 *** =video_link
 
 //player.vimeo.com/video/182551068
+
+
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:ea6319ebc8
+##Putting all the `if` and `else` statements together. 
+
+We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
+
+| Category | BMI   |
+| -------- | ----- |
+| Underweight | 18.5 | 
+| Normal | 25 |
+|Overweight | 30|
+| Obese | 35|
+
+
+*** =instructions
+
+
+
+- Consider the variable `bmi`.
+- Write `if`, `elseif` and `else` statements to match the table above. 
+- Make sure you know what Boolean you need. 
+- Start with the underweight category and move your way down through the chart for this. 
+
+
+*** =hint
+
+Recall with the `if` statement we need the correct boolean and then inside brackets what you want to do with that Boolean. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# bmi is defined for you
+bmi <- 35
+
+# write the if statement about bmi
+
+
+```
+
+*** =solution
+
+```{r}
+# bmi is defined for you
+bmi <- 25
+
+# write the if statement about bmi
+
+if (bmi <= 18.5){
+    print("Underweight")
+} else if (bmi <= 25) {
+    print("Normal")
+} else if (bmi <= 30) {
+    print("Overweight")
+} else {
+    print("Obese")
+}
+
+
+```
+
+*** =sct
+```{r}
+test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
+test_if_else(if_cond_test=test_student_typed(c("bmi <= 18.5", "18.5 >= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Underweight"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese") ) 
+success_msg("Great!")
+```
+
 
 
 
