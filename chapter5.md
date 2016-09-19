@@ -438,18 +438,9 @@ success_msg("Great!")
 
 
 
---- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
-## Avoiding Iterations in R
 
-*** =video_link
-
-//player.vimeo.com/video/182551068
-
-
-
-
---- type:NormalExercise lang:r xp:25 skills:1 key:ea6319ebc8
-##Putting all the `if` and `else` statements together. 
+--- type:NormalExercise lang:r xp:25 skills:1 key:8f8dc28fd3
+##Using a `for` loop to evaluate BMI. 
 
 We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
 
@@ -461,14 +452,15 @@ We have now made it so we can classify if a person is obese to not obese. Howeve
 | Obese | 35|
 
 
+In our last example this only worked for a single BMI value. Your next task will be to make this iterate through a vector of values. 
+
 *** =instructions
 
 
 
 - Consider the variable `bmi`.
-- Write `if`, `elseif` and `else` statements to match the table above. 
-- Make sure you know what Boolean you need. 
-- Start with the underweight category and move your way down through the chart for this. 
+- Use `if`, `elseif` and `else` statements from your previous work. 
+- Loop through the vector `bmi` and print out the BMI categories for each patient. 
 
 
 *** =hint
@@ -487,9 +479,11 @@ Recall with the `if` statement we need the correct boolean and then inside brack
 
 ```{r}
 # bmi is defined for you
-bmi <- 35
+bmi <- c(17, 18.5, 23, 25, 28, 31, 35)
 
-# write the if statement about bmi
+# Calculate the length of the vector bmi
+
+# write the loop to print out the evaluation of bmi
 
 
 ```
@@ -498,18 +492,27 @@ bmi <- 35
 
 ```{r}
 # bmi is defined for you
-bmi <- 25
+bmi <- c(17, 18.5, 23, 25, 28, 31, 35)
 
-# write the if statement about bmi
+# Calculate the length of the vector bmi
+length(bmi)
 
-if (bmi <= 18.5){
+
+# Use the calculation of length to iterate through
+# write the loop to print out the evaluation of bmi
+# hint you will need to use individual values bmi[i]
+
+
+for (i in 1:length(bmi)){
+  if (bmi[i] <= 18.5){
     print("Underweight")
-} else if (bmi <= 25) {
+  } else if (bmi[i] <= 25) {
     print("Normal")
-} else if (bmi <= 30) {
+  } else if (bmi[i] <= 30) {
     print("Overweight")
-} else {
+  } else {
     print("Obese")
+  }
 }
 
 
@@ -518,9 +521,27 @@ if (bmi <= 18.5){
 *** =sct
 ```{r}
 test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
-test_if_else(if_cond_test=test_student_typed(c("bmi <= 18.5", "18.5 >= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Underweight"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese") ) 
+test_function("length", eval=FALSE, incorrect_msg="Did you use a function to find length?")
+
+test_for_loop(cond_test = test_student_typed("in 1:length(bmi)", not_typed_msg="For this situation use i in 1:length(bmi)"), expr_test =test_if_else(if_cond_test=test_student_typed(c("bmi[i] <= 18.5", "18.5 >= bmi[i]"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Underweight"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese") )  )
+
+
+
 success_msg("Great!")
 ```
+
+
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
+## Avoiding Iterations in R
+
+*** =video_link
+
+//player.vimeo.com/video/182551068
+
 
 
 
