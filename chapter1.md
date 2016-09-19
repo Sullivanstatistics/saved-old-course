@@ -15,7 +15,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:e412be26b2
+--- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Practicing Basic R
 
 *** =instructions
@@ -62,7 +62,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:5a54b078aa
+--- type:NormalExercise lang:r xp:100 skills:1 key:5a54b078aa
 
 ## Basic Procedures in R
 

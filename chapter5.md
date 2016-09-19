@@ -11,7 +11,7 @@ description : In this chapter we will work on flow control as well as the start 
 //player.vimeo.com/video/182536770
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:e412be26b2
+--- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
 ##Basic Conditionals in R
 
 
@@ -84,7 +84,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:2d3ff46486
+--- type:NormalExercise lang:r xp:100 skills:1 key:2d3ff46486
 ##Practicing `if` statements
 
 We will work with some simple `if` expressions in this part of the lab. 
@@ -141,7 +141,7 @@ success_msg("Great!")
 ```
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:45e09152d8
+--- type:NormalExercise lang:r xp:100 skills:1 key:45e09152d8
 ##Practicing `if` and `else` statements
 
 We created a way to show if a `bmi` was obese. However we have done nothing for those that are not obese. We now must complete this. 
@@ -205,7 +205,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:1a76220ea7
+--- type:NormalExercise lang:r xp:100 skills:1 key:1a76220ea7
 ##Putting all the `if` and `else` statements together. 
 
 We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
@@ -292,7 +292,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:fb98726742
+--- type:NormalExercise lang:r xp:100 skills:1 key:fb98726742
 ##Basic `for()` loops
 For loops can be crucial for data analysis and cleaning. It is important to take time to work through some simple ones. 
 
@@ -348,7 +348,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:44ef05ca18
+--- type:NormalExercise lang:r xp:100 skills:1 key:44ef05ca18
 ##Loop Through a matrix
 Before we did a basic loop through a vector. We only needed to concern ourselves with one dimension. If we have a matric we need to now work with rows and columns. Remember that if `x` is a matrix, we index it by `x[r,c]` where `r` is a row and `x` is a column. 
 
@@ -439,7 +439,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:8f8dc28fd3
+--- type:NormalExercise lang:r xp:100 skills:1 key:8f8dc28fd3
 ##Using a `for` loop to evaluate BMI. 
 
 We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
@@ -556,7 +556,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:124cb65c8e
+--- type:NormalExercise lang:r xp:100 skills:1 key:124cb65c8e
 ##Basic function in R
 We need to be able to write our own functions. We will begin with a simple print function and move up from there. 
 
@@ -611,7 +611,7 @@ success_msg("Great!")
 ```
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:2544dab41f
+--- type:NormalExercise lang:r xp:100 skills:1 key:2544dab41f
 ##Basic functions in R part 2
 We need to be able to write our own functions. Now write a function which adds the absolute value of two objects. 
 

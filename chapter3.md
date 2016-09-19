@@ -13,7 +13,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1   key:d4bdee1c7f
+--- type:NormalExercise lang:r xp:100 skills:1   key:d4bdee1c7f
 ##Practicing Basic Julia
 
 *** =instructions
@@ -90,7 +90,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:a87eb5e29d
+--- type:NormalExercise lang:r xp:100 skills:1    key:a87eb5e29d
 ##Practicing Basic Data Objects in Julia
 
 *** =instructions
@@ -166,7 +166,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1     key:5f3b5ac010
+--- type:NormalExercise lang:r xp:100 skills:1     key:5f3b5ac010
 ##Practicing Arrays in Julia 1
 
 *** =instructions
@@ -251,7 +251,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:ba4b5e5554
+--- type:NormalExercise lang:r xp:100 skills:1    key:ba4b5e5554
 ##Accessing Arrays in Julia
 
 *** =instructions

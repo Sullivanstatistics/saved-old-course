@@ -26,7 +26,7 @@ attachments :
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1  key:f863fcb9ce
+--- type:NormalExercise lang:r xp:100 skills:1  key:f863fcb9ce
 ##Strings Basics in R
 
 *** =instructions
@@ -88,7 +88,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:fdee851eec
+--- type:NormalExercise lang:r xp:100 skills:1    key:fdee851eec
 ##Substrings in R Exercise
 
 *** =instructions
@@ -155,7 +155,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:bd6a38c579
+--- type:NormalExercise lang:r xp:100 skills:1 key:bd6a38c579
 ##Analyzing Text from a Blog
 
 *** =instructions
@@ -223,7 +223,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1 key:33fe23b9de
+--- type:NormalExercise lang:r xp:100 skills:1 key:33fe23b9de
 ##Regular Expressions in the blog Data
 
 *** =instructions

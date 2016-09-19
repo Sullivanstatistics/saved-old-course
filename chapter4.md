@@ -12,7 +12,7 @@ description : In this chapter we will explore how Julia handles string data.
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:a87eb5e29d
+--- type:NormalExercise lang:r xp:100 skills:1    key:a87eb5e29d
 ## Practicing Basic Strings in Julia
 
 *** =instructions
@@ -77,7 +77,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:00594f3380
+--- type:NormalExercise lang:r xp:100 skills:1    key:00594f3380
 ## Practicing Substrings in Julia
 
 *** =instructions
@@ -165,7 +165,7 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:25 skills:1    key:ce67f9b4e3
+--- type:NormalExercise lang:r xp:100 skills:1    key:ce67f9b4e3
 ## Practicing Regular Expressions in Julia
 
 *** =instructions
