@@ -102,8 +102,7 @@ Many times with continuous random variables we wish to place them into named cat
 
 *** =hint
 
-Recall with the `if` statement we need the correct boolean and then inside brackets what you want to do with that Boolean. 
-
+Remember how Julia does an if statement, no brackets, braces but needs and end
 
 *** =pre_exercise_code
 ```{r}
@@ -136,13 +135,17 @@ Recall with the `if` statement we need the correct boolean and then inside brack
 *** =sct
 ```{r}
 test_student_typed("if bmi >= 35", not_typed_msg="make sure to use if bmi >=35")
-
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("end", not_typed_msg="make sure to end.")
 success_msg("Great!")
 ```
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:45e09152d8
 ##Practicing `if` and `else` statements
+
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
+
 
 We created a way to show if a `bmi` was obese. However we have done nothing for those that are not obese. We now must complete this. 
 For the purposes of this exercise you may **NOT** use the `ifelse()` function. 
@@ -170,8 +173,6 @@ Recall with the `if` statement we need the correct boolean and then inside brack
 *** =sample_code
 
 ```{r}
-# bmi is defined for you
-bmi <- 35
 
 # write the if statement about bmi
 
@@ -181,24 +182,24 @@ bmi <- 35
 *** =solution
 
 ```{r}
-# bmi is defined for you
-bmi <- 35
-
 # write the if statement about bmi
 
-if (bmi >= 35){
-    print("Obese")
-} else {
-    print("Not Obese")
-}
+# if bmi >= 35
+#     print("Obese")
+# else 
+#     print("Not Obese")
+# end
 
 
 ```
 
 *** =sct
 ```{r}
-test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
-test_if_else(if_cond_test=test_student_typed(c("bmi >= 35", "35 <= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Not Obese") ) 
+test_student_typed("if bmi >= 35", not_typed_msg="make sure to use if bmi >=35")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("else", not_typed_msg="Make sure that you use else.")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("end", not_typed_msg="make sure to end.")
 success_msg("Great!")
 ```
 
@@ -207,6 +208,9 @@ success_msg("Great!")
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:1a76220ea7
 ##Putting all the `if` and `else` statements together. 
+
+
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
 
 We have now made it so we can classify if a person is obese to not obese. However with BMI there are many more categories. 
 
@@ -243,8 +247,6 @@ Recall with the `if` statement we need the correct boolean and then inside brack
 *** =sample_code
 
 ```{r}
-# bmi is defined for you
-bmi <- 35
 
 # write the if statement about bmi
 
@@ -254,28 +256,33 @@ bmi <- 35
 *** =solution
 
 ```{r}
-# bmi is defined for you
-bmi <- 25
 
 # write the if statement about bmi
 
-if (bmi <= 18.5){
-    print("Underweight")
-} else if (bmi <= 25) {
-    print("Normal")
-} else if (bmi <= 30) {
-    print("Overweight")
-} else {
-    print("Obese")
-}
+# if bmi <= 18.5
+#    print("Underweight")
+# else if (bmi <= 25) 
+#    print("Normal")
+# else if (bmi <= 30) 
+#    print("Overweight")
+# else 
+#    print("Obese")
+# end
 
 
 ```
 
 *** =sct
 ```{r}
-test_object("bmi", incorrect_msg="Make sure bmi is set to its origina value!")
-test_if_else(if_cond_test=test_student_typed(c("bmi <= 18.5", "18.5 >= bmi"), not_typed_msg="Make sure to include spaces between elements in the Boolean and make sure you have the correct comparisons"), if_expr_test=test_function("print", incorrect_msg="Did you remember to print out Underweight"), else_expr_test=test_function("print", incorrect_msg="Did you remember to print out Obese") ) 
+test_student_typed("if bmi >= 35", not_typed_msg="make sure to use if bmi >=35")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("else if", not_typed_msg="Make sure that you use else if.")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("else if", not_typed_msg="Make sure that you use else if.")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("else", not_typed_msg="Make sure that you use else if.")
+test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
+test_student_typed("end", not_typed_msg="make sure to end.")
 success_msg("Great!")
 ```
 
