@@ -347,6 +347,97 @@ success_msg("Great!")
 
 
 
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:44ef05ca18
+##Loop Through a matrix
+Before we did a basic loop through a vector. We only needed to concern ourselves with one dimension. If we have a matric we need to now work with rows and columns. Remember that if `x` is a matrix, we index it by `x[r,c]` where `r` is a row and `x` is a column. 
+
+
+*** =instructions
+
+- Consider matrix `x` which is already loaded into your workspace. 
+- Write a loop that iterates through `x` and calculates the mean of each row.
+ 
+
+
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. Please use the sqrt() function rather than an exponential argument. 
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+x <- runif(1008, 0, 10)
+x <- matrix(x,  ncol=4)
+
+```
+
+
+*** =sample_code
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+
+# What are the dimensions of x
+
+
+
+#Index the dimensions to get the number of columns
+
+
+#Calculate the mean of the 3rd column
+
+
+# Iterate through each column and calculate the mean
+
+
+
+```
+
+*** =solution
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+
+# What are the dimensions of x
+
+dim(x)
+
+#Index the dimensions to get the number of columns
+
+dim(x)[2]
+
+
+#Calculate the mean of the 3rd column and name this mean3
+
+mean3 <- mean(x[,3])
+
+
+# Iterate through each column and calculate the mean
+
+for (i in 1:dim(x)[2]){
+    mean(x[,i])
+}
+
+```
+
+*** =sct
+```{r}
+test_object("x", incorrect_msg="Make sure not to change x!")
+test_function("dim", eval=FALSE, incorrect_msg="Make sure to use the dim() function.")
+test_function("dim", eval=FALSE, incorrect_msg="Make sure to use the dim() function.")
+test_student_typed("(x)[2]", not_typed_msg="Make sure to index the dimensions in order to get the columns")
+test_object("mean3", incorrect_msg="Make sure to find mean of the 3rd column")
+test_for_loop(cond_test = test_student_typed("in 1:dim(x)[2]", not_typed_msg="For this situation use i in 1:dim(x)[2]"), expr_test = test_function("mean", "x", eval = FALSE, incorrect_msg="Make sure to use the mean function."))
+
+success_msg("Great!")
+```
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:5952e54720
 ## Avoiding Iterations in R
 
