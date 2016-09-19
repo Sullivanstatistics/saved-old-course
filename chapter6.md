@@ -376,7 +376,7 @@ Recall your basics of a loop and make sure all components are there.
 *** =sample_code
 
 ```{r}
-#Write the loop out and remember how Julia creates a sequence
+#Write the loop out 
 
 #My sentance:
 
@@ -386,7 +386,7 @@ Recall your basics of a loop and make sure all components are there.
 *** =solution
 
 ```{r}
-#Write the loop out and remember how Julia creates a sequenced
+#Write the loop out 
 
 #My sentance: "This is the best class ever!"
 
@@ -401,7 +401,120 @@ Recall your basics of a loop and make sure all components are there.
 ```{r}
 test_student_typed("for", not_typed_msg= "Did you use a for loops?")
 test_student_typed("letter", not_typed_msg="Use letter as the iterator here.")
-test_student_typed("print("letter"), ", not_typed_msg="Did you remember to use println instead of print. ")
+test_student_typed("print(",  not_typed_msg="Did you remember to use print? ")
+test_student_typed("letter",  not_typed_msg="Use your iterator of letter.")
+test_student_typed("end", not_typed_msg="Did you remember to end it?")
+success_msg("Great!")
+```
+
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:bff406a879
+## While loop in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
+
+
+While loops are important when we are trying to convege on values. We use these a lot in optimization. 
+
+
+*** =instructions
+
+- Create a `while` loop.
+- Make sure to run this loop while `x < 10`
+- Have this loop print `x` on its own line until the end, increasing by 0.5 each time. 
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. 
+
+
+*** =sample_code
+
+```{r}
+#Write the loop out 
+
+
+
+```
+
+*** =solution
+
+```{r}
+#Write the loop out 
+
+#julia> while x < 10
+#          println(x)
+#           x += 0.5
+#       end
+```
+
+*** =sct
+```{r}
+test_student_typed("while", not_typed_msg= "Did you use a while loop?")
+test_student_typed("x < 10", not_typed_msg="Remember to do this while x < 10")
+test_student_typed("println",  not_typed_msg="Did you remember to use println function? ")
+test_student_typed("x += 0.5",  not_typed_msg="Did you increase it by 0.5?")
+test_student_typed("end", not_typed_msg="Did you remember to end it?")
+success_msg("Great!")
+```
+
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:47a7431bf2
+## While loop in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code. 
+
+
+While loops are important when we are trying to convege on values. We use these a lot in optimization. 
+
+
+*** =instructions
+
+- Create a `while` loop.
+- Make sure to run this loop while `x < 10`
+- Have this loop print `x` on its own line until the end, increasing by 0.5 each time. 
+- This time use a break command to stop it rather than `while x < 10`, this would be `while true`.
+
+*** =hint
+
+Recall your basics of a loop and make sure all components are there. 
+
+
+*** =sample_code
+
+```{r}
+#Write the loop out 
+
+
+
+```
+
+*** =solution
+
+```{r}
+#Write the loop out 
+
+#julia> while true
+#          println(x)
+#           x += 0.5
+#           x > 10 && break
+#       end
+```
+
+*** =sct
+```{r}
+test_student_typed("while", not_typed_msg= "Did you use a while loop?")
+test_student_typed("true", not_typed_msg="Remember to do this for all true values?")
+test_student_typed("println",  not_typed_msg="Did you remember to use println function? ")
+test_student_typed("x += 0.5",  not_typed_msg="Did you increase it by 0.5?")
+test_student_typed("x > 10", not_typed_msg="Remember it does not stop for x < 10.")
+test_student_typed("&& break", not_typed_msg="Did you remeber to break?")
 test_student_typed("end", not_typed_msg="Did you remember to end it?")
 success_msg("Great!")
 ```
