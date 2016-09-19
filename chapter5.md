@@ -556,6 +556,127 @@ success_msg("Great!")
 
 
 
+--- type:NormalExercise lang:r xp:25 skills:1 key:124cb65c8e
+##Basic function in R
+We need to be able to write our own functions. We will begin with a simple print function and move up from there. 
+
+
+*** =instructions
+
+- Consider vector `x` which is already loaded into your workspace. 
+- write a function that prints x.  
+- name this `my_print`
+
+*** =hint
+
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+x <- seq(1,1000, by= 6)
+
+```
+
+
+*** =sample_code
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+# Write the function below
+
+
+```
+
+*** =solution
+
+```{r}
+#Do not print out x but work through the loop without having to print it
+# Write the function below
+
+
+my_print <- function(x){
+                print(x)
+                }
+
+
+
+
+```
+
+*** =sct
+```{r}
+test_object("x", incorrect_msg="Make sure not to change x!")
+test_function_definition("my_print", function_test= test_expression_result("my_print(x)"), body_test = test_function("print"))
+success_msg("Great!")
+```
+
+
+--- type:NormalExercise lang:r xp:25 skills:1 key:2544dab41f
+##Basic functions in R part 2
+We need to be able to write our own functions. Now write a function which adds the absolute value of two objects. 
+
+
+*** =instructions
+
+- write a function that adds the absolute value of `a` and `b`.
+- Name this `my_abs_sum`.
+
+*** =hint
+
+
+*** =pre_exercise_code
+```{r}
+set.seed(1234)
+x <- seq(1,1000, by= 6)
+
+```
+
+
+*** =sample_code
+
+```{r}
+
+# Write the function below
+
+
+```
+
+*** =solution
+
+```{r}
+
+# Write the function below
+
+
+my_abs_sum <- function(a,b){
+                abs(a) + abs(b)
+                }
+
+
+
+
+```
+
+*** =sct
+```{r}
+test_function_definition("my_abs_sum",
+                         function_test = {
+                           test_expression_result("my_abs_sum(1,2)")
+                           test_expression_result("my_abs_sum(-1,2)")
+                           test_expression_result("my_abs_sum(1,-2)")
+                           test_expression_result("my_abs_sum(-1,-2)")
+                         },
+                         body_test = {
+                            test_function("abs", index = 1)
+                            test_function("abs", index = 2)
+                         })
+success_msg("Great!")
+```
+
+
+
+
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:9b442d9826
 ## Example of a Function in R
