@@ -467,7 +467,7 @@ success_msg("Great!")
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:47a7431bf2
-## While loop in Julia
+## While loop in Julia with `break`
 #### Remember to comment out your answers as DataCamp does not accept Julia code. 
 
 
