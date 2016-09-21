@@ -274,7 +274,7 @@ Recall with the `if` statement we need the correct boolean and then inside brack
 
 *** =sct
 ```{r}
-test_student_typed("if bmi >= 35", not_typed_msg="make sure to use if bmi >=35")
+test_student_typed("if bmi <= 18.5", not_typed_msg="make sure to use if bmi <= 18.5")
 test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
 test_student_typed("else if", not_typed_msg="Make sure that you use else if.")
 test_student_typed("print(", not_typed_msg="make sure to use print function and not println")
