@@ -331,7 +331,7 @@ x <- seq(1,1000, by= 6)
 # Write the loop below
 
 for (i in x){
-    sqrt(x)
+    sqrt(i)
 }
 
 
@@ -340,7 +340,7 @@ for (i in x){
 *** =sct
 ```{r}
 test_object("x", incorrect_msg="Make sure not to change x!")
-test_for_loop(cond_test = test_student_typed("in x", not_typed_msg="For this situation you do not need to use length(x) just use for (i in x)"), expr_test = test_function("sqrt", "x", eval = FALSE, incorrect_msg="Make sure to use the sqrt function."))
+test_for_loop(cond_test = test_student_typed("in x", not_typed_msg="For this situation you do not need to use length(x) just use for (i in x)"), expr_test = test_function("sqrt",  eval = FALSE, incorrect_msg="Make sure to use the sqrt function."))
 success_msg("Great!")
 ```
 
