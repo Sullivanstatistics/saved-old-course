@@ -136,11 +136,7 @@ test_function_definition("my_abs",
                               test_expression_result("my_abs(1)")
                               }, 
                               body_test = test_function("ifelse", incorrect_msg="Did you use ifelse?"))
-test_correct({
-  test_object("out")
-}, {
-  test_function("my_abs")
-})
+test_object("out")
 success_msg("Great!")
 ```
 
