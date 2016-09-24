@@ -76,7 +76,7 @@ test_correct({
 success_msg("Great!")
 ```
 
-test_stu
+test_func
 
 
 
