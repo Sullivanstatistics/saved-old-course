@@ -68,7 +68,7 @@ welcome()
 ```{r}
 test_function_definition("welcome",
                               body_test = test_function("print", incorrect_msg="Did you call the print function?"))
-
+test_output_contains("Welcome to Functions in R!")
 success_msg("Great!")
 ```
 
