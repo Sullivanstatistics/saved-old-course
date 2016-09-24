@@ -141,6 +141,73 @@ success_msg("Great!")
 ```
 
 
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:abb14a9293
+## Functions as Objects in R Exercise
+
+
+We will now make a function that calls other functions. 
+
+*** =instructions
+
+Write a function called `my_row`.
+
+- This function will take arguments, `mat` and `func`. 
+- This function will use the `apply()` function with `mat` as the object and `func` as the function. 
+- Make sure this operates on the row.
+- Call this functon for `mat=A` and `func=mean`. Name this out.
+
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+A = matrix( 
+     c(2, 4, 3, 1, 5, 7), # the data elements 
+    nrow=2,              # number of rows 
+    ncol=3,              # number of columns 
+    byrow = TRUE)        # fill matrix by rows
+```
+
+
+*** =sample_code
+
+```{r}
+# Write the function my_row
+
+
+# call the function as directed and name out
+```
+
+*** =solution
+
+```{r}
+# Write the function my_row
+
+my_row = function(mat,func){
+                apply(mat, 1, func)
+                }
+
+# call the function as directed and name out
+out <- my_row(A, mean)
+```
+
+*** =sct
+```{r}
+test_function_definition("my_row",
+                              function_test= {
+                              test_expression_result("my_row(A,sum)")
+                              test_expression_result("my_row(2*A,mean)")
+                              }, 
+                              body_test = test_function("apply", incorrect_msg="Did you use apply?"))
+test_object("out")
+success_msg("Great!")
+```
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:e84601da06
 ## Debugging Functions in R
 
