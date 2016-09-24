@@ -356,7 +356,9 @@ Before we did a basic loop through a vector. We only needed to concern ourselves
 *** =instructions
 
 - Consider matrix `x` which is already loaded into your workspace. 
-- Write a loop that iterates through `x` and calculates the mean of each row.
+- What are the dimensions of `x`?
+- Calculate the mean of the 3rd column.
+- Iterate through the columns to find the mean of each. 
  
 
 
