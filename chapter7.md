@@ -68,11 +68,7 @@ welcome()
 ```{r}
 test_function_definition("welcome",
                               body_test = test_function("print", incorrect_msg="Did you call the print function?"))
-test_correct({
-  test_object("result")
-}, {
-  test_function("welcome")
-})
+
 success_msg("Great!")
 ```
 
