@@ -67,7 +67,7 @@ welcome()
 *** =sct
 ```{r}
 test_function_definition("welcome",
-                            function_test= test_output_contains("Welcome to Functions in R!", incorrect_msg = "Did you remember to ask it to print the right message?"),
+                            function_test= test_student_typed("Welcome to Functions in R!", not_typed_msg = "Did you remember to ask it to print the right message?"),
                             body_test = test_function("print", incorrect_msg="Did you call the pirnt function?"))
 test_correct({
   test_object("result")
