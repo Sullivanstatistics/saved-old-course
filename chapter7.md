@@ -122,9 +122,9 @@ my_abs <- function(x){
             
 
 
-# call the function with c(-2,2)
+# call the function with c(-2,2) name this out
 
-my_abs(c(-2,2))
+out <- my_abs(c(-2,2))
 
 ```
 
