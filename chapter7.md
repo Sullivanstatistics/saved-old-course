@@ -72,8 +72,77 @@ test_output_contains("Welcome to Functions in R!")
 success_msg("Great!")
 ```
 
-test_func
 
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:0e2f719dab
+## Slightly More advanced Functions in R Exercise
+
+
+We will now make a function that takes some arguments in R. 
+
+*** =instructions
+
+Write a function called `my_abs`.
+
+- This function will take an argument `x`. 
+- This function will use `ifelse` function to define output absolute value of `x`.
+- Call this function for `c(-2,2)`.
+
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Write the function my_abs
+
+
+# call the function with c(-2,2)
+```
+
+*** =solution
+
+```{r}
+# Write the function my_abs
+
+my_abs <- function(x){
+            ifelse(x>=0, x, -x)
+            }
+            
+
+
+# call the function with c(-2,2)
+
+my_abs(c(-2,2))
+
+```
+
+*** =sct
+```{r}
+test_function_definition("my_abs",
+                              function_test= {
+                              test_expression_result("my_abs(-1)")
+                              test_expression_result("my_abs(1)")
+                              }, 
+                              body_test = test_function("ifelse", incorrect_msg="Did you use ifelse?"))
+test_correct({
+  test_object("result")
+}, {
+  test_function("my_abs")
+})
+success_msg("Great!")
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:e84601da06
