@@ -503,7 +503,7 @@ Recall your basics of a loop and make sure all components are there.
 #julia> while true
 #          println(x)
 #           x += 0.5
-#           x > 10 && break
+#           x >= 10 && break
 #       end
 ```
 
@@ -513,7 +513,7 @@ test_student_typed("while", not_typed_msg= "Did you use a while loop?")
 test_student_typed("true", not_typed_msg="Remember to do this for all true values?")
 test_student_typed("println",  not_typed_msg="Did you remember to use println function? ")
 test_student_typed("x += 0.5",  not_typed_msg="Did you increase it by 0.5?")
-test_student_typed("x > 10", not_typed_msg="Remember it does not stop for x < 10.")
+test_student_typed("x >= 10", not_typed_msg="Remember it does not stop for x < 10.")
 test_student_typed("&& break", not_typed_msg="Did you remeber to break?")
 test_student_typed("end", not_typed_msg="Did you remember to end it?")
 success_msg("Great!")
