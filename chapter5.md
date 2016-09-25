@@ -223,7 +223,7 @@ We have now made it so we can classify if a person is obese to not obese. Howeve
 
 
 - Consider the variable `bmi`.
-- Write `if`, `elseif` and `else` statements to match the table above. 
+- Write `if`, `else if` and `else` statements to match the table above. 
 - Make sure you know what Boolean you need. 
 - Start with the underweight category and move your way down through the chart for this. 
 
@@ -461,7 +461,7 @@ In our last example this only worked for a single BMI value. Your next task will
 
 
 - Consider the variable `bmi`.
-- Use `if`, `elseif` and `else` statements from your previous work. 
+- Use `if`, `else if` and `else` statements from your previous work. 
 - Loop through the vector `bmi` and print out the BMI categories for each patient. 
 
 
