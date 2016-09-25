@@ -138,11 +138,10 @@ Remember the parts of the function. This is very similar to one created during t
 ```{r}
 test_student_typed("return", not_typed_msg="Did you remember to use return()?")
 test_student_typed("println", not_typed_msg="Remember to use the println function?")
-test_student_typed("$mandatory", not_typed_msg="Did you remember to call up the number of mandatory courses?")
-test_student_typed("$extra", not_typed_msg="Did you remember to call up the number of extra courses?")
-test_student_typed("\$", not_typed_msg="Did you remember to escape the dollar sign?")
-test_student_typed("$total_cost", not_typed_msg="Did you remember to call up the total cost")
-test_student_typed("The cost of 2 mandatory courses and 1 extra course is $17301", not_typed_msg="The correct outcome of this is: The cost of 2 mandatory courses and 1 extra course is $17301")
+test_student_typed("mandatory", not_typed_msg="Did you remember to call up the number of mandatory courses?")
+test_student_typed("extra", not_typed_msg="Did you remember to call up the number of extra courses?")
+test_student_typed("total_cost", not_typed_msg="Did you remember to call up the total cost")
+test_student_typed("The cost of 2 mandatory courses and 1 extra course is", not_typed_msg="The correct outcome of this is: The cost of 2 mandatory courses and 1 extra course is $17301")
 
 success_msg("Great!")
 ```
