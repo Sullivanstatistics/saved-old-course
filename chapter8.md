@@ -522,3 +522,37 @@ test_mc(correct=2, feedback_msgs = c("Incorrect: try does try the function out. 
 //player.vimeo.com/video/184142654
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:9e8ab36885
+## Advanced Handling in Julia
+
+
+Which of the following is true.
+
+
+*** =instructions
+
+- `info` allows users to look up information about the function. 
+- `info` allows users to direct their function to the help menu. 
+- `warn` lets users know of a potential error with their code.
+- `rethrow` only grabs an error that was displayed for us in the output. 
+
+*** =hint
+
+
+Go back and watch the video again. 
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Incorrect: info allows users to place certain messages throughout the coding.   ",
+                                     "Incorrect: info allows users to place certain messages throughout the coding.   ",
+                                     "Correct: warn does let us know of potential errors regardless of whether Julia felt it was an error. "
+                                     "Incorrect: rethrow can grab errors that Julia hid from is, such as in a try/catch function.")
+
+```
