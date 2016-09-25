@@ -465,7 +465,7 @@ test_mc(correct=1, feedback_msgs = c("Correct: We do not have a concept for skip
                                      "Incorrect: We can create and define out own exceptions to make our own errors.",
                                      "Incorrect: You can pass arguments such as strings into an exception to make it more clear.",
                                      "Incorrect: The throw function does allow an exception to be viewed when a function is run."
-                                    )
+                                    ))
 
 ```
 
@@ -509,7 +509,7 @@ Go back and watch the video again.
 test_mc(correct=2, feedback_msgs = c("Incorrect: try does try the function out. Then it passes it to catch.  ",
                                      "Correct: try passes it to catch and does not stop running the function.",
                                      "Incorrect: catch does allow us to correct for certain errors. This way our function will never show us an error but only the answer. "
-                                    )
+                                    ))
 
 ```
 
@@ -553,6 +553,6 @@ Go back and watch the video again.
 test_mc(correct=3, feedback_msgs = c("Incorrect: info allows users to place certain messages throughout the coding.   ",
                                      "Incorrect: info allows users to place certain messages throughout the coding.   ",
                                      "Correct: warn does let us know of potential errors regardless of whether Julia felt it was an error. "
-                                     "Incorrect: rethrow can grab errors that Julia hid from is, such as in a try/catch function.")
+                                     "Incorrect: rethrow can grab errors that Julia hid from is, such as in a try/catch function."))
 
 ```
