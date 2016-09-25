@@ -393,10 +393,8 @@ When we design functions we do not need to work about Procedure as long as we ca
 *** =sct
 ```{r}
 
-test_mc(correct=2, feedback_msgs = c("Incorrect: We need to modify the code in order to remove the error", 
-                                        "Incorrect: This is the first stage, where we try and figure out what is going wrong. ",
-                                        "Incorrect: We need to figure out where in the function the error is coming from before modifying.",
-                                        "Correct: We should not delete the code but correct it! "))
+test_mc(correct=2, feedback_msgs = c("Incorrect: While the answer is important so is how we arrive at it. ",
+                                        "Correct: We need to be mindful how we arrive at an answer! "))
 
 ```
 
