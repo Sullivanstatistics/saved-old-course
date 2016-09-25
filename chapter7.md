@@ -217,12 +217,144 @@ success_msg("Great!")
 
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:2526ff8b47
+## Debugging Functions Multiple Choice 
+
+
+With Debugging we want to make sure we follow some procedures in order to correctly diagnose and repair our functions. 
+
+Answer the following Question. 
+
+*** =instructions
+
+Which of the following is **NOT** a stage of debugging.
+
+
+- Modify the Code.
+- Characterize the Error
+- Localize the error
+- Delete code leading to error.
+
+
+
+*** =hint
+
+Remember the stages of debugging
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=4, feedback_msgs = c("Incorrect: We need to modify the code in order to remove the error", 
+                                        "Incorrect: This is the first stage, where we try and figure out what is going wrong. ",
+                                        "Incorrect: We need to figure out where in the function the error is coming from before modifying.",
+                                        "Correct: We should not delete the code but correct it! "))
+
+```
+
+
+
+
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:3c0bd31c27
 ## Some Debugging Methods in R
 
 *** =video_link
 
 //player.vimeo.com/video/184080457
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:0f6e468d43
+## Debugging Methods in R Exercise 1 
+
+We will begin with some simple debugging methods. 
+*** =instructions
+
+Consider the function `my_mean`
+
+- This function does not work on strings. 
+- Use the `stopifnot()` function to stop if the value put into this function is a not numeric.  
+
+
+*** =hint
+
+Figure out how to insert the `stopifnot` in here. How can we test if our value is a string?
+
+
+*** =pre_exercise_code
+```{r}
+allow_solution_error()
+```
+
+
+*** =sample_code
+
+```{r}
+
+#Add stopifnot message in so that you do not get an error
+# when you use a string
+
+#This function calculates the mean of an object.size
+# The object should not be a string
+# It outputs the mean
+my_mean <- function(x){
+            mu <- sum(x)/length(x)
+            return(mu)
+            }
+
+# If you do this right, you will not get an error here.
+
+out <- my_mean("Statistical Computing")
+                
+```
+
+*** =solution
+
+```{r}
+#Add stopifnot message in so that you do not get an error
+# when you use a string
+
+#This function calculates the mean of an object.size
+# The object should not be a string
+# It outputs the mean
+my_mean <- function(x){
+            stopifnot(is.numeric(x))
+            mu <- sum(x)/length(x)
+            return(mu)
+            }
+
+# If you do this right, you will not get an error here.
+
+out <- my_mean("Statistical Computing")
+       
+```
+
+*** =sct
+```{r}
+test_function_definition("my_mean",
+                               {
+                              test_expression_result("my_mean("Statistical Computing")")})
+test_object("out")
+success_msg("Great!")
+```
+
+test_e
+
+
+
+
 
 
 
