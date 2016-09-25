@@ -326,6 +326,44 @@ test_mc(correct=2, feedback_msgs = c("Incorrect: With the removal of the functio
 //player.vimeo.com/video/184141060
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:85c6561b64
+## Multiple Dispatch in Julia
+
+
+Which of the following is true about Multiple Dispatch?
+
+
+*** =instructions
+
+- It allows a function to use multiple arguments. 
+- It allows a function to use multiple methods for different types of data. 
+- It dispatches more than one function each time you run it.
+
+
+
+*** =hint
+
+
+Remember what is unique about the * operator. 
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: With the removal of the function and end, the code is much more concise. ",
+                                    "Correct: It has nothing to do with rates.",
+                                    "Incorrect: We do use the -> in order to name the function."))
+
+```
+
+
+
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:f708daa41e
 ## Exceptions in Julia
