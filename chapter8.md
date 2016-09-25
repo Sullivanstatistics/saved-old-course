@@ -223,6 +223,55 @@ success_msg("Great!")
 ```
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:2526ff8b47
+## Functions in Julia MC
+
+Do not run this code in Julia but imagine what would happen if you did:
+
+```
+function foo()
+        println(x)
+    end
+
+    function bar()
+        x = 2
+        foo()
+    end
+```
+
+What would the outcome of this be?
+
+*** =instructions
+
+- The outcome would be 2. 
+- There would be no outcome it would run and return nothing. 
+- This would return an error. 
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Incorrect: We need to modify the code in order to remove the error", 
+                                        "Incorrect: This is the first stage, where we try and figure out what is going wrong. ",
+                                        "Incorrect: We need to figure out where in the function the error is coming from before modifying.",
+                                        "Correct: We should not delete the code but correct it! "))
+
+```
+
+
+
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:1acf8f7cc5
