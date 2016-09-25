@@ -343,9 +343,7 @@ out <- my_mean(as.character(2))
 
 *** =sct
 ```{r}
-test_function_definition("my_mean", {
- test_expression_error("my_mean(as.character(2))")
- })
+test_student_typed("stopifnot(is.numeric(x))", not_typed_msg="Make sure you stop if it is not numeric, use is.numeric")
 success_msg("Great!")
 ```
 
