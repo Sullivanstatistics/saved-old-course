@@ -430,7 +430,7 @@ Remember what was said in the video for this.
 *** =sct
 ```{r}
 
-test_mc(correct=2, feedback_msgs = c("Incorrect: This makes sense for hockey but not R.",
+test_mc(correct=4, feedback_msgs = c("Incorrect: This makes sense for hockey but not R.",
                                         "Incorrect: We are not looking for better but to make sure they work as well. ",
                                         "Incorrect: there really is not a ranking order to checks",
                                         "Correct: We need our function to perform as well as the other in certain tests! "))
