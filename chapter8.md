@@ -429,6 +429,46 @@ success_msg("Great!")
 //player.vimeo.com/video/184141478
 
 
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:03e75cc5cb
+## Exceptions in Julia MC
+
+
+What is not true of an exception in Julia.
+
+
+*** =instructions
+
+- An exception is a way to skip having to use your function. 
+- You can create your own exceptions.
+- You can pass arguments into exceptions. 
+- The `throw()` function allows us to call exceptions when they appear. 
+
+
+
+*** =hint
+
+
+Go back and watch the video again. 
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: We do not have a concept for skipping a function. We simply do not use it if we do not want to. ",
+                                     "Incorrect: We can create and define out own exceptions to make our own errors.",
+                                     "Incorrect: You can pass arguments such as strings into an exception to make it more clear.",
+                                     "Incorrect: The throw function does allow an exception to be viewed when a function is run."
+                                    )
+
+```
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:f52e5b57c6
 ## Handling Exceptions in Julia
 
