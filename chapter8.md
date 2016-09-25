@@ -81,18 +81,17 @@ success_msg("Great!")
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:0e2f719dab
-## Slightly More advanced Functions in R Exercise
+## Returning Values in Julia
 
-
-We will now make a function that takes some arguments in R. 
+Consider the function `courses` in the video
 
 *** =instructions
 
-Write a function called `my_abs`.
-
-- This function will take an argument `x`. 
-- This function will use `ifelse` function to define output absolute value of `x`.
-- Call this function for `c(-2,2)`.
+- Return a the string "The cost of ____ mandatory courses and ____ extra course is $____"
+- Fill in the blanks with the appropriate values from the function.
+- Use the printline function.
+- Remember when you need to use an escape character. 
+- Paste the output of `courses(2,1)`.
 
 
 *** =hint
@@ -109,38 +108,41 @@ Remember the parts of the function. This is very similar to one created during t
 *** =sample_code
 
 ```{r}
-# Write the function my_abs
+#function courses( mandatory, extra)
+#                  cost_of_course = mandatory * 6126
+#                  cost_of_extra = (extra == true ? 5049 : 0)
+#                  total_cost = cost_of_course + cost_of_extra
+#              end
 
 
-# call the function with c(-2,2)
+#courses(2,1) paste output below.
+#
 ```
 
 *** =solution
 
 ```{r}
-# Write the function my_abs
+#function courses( mandatory, extra)
+#                  cost_of_course = mandatory * 6126
+#                  cost_of_extra = (extra == true ? 5049 : 0)
+#                  total_cost = cost_of_course + cost_of_extra
+#                  return(println("The cost of $mandatory mandatory courses and $extra extra course is \$$total_cost"))
+#              end
 
-my_abs <- function(x){
-            ifelse(x>=0, x, -x)
-            }
-            
 
-
-# call the function with c(-2,2) name this out
-
-out <- my_abs(c(-2,2))
-
+#courses(2,1) paste output below.
+# The cost of 2 mandatory courses and 1 extra course is $17301
 ```
 
 *** =sct
 ```{r}
-test_function_definition("my_abs",
-                              function_test= {
-                              test_expression_result("my_abs(-1)")
-                              test_expression_result("my_abs(1)")
-                              }, 
-                              body_test = test_function("ifelse", incorrect_msg="Did you use ifelse?"))
-test_object("out")
+test_student_typed("return", not_typed_msg="Did you remember to use return()?")
+test_student_typed("println", not_typed_msg="Remember to use the println function?")
+test_student_typed("$mandatory", not_typed_msg="Did you remember to call up the number of mandatory courses?")
+test_student_typed("$extra", not_typed_msg="Did you remember to call up the number of extra courses?")
+test_student_typed("\$", not_typed_msg="Did you remember to escape the dollar sign?")
+test_student_typed("$total_cost", not_typed_msg="Did you remember to call up the total cost")
+
 success_msg("Great!")
 ```
 
