@@ -343,10 +343,6 @@ out <- my_mean(as.character(2))
 
 *** =sct
 ```{r}
-test_function_definition("my_mean",
-                               {
-                              test_expression_error("as.character(2)")})
-
 success_msg("Great!")
 ```
 
