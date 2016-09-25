@@ -263,10 +263,9 @@ Try to remember the scope of functions.
 *** =sct
 ```{r}
 
-test_mc(correct=3, feedback_msgs = c("Incorrect: We need to modify the code in order to remove the error", 
-                                        "Incorrect: This is the first stage, where we try and figure out what is going wrong. ",
-                                        "Incorrect: We need to figure out where in the function the error is coming from before modifying.",
-                                        "Correct: We should not delete the code but correct it! "))
+test_mc(correct=3, feedback_msgs = c("Incorrect: foo() cannot see what x is.", 
+                                        "Incorrect: This function will return something.  ",
+                                        "Correct: Since foo() cannot see x = 2 it does not work right. It will return an error. This is because x is outside of the scope of foo(). "))
 
 ```
 
