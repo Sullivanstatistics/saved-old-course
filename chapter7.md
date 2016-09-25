@@ -382,6 +382,7 @@ When we design functions we do not need to work about Procedure as long as we ca
 
 *** =hint
 
+Remember what was said in the video for this. 
 
 
 *** =pre_exercise_code
@@ -395,6 +396,44 @@ When we design functions we do not need to work about Procedure as long as we ca
 
 test_mc(correct=2, feedback_msgs = c("Incorrect: While the answer is important so is how we arrive at it. ",
                                         "Correct: We need to be mindful how we arrive at an answer! "))
+
+```
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:df820a1cb3
+## Designing Programs for Debugging MC #2
+
+
+Why do we perform cross-checks!
+
+*** =instructions
+
+- Because we are not concerned about the penalty box.
+- Because we need ot make sure new versions of code are better than old versions of code.
+- Because we have no better method for checking.
+- Because we need ot make sure new versions of code are at least as good as an old versions of code.
+
+
+*** =hint
+
+Remember what was said in the video for this. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: This makes sense for hockey but not R.",
+                                        "Incorrect: We are not looking for better but to make sure they work as well. ",
+                                        "Incorrect: there really is not a ranking order to checks",
+                                        "Correct: We need our function to perform as well as the other in certain tests! "))
 
 ```
 
