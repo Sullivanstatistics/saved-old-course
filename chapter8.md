@@ -82,6 +82,7 @@ success_msg("Great!")
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:0e2f719dab
 ## Returning Values in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code.
 
 Consider the function `courses` in the video
 
@@ -149,79 +150,79 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:abb14a9293
-## Functions as Objects in R Exercise
-
-
-We will now make a function that calls other functions. 
-
-*** =instructions
-
-Write a function called `my_row`.
-
-- This function will take arguments, `mat` and `func`. 
-- This function will use the `apply()` function with `mat` as the object and `func` as the function. 
-- Make sure this operates on the row.
-- Call this functon for `mat=A` and `func=mean`. Name this out.
-
-
-*** =hint
-
-Remember the parts of the function. This is very similar to one created during the video.
-
-
-*** =pre_exercise_code
-```{r}
-A = matrix( 
-     c(2, 4, 3, 1, 5, 7), # the data elements 
-    nrow=2,              # number of rows 
-    ncol=3,              # number of columns 
-    byrow = TRUE)        # fill matrix by rows
-```
-
-
-*** =sample_code
-
-```{r}
-# Write the function my_row
-
-
-# call the function as directed and name out
-```
-
-*** =solution
-
-```{r}
-# Write the function my_row
-
-my_row = function(mat,func){
-                apply(mat, 1, func)
-                }
-
-# call the function as directed and name out
-out <- my_row(A, mean)
-```
-
-*** =sct
-```{r}
-test_function_definition("my_row",
-                              function_test= {
-                              test_expression_result("my_row(A,sum)")
-                              test_expression_result("my_row(2*A,mean)")
-                              }, 
-                              body_test = test_function("apply", incorrect_msg="Did you use apply?"))
-test_object("out")
-success_msg("Great!")
-```
-
-
-
 --- type:VideoExercise lang:r xp:25 skills:1 key:59ea3c577a
 ## Further Function Details in Julia
 
 *** =video_link
 
 //player.vimeo.com/video/184139354
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:7537021881
+## map function in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code.
+
+Consider the function below:
+
+```
+map([2, 3, 5, 7]) do x
+        if mod(x, 3) == 0
+            x^2 + 2x - 4
+        elseif mod(x, 3) == 1
+            2x^3 + x^2 - 2x + 4
+        else
+            2x-4
+        end
+    end
+```
+
+*** =instructions
+
+- Copy this into Julia.
+- Paste the output of this in a commented form below
+
+
+*** =hint
+
+Run this function in Julia and then paste the answer.
+
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Paste the outcome below
+```
+
+*** =solution
+
+```{r}
+# Paste the outcome below
+#4-element Array{Int64,1}:
+#   0
+#  11
+#   6
+# 725
+```
+
+*** =sct
+```{r}
+test_student_typed("4-element", not_typed_msg="Did you remember to copy this exactly?")
+test_student_typed("0", not_typed_msg="You should have had a value of 0.")
+test_student_typed("11", not_typed_msg="You should have had a value of 11.")
+test_student_typed("6", not_typed_msg="You should have had a value of 6.")
+test_student_typed("725", not_typed_msg="You should have had a value of 725.")
+
+success_msg("Great!")
+```
+
+
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:1acf8f7cc5
