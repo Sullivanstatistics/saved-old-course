@@ -316,7 +316,7 @@ my_mean <- function(x){
 
 # If you do this right, you will not get an error here.
 
-out <- my_mean("Statistical Computing")
+out <- my_mean(as.character(2))
                 
 ```
 
@@ -343,6 +343,9 @@ out <- my_mean(as.character(2))
 
 *** =sct
 ```{r}
+test_function_definition("my_mean", {
+ test_expression_error(my_mean(as.character(2)))
+ })
 success_msg("Great!")
 ```
 
