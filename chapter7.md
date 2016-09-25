@@ -438,6 +438,7 @@ test_mc(correct=4, feedback_msgs = c("Incorrect: This makes sense for hockey but
 ```
 
 
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:b0337a0e75
 ## Designing Functions in R
 
@@ -454,9 +455,122 @@ test_mc(correct=4, feedback_msgs = c("Incorrect: This makes sense for hockey but
 //player.vimeo.com/video/184136056
 
 
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:2a36ddd562
+## Top Down Function Design MC
+
+
+When we divide and conquer a good method might be to break up our 300 line code into chunks of 100 lines and work with those blocks.
+
+*** =instructions
+
+- True
+- False
+
+*** =hint
+
+There are only 2 choices you really should not ask for a hint!
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: We really need to be concerned with useable chunks not just a specific number of lines.",
+                                        
+                                        "Correct: Splitting it into 100 lines does not mean we can do something with each 100 line section. We may end up splitting it in the middle of code.  "))
+
+```
+
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:bb49fc9b2c
+## Top Down Function Design MC #2
+
+
+Which of the following is **NOT** a correct statement about when top down design works.
+
+*** =instructions
+
+- A systematic way to solve the problem.
+- The entire problem. 
+- An efficient way to solve the problem.
+
+*** =hint
+
+You should not need hints on multiple choice. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Incorrect: We really need to have a systematic method which we can follow to solve this.  ",
+                                        
+                                        "Inorrect: You cannot perform a top down design if you do not understand the problem.  ", 
+                                        "Correct: You may not know how to achieve efficiency (or fast code) however you can still approach it from an algorithmic standpoint and top down design it."))
+
+```
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:5fc6a5dbb8
 ## Refactoring Functions in R
 
 *** =video_link
 
 //player.vimeo.com/video/184136884
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:6a830662f7
+## Refactoring MC
+
+
+What do we do in refactoring?
+
+*** =instructions
+
+- Group Related values into objects. 
+- Common tasks become shared functions.
+- Common overall tasks become general functions.
+- Factor out code in order to split it up. 
+- Give transparent names.
+
+*** =hint
+
+You should not need hints on multiple choice. 
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=4, feedback_msgs = c("Incorrect: This is part of the process.  ",
+                                        
+                                        "Incorrect: This is part of the process.  ", 
+                                        "Incorrect: This is part of the process.  ", 
+                                        "Correct: We are not really looking to split up coding but to make it more concise.",
+                                        "Incorrect: This is part of the process.  "))
+
+```
+
