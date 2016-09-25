@@ -68,7 +68,7 @@ welcome()
 ```{r}
 test_function_definition("welcome",
                               body_test = test_function("print", incorrect_msg="Did you call the print function?"))
-test_output_contains("Welcome to Functions in R!")
+test_student_typed("Welcome to Functions in R!")
 success_msg("Great!")
 ```
 
@@ -277,7 +277,7 @@ test_mc(correct=4, feedback_msgs = c("Incorrect: We need to modify the code in o
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:0f6e468d43
-## Debugging Methods in R Exercise 1 
+## Debugging Methods in R Exercise
 
 We will begin with some simple debugging methods. 
 *** =instructions
@@ -362,6 +362,43 @@ test_e
 
 //player.vimeo.com/video/184133246
 
+
+
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:42f9cfd2af
+## Designing Programs for Debugging MC
+
+
+When we design functions we do not need to work about Procedure as long as we can get the right answer.
+
+*** =instructions
+
+- True
+- False
+
+
+*** =hint
+
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: We need to modify the code in order to remove the error", 
+                                        "Incorrect: This is the first stage, where we try and figure out what is going wrong. ",
+                                        "Incorrect: We need to figure out where in the function the error is coming from before modifying.",
+                                        "Correct: We should not delete the code but correct it! "))
+
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:b0337a0e75
