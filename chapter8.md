@@ -281,6 +281,43 @@ test_mc(correct=3, feedback_msgs = c("Incorrect: foo() cannot see what x is.",
 //player.vimeo.com/video/184139806
 
 
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:7a9a50bad5
+## Functions as Objects in Julia MC
+
+
+which of the following is not true of lambda syntax.
+
+*** =instructions
+
+- It makes the function code more concise.
+- It is designed to create rates in our functions. 
+- It uses `->` to name a function.
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: With the removal of the function and end, the code is much more concise. ",
+                                    "Correct: It has nothing to do with rates.",
+                                    "Incorrect: We do use the -> in order to name the function."))
+
+```
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:f96656952f
 ## Further Complexities of Functions in Julia
 
