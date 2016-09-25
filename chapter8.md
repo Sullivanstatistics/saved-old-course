@@ -477,6 +477,42 @@ test_mc(correct=1, feedback_msgs = c("Correct: We do not have a concept for skip
 //player.vimeo.com/video/184142074
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:a12248afba
+## try/catch in Julia MC
+
+
+Which of the following is **NOT** true about try/catch
+
+
+*** =instructions
+
+- `try` lets us try a function out to see if it works. 
+- `try` will run the function and then stop it if it does not like what it sees. 
+- `catch` will grab the error for us and allows us to correct instead of breaking the function. 
+- 
+
+
+*** =hint
+
+
+Go back and watch the video again. 
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: try does try the function out. Then it passes it to catch.  ",
+                                     "Correct: try passes it to catch and does not stop running the function.",
+                                     "Incorrect: catch does allow us to correct for certain errors. This way our function will never show us an error but only the answer. "
+                                    )
+
+```
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:03fdb184eb
 ## Advanced Exception Hnadling in Julia
