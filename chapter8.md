@@ -355,14 +355,70 @@ Remember what is unique about the * operator.
 *** =sct
 ```{r}
 
-test_mc(correct=2, feedback_msgs = c("Incorrect: With the removal of the function and end, the code is much more concise. ",
-                                    "Correct: It has nothing to do with rates.",
-                                    "Incorrect: We do use the -> in order to name the function."))
+test_mc(correct=2, feedback_msgs = c("Incorrect: Julia does not need anything special in order to call multiple arguemnts.",
+                                     "Correct: Multiple Dispatches allow a function to run differently depending on the type of data input.",
+                                     "Incorrect: There is nothing specific that will run multiple functions at once. "))
 
 ```
 
 
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:782d8fb490
+## Building Methods in Julia
+#### Remember to comment out your answers as DataCamp does not accept Julia code.
+
+Consider the function below:
+  
+```
+function g(x, y)
+      return 2x^2 - 2y
+    end
+
+```
+
+*** =instructions
+
+- Rewrite this function to create a method.
+- Let this work for `x` and `y` is an integer.
+- Make only the changes on variable types to do this and paste the answer below.
+
+*** =hint
+
+Recall how Julia uses methods (::)
+
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Paste the outcome below
+```
+
+*** =solution
+
+```{r}
+# Paste the update function below
+#   function g(x::int, y::int)
+#       return 2x^2 - 2y
+#     end
+
+
+```
+
+*** =sct
+```{r}
+test_student_typed("function", not_typed_msg="Did you remember to copy the function?")
+test_student_typed("x::int, y::int", not_typed_msg="Remember to call up a method with ::")
+test_student_typed("return 2x^2 - 2y", not_typed_msg="Do not change the innards of this function.")
+test_student_typed("end", not_typed_msg="You must remember to end a function in Julia.")
+
+success_msg("Great!")
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:f708daa41e
