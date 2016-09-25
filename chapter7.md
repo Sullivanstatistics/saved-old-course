@@ -345,8 +345,8 @@ out <- my_mean("Statistical Computing")
 ```{r}
 test_function_definition("my_mean",
                                {
-                              test_expression_result("my_mean("Statistical Computing")")})
-test_object("out")
+                              test_expression_error("my_mean("Statistical Computing")")})
+
 success_msg("Great!")
 ```
 
