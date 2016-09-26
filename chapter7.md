@@ -88,7 +88,7 @@ Write a function called `my_abs`.
 
 - This function will take an argument `x`. 
 - This function will use `ifelse` function to define output absolute value of `x`.
-- Call this function for `c(-2,2)`.
+- Call this function for `c(-2,2)` and name this `out`.
 
 
 *** =hint
@@ -156,7 +156,7 @@ Write a function called `my_row`.
 - This function will take arguments, `mat` and `func`. 
 - This function will use the `apply()` function with `mat` as the object and `func` as the function. 
 - Make sure this operates on the row.
-- Call this functon for `mat=A` and `func=mean`. Name this out.
+- Call this functon for `mat=A` and `func=mean`. Name this `out`.
 
 
 *** =hint
