@@ -456,7 +456,7 @@ Recall your basics of a loop and make sure all components are there.
 test_student_typed("while", not_typed_msg= "Did you use a while loop?")
 test_student_typed("x < 10", not_typed_msg="Remember to do this while x < 10")
 test_student_typed("println",  not_typed_msg="Did you remember to use println function? ")
-test_student_typed("x += 0.5",  not_typed_msg="Did you increase it by 0.5?")
+test_student_typed("x += 0.5",  not_typed_msg="Did you increase it by 0.5 or if you did make sure you use x += 0.5 as the increase?")
 test_student_typed("end", not_typed_msg="Did you remember to end it?")
 success_msg("Great!")
 ```
