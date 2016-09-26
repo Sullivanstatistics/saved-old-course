@@ -223,11 +223,12 @@ success_msg("Great!")
 
 With Debugging we want to make sure we follow some procedures in order to correctly diagnose and repair our functions. 
 
-Answer the following Question. 
+Answer the following Question:
+
+Which of the following is **NOT** a stage of debugging?
 
 *** =instructions
 
-Which of the following is **NOT** a stage of debugging.
 
 
 - Modify the Code.
@@ -406,7 +407,7 @@ test_mc(correct=2, feedback_msgs = c("Incorrect: While the answer is important s
 ## Designing Programs for Debugging MC #2
 
 
-Why do we perform cross-checks!
+Why do we perform cross-checks?
 
 *** =instructions
 

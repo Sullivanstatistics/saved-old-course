@@ -435,7 +435,7 @@ success_msg("Great!")
 ## Exceptions in Julia MC
 
 
-What is not true of an exception in Julia.
+What is not true of an exception in Julia?
 
 
 *** =instructions
@@ -481,7 +481,7 @@ test_mc(correct=1, feedback_msgs = c("Correct: We do not have a concept for skip
 ## try/catch in Julia MC
 
 
-Which of the following is **NOT** true about try/catch
+Which of the following is **NOT** true about try/catch?
 
 
 *** =instructions
@@ -526,7 +526,7 @@ test_mc(correct=2, feedback_msgs = c("Incorrect: try does try the function out. 
 ## Advanced Handling in Julia
 
 
-Which of the following is true.
+Which of the following is true?
 
 
 *** =instructions
