@@ -219,7 +219,7 @@ We have now made it so we can classify if a person is obese to not obese. Howeve
 | Underweight | 18.5 | 
 | Normal | 25 |
 |Overweight | 30|
-| Obese | 35|
+| Obese | >30|
 
 
 *** =instructions
