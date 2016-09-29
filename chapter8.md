@@ -552,7 +552,7 @@ Go back and watch the video again.
 
 test_mc(correct=3, feedback_msgs = c("Incorrect: info allows users to place certain messages throughout the coding.   ",
                                      "Incorrect: info allows users to place certain messages throughout the coding.   ",
-                                     "Correct: warn does let us know of potential errors regardless of whether Julia felt it was an error. "
+                                     "Correct: warn does let us know of potential errors regardless of whether Julia felt it was an error. ",
                                      "Incorrect: rethrow can grab errors that Julia hid from is, such as in a try/catch function."))
 
 ```
