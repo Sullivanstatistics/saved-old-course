@@ -115,6 +115,92 @@ success_msg("Great!")
 
 
 
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:ef4e3ece30
+## Generating Continuous Distributions
+
+
+We will start by generating data from continuous distributions. 
+
+*** =instructions
+
+Your goal will be to use the continuous distribution functions in R. (A seed ahs been set do not set one)
+
+- Generate 100 random Normal(0,1) values name this `x1`. 
+- Generate 10000 Gamma(2,2) name this `x2`. 
+- Generate 1000 Beta(0.2, 0.2) name this `x3`.
+- Generate histograms of `x1`, `x2`, and `x3`
+
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+par(mfrow=c(1,3))
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Generate 100 N(0,1) values.
+x1 = 
+
+# Generate 10000 Gamma(2,2) values.
+x2= 
+
+
+# Generate 1000 Beta(0.2,0.2) values.
+
+x3=
+
+# generate histograms of the 3 variables
+
+```
+
+*** =solution
+
+```{r}
+# Generate 100 N(0,1) values.
+x1 = rnorm(100,0,1)
+
+# Generate 10000 Gamma(2,2) values.
+x2= rgamma(10000, 2,2)
+
+
+# Generate 1000 Beta(0.2,0.2) values.
+
+x3= rbeta(1000,0.2,0.2)
+
+# generate histograms of the 3 variables
+hist(x1)
+hist(x2)
+hist(x3)
+```
+
+*** =sct
+```{r}
+test_object("x1", incorrect_msg="Make sure you drew 100 samples using rnorm().")
+test_function("rnorm", incorrect_msg="Make sure you drew 100 samples using rnorm().")
+test_object("x2", incorrect_msg="Make sure you drew 10000 samples using rgamma().")
+test_function("rgamma", incorrect_msg="Make sure you drew 10000 samples using rgamma().")
+test_object("x3", incorrect_msg="Make sure you drew 1000 samples using rbeta().")
+test_function("rbeta", incorrect_msg="Make sure you drew 1000 samples using rbeta().")
+test_function("hist", incorrect_msg="Did you make the histograms?")
+success_msg("Great!")
+```
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:a24a8c8a04
 ## Basics of Simulations
 
