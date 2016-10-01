@@ -12,6 +12,7 @@ description : In this chapter we will cover statistical simulations.
 
 
 
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:6faff5dbf6
 ## Discrete Random Variables
 
@@ -99,7 +100,6 @@ test_function("mean", incorrect_msg="Did you use the mean function?")
 test_function("print", incorrect_msg="Did you print the difference in means?")
 success_msg("Great!")
 ```
-
 
 
 
