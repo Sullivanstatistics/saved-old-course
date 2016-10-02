@@ -81,7 +81,7 @@ set.seed(1234)
 x1 = rpois(100, 0.2)
 
 # Generate 100 random Poisson random variables with lambda = 0.5
-x2 = rpois(100, 0.5)
+x2 = rpois(10, 0.5)
 
 
 # Find the difference in means
