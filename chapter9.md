@@ -303,11 +303,16 @@ We need to build functions that allow us to start to simulate these things on an
 
 The next exercises will modify this code. Start with a basic function and follow all the steps. 
 
-- Create a function with no arguments.
-- This 
+- Create a function with argument `n`.
+- This function will create a histogram of `n` replicates of:
+```
+mean(rnorm(100,0,2))
+```
+- Evaluate `rep_hist` with `n=25`.
+
 
 *** =hint
-This
+
 Remember the parts of the function. This is very similar to one created during the video.
 
 
@@ -323,32 +328,32 @@ set.seed(1234)
 *** =sample_code
 
 ```{r}
-# Replicate the mean calculation 10 times.
+# Create the function and name it rep_hist
 
 
+#Evaluate when n=25
 
 
-
-#Print x
 ```
 
 *** =solution
 
 ```{r}
 # Replicate the mean calculation 10 times.
- x= replicate(10 , rnorm(100,0,2))
- 
- 
- #Print x
- print(x)
+rep_hist <- function(n){
+        hist(replicate(n, mean(rnorm(100,0,2))))
+        }
+
+#Evaluate when n=25
+rep_hist(25)
 
 ```
 
 *** =sct
 ```{r}
-test_object("x", incorrect_msg="Make sure you replicated 10 times. Do not set a seed for this. ")
-test_function("replicate", incorrect_msg="Did you use the replicate function?")
-test_function("print", incorrect_msg="Did you remember to print?")
+test_function_definition("rep_hist",
+                              body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
+test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to evaluate this with n = 25? If you did make sure you just called rep_hist(25).")
 success_msg("Great!")
 ```
 
