@@ -542,7 +542,7 @@ success_msg("Great!")
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d9322d8ce4
-## Simulation with t-test function II
+## Simulation with t-test function I
 
 Now that you know how to extract the p-value we will create a function that does this for us. 
 
@@ -614,6 +614,95 @@ test_function_definition("my_test",
 test_object("pvals", incorrect_msg="Did you remember to call your function for x and y and name it pvals?")
 success_msg("Great!")
 ```
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:43c7f94b95
+## Simulation with t-test function II
+
+We will now modify the function to allow us to try more values. 
+What we had been testing before was:
+```
+x <- rnorm(100, 0, 2)
+y <- rnorm(100,0,2)
+```
+
+*** =instructions
+Modify your previous function to now allow for:
+
+- `mu1` mean of first normal.
+- `var1` variance of first normal.
+- `mu2` mean of second normal.
+- `var2` variance of second normal.
+- `n` number of samples of each normal.
+
+
+- Generate `x` as the first normal with `n` samples of mean `mu1` and var `var1`.
+- Generate `y` as the second normal with `n` samples of mean `mu2` and var `var2`.
+- Compare with a t-test and return the p-value.
+- Run this function with `mu1=mu2=var1=var2=1` and `n=100` name this p-vals.
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+
+# Modify the function as directed.
+
+
+
+
+
+# Run the function with the parameters as listed and name pvals
+
+```
+
+*** =solution
+
+```{r}
+# Write a function that takes input `x` and `y` call this my_test
+# This function should take the t-test of `x` and `y`.
+# Then it should return the p-value. 
+
+my_test = function(mu1, mu2, var1, var2, n ){
+    x = rnorm(n,mu1,var1)
+    y = rnorm(n,mu2, var2)
+    test = t.test(x,y)
+    pval = test$p.value
+    return(pval)
+}
+    
+
+
+
+
+
+# Run the function with the parameters as listed and name pvals
+
+pvals = my_test(1,1,1,1,100)
+```
+
+*** =sct
+```{r}
+test_function_definition("my_test",
+                            body_test = test_function("t.test", incorrect_msg="Did you use t.test?"))
+test_object("pvals", incorrect_msg="Did you remember to call your function for x and y and name it pvals?")
+success_msg("Great!")
+```
+
 
 
 
