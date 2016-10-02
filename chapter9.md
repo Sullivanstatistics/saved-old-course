@@ -608,7 +608,7 @@ pvals = my_test(x,y)
 ```{r}
 test_function_definition("my_test",
                               function_test= {
-                              test_expression_result("my_test(x,y)"),
+                              test_expression_result("my_test(x,y)")
                               test_expression_result("my_test(rnorm(10), rnorm(10))")
                               }, 
                               body_test = test_function("t.test", incorrect_msg="Did you use t.test?"))
