@@ -978,6 +978,117 @@ test_mc(correct=3, feedback_msgs = c("Inorrect: in order to fully sample we need
 
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:0aee3f1bf0
+## Metropolis Hastings Question I
+
+With the metropolis hastings, we only accept out proposal 50% of the time. 
+
+*** =instructions
+
+
+- True
+- False
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: We accept our proposal give the acceptance ratio and a uniform random number. ",
+                                    "Correct: We accept our proposal give the acceptance ratio and a uniform random number. "
+                                    ))
+
+```
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:eac0144f7e
+## Metropolis Hastings Question II
+
+If the density of our proposal is less than the density of our current position we will move. 
+
+*** =instructions
+
+
+- True
+- False
+- Depends
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Incorrect: We accept our proposal give the acceptance ratio and a uniform random number. ",
+                                    "Incorrect: We accept our proposal give the acceptance ratio and a uniform random number. ",
+                                    "Correct: Depending on the random uniform value we may or may not move. "
+                                    ))
+
+```
+
+
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:e97128d91d
+## Metropolis Hastings Question II|
+
+If the density of our proposal is more than the density of our current position we will move. 
+
+*** =instructions
+
+
+- True
+- False
+- Depends
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: We accept our proposal by comparing it to a number between 0 and 1. If our value is larger than 1 we will always accept.",
+                                    "Incorrect: We accept our proposal by comparing it to a number between 0 and 1. If our value is larger than 1 we will always accept. ",
+                                    "Incorrect: We accept our proposal by comparing it to a number between 0 and 1. If our value is larger than 1 we will always accept. "
+                                    ))
+
+```
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:f148a1ff96
 ## Metropolis Hastings Example
 
