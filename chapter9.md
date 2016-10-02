@@ -219,6 +219,75 @@ success_msg("Great!")
 //player.vimeo.com/video/185153636
 
 
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:b5ee583fab
+## Using the function replicates
+
+
+We will begin working with the function `replicates()` in R. This function allows us to replicate an action over a specified abount of times. 
+
+*** =instructions
+
+The code below replicates the calculation of mean on a random sample of normals:
+
+```
+replicate(3 , rnorm(100,0,2))
+```
+
+- Change this so it replicates it 10 times and name this `x`.
+- Print `x`.
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Replicate the mean calculation 10 times.
+
+
+
+
+
+#Print x
+```
+
+*** =solution
+
+```{r}
+# Replicate the mean calculation 10 times.
+ x= replicate(3 , rnorm(100,0,2))
+ 
+ 
+ #Print x
+ print(x)
+
+```
+
+*** =sct
+```{r}
+test_object("x", incorrect_msg="Make sure you replicated 10 times. Do not set a seed for this. ")
+test_function("replicate", incorrect_msg="Did you use the replicate function?")
+test_function("print", incorrect_msg="Did you remember to print?")
+success_msg("Great!")
+```
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:2111db78fe
 ## Simulation of Distributions
 
