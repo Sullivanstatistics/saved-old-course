@@ -354,8 +354,10 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
+test_fun("rep_hist", incorrect_msg="Did you remember to evaluate this with N=100 n = 25?")
 test_student_typed("rep_hist(100,25)", not_typed_msg="Did you remember to evaluate this with N=100 n = 25? If you did make sure you just called rep_hist(100,25).")
 test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to evaluate this with n = 25? If you did make sure you just called rep_hist(25).")
+
 success_msg("Great!")
 ```
 
