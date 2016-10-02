@@ -80,7 +80,7 @@ set.seed(1234)
 # Generate 100 random Poisson random variables with lambda = 0.2
 x1 = rpois(100, 0.2)
 
-# Generate 100 random Poisson random variables with lambda = 0.2
+# Generate 100 random Poisson random variables with lambda = 0.5
 x2= rpois(100, 0.5)
 
 
