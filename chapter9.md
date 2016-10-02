@@ -843,6 +843,41 @@ test_mc(correct=1, feedback_msgs = c("Correct",
 
 
 
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:e228604a51
+## Random Walk
+
+In a simple random walk, what are the options we have. 
+
+*** =instructions
+
+- Move up or Move down. 
+- Move up or stay in same spot. 
+- Move down or stay in same spot. 
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: We can move both up and down. ",
+                                    "Incorrect : With out definition we must make a move.  ", 
+                                    "Incorrect: With our definition we must make a move."
+                                    ))
+
+```
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:270f838f0e
 ## Rejection Sampling
 
