@@ -48,7 +48,7 @@ Remember the parts of the function. This is very similar to one created during t
 *** =pre_exercise_code
 ```{r}
 
-set.seed(1234)
+
 
 ```
 
@@ -56,6 +56,7 @@ set.seed(1234)
 *** =sample_code
 
 ```{r}
+set.seed(1234)
 # Generate 100 random Poisson random variables with lambda = 0.2
 x1 = 
 
@@ -75,6 +76,7 @@ diff_means
 *** =solution
 
 ```{r}
+set.seed(1234)
 # Generate 100 random Poisson random variables with lambda = 0.2
 x1 = rpois(100, 0.2)
 
