@@ -288,6 +288,74 @@ success_msg("Great!")
 
 
 
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:6d5031d908
+## Further Functions for Analysis
+
+
+We need to build functions that allow us to start to simulate these things on an easier scale. 
+
+
+*** =instructions
+
+The next exercises will modify this code. Start with a basic function and follow all the steps. 
+
+- Create a function with no arguments.
+- This 
+
+*** =hint
+This
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Replicate the mean calculation 10 times.
+
+
+
+
+
+#Print x
+```
+
+*** =solution
+
+```{r}
+# Replicate the mean calculation 10 times.
+ x= replicate(10 , rnorm(100,0,2))
+ 
+ 
+ #Print x
+ print(x)
+
+```
+
+*** =sct
+```{r}
+test_object("x", incorrect_msg="Make sure you replicated 10 times. Do not set a seed for this. ")
+test_function("replicate", incorrect_msg="Did you use the replicate function?")
+test_function("print", incorrect_msg="Did you remember to print?")
+success_msg("Great!")
+```
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:2111db78fe
 ## Simulation of Distributions
 
