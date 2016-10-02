@@ -356,7 +356,7 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to evaluate this with n = 25? If you did make sure you just called rep_hist(25).")
+test_function_result("rep_hist", incorrect_msg="Did you remember to call this with n=25?")
 success_msg("Great!")
 ```
 
@@ -380,7 +380,7 @@ mean(rnorm(N, 0,2))
 ```
 - Set the default value of `N` to be 100.
 
--call this function with N=100, n=25. 
+-call this function with N=90, n=25. 
 - call this function with n=25 only. 
 *** =hint
 
