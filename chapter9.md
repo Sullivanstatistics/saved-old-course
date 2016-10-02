@@ -357,7 +357,7 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_student_typed("rep_hist(25)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
+test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
 success_msg("Great!")
 ```
 
@@ -433,8 +433,8 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_student_typed("rep_hist(25,90)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25,90).")
-test_student_typed("rep_hist(25)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
+test_student_typed("rep_hist(25,90)", not_typed_msg="Did you remember to call this with n=25? Make sure to call it with (25,90).")
+test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
 
 success_msg("Great!")
 ```
