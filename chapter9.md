@@ -292,81 +292,11 @@ success_msg("Great!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:6d5031d908
-## Further Functions for Analysis I
-
-
-We will continue working with our function from the previous problem. 
-
-
-*** =instructions
-
-Start with the function you had before and modify it in the following way:
-
-- Modify the function so that you can create the histogram of repliccates of 
-```
-mean(rnorm(N, 0,2))
-```
-- Set the default value of `N` to be 100.
-
--call this function with N=100, n=25. 
-- call this function with n=25 only. 
-*** =hint
-
-Remember the parts of the function. This is very similar to one created during the video.
-
-
-*** =pre_exercise_code
-```{r}
-
-set.seed(1234)
-
-
-```
-
-
-*** =sample_code
-
-```{r}
-# Create the function and name it rep_hist
-
-
-#Evaluate when n=25
-
-
-```
-
-*** =solution
-
-```{r}
-# Replicate the mean calculation 10 times.
-rep_hist <- function(n, N=100){
-        hist(replicate(n, mean(rnorm(N,0,2))))
-        }
-
-#Evaluate when n=25
-rep_hist(100,25)
-rep_hist(25)
-
-```
-
-*** =sct
-```{r}
-test_function_definition("rep_hist",
-                              body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_fun("rep_hist", incorrect_msg="Did you remember to evaluate this with N=100 n = 25?")
-
-
-success_msg("Great!")
-```
-
-
-
 
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:757c64a18c
-## Further Functions for Analysis II
+## Further Functions for Analysis I
 
 
 We need to build functions that allow us to start to simulate these things on an easier scale. 
@@ -429,6 +359,79 @@ test_function_definition("rep_hist",
 test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to evaluate this with n = 25? If you did make sure you just called rep_hist(25).")
 success_msg("Great!")
 ```
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:6d5031d908
+## Further Functions for Analysis II
+
+
+We will continue working with our function from the previous problem. 
+
+
+*** =instructions
+
+Start with the function you had before and modify it in the following way:
+
+- Modify the function so that you can create the histogram of repliccates of 
+```
+mean(rnorm(N, 0,2))
+```
+- Set the default value of `N` to be 100.
+
+-call this function with N=100, n=25. 
+- call this function with n=25 only. 
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Create the function and name it rep_hist
+
+
+#Evaluate when n=25
+
+
+```
+
+*** =solution
+
+```{r}
+# Replicate the mean calculation 10 times.
+rep_hist <- function(n, N=100){
+        hist(replicate(n, mean(rnorm(N,0,2))))
+        }
+
+#Evaluate when n=25
+rep_hist(100,25)
+rep_hist(25)
+
+```
+
+*** =sct
+```{r}
+test_function_definition("rep_hist",
+                              body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
+test_fun("rep_hist", incorrect_msg="Did you remember to evaluate this with N=100 n = 25?")
+test_student_typed("rep_hist(100,25)", not_typed_msg="Did you remember to evaluate this with N=100 n = 25? If you did make sure you just called rep_hist(100,25).")
+test_student_typed("rep_hist(25)", not_typed_msg="Did you remember to evaluate this with n = 25? If you did make sure you just called rep_hist(25).")
+
+success_msg("Great!")
+```
+
 
 
 
