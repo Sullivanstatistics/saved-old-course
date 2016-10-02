@@ -878,6 +878,44 @@ test_mc(correct=1, feedback_msgs = c("Correct: We can move both up and down. ",
 
 ```
 
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:0dc3256ba1
+## Markov Chain
+
+A Markov chain relies on what previous values?
+
+*** =instructions
+
+- All of them. 
+- Only the past 2.
+- Only the past 1. 
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Inorrect:Markov chain depends on the last value. ",
+                                    "Incorrect : it only depends on the last value.  ", 
+                                    "Correct"
+                                    ))
+
+```
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:270f838f0e
 ## Rejection Sampling
 
