@@ -451,6 +451,97 @@ success_msg("Great!")
 //player.vimeo.com/video/185155969
 
 
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:82b0d7ea8e
+## Simulation with t-test
+
+We will start to create a function that allows us to work with t-tests. 
+
+*** =instructions
+
+In your environment are `x` and `y`. These are random normal values that we wish to t-test. 
+
+- use the `t.test` function on x and y. name this `test`.
+- find the names of `test`.
+- extract the p-value of `test` and call this `pval`.
+
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+x <- rnorm(100, 0, 2)
+y <- rnorm(100,0,2)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# use the `t.test` function on x and y. name this `test`.
+
+
+
+
+# find the names of `test`.
+
+
+
+
+
+# extract the p-value of `test` and call this `pval`.
+
+
+#print pval
+
+
+```
+
+*** =solution
+
+```{r}
+# use the `t.test` function on x and y. name this `test`.
+
+test = t.test(x,y)
+
+
+# find the names of `test`.
+names(test)
+
+
+
+
+# extract the p-value of `test` and call this `pval`.
+pval = test$p.value
+
+
+#Print pval
+print(pval)
+
+```
+
+*** =sct
+```{r}
+test_object("test", incorrect_msg="Did you perform a t test of x and y?")
+test_function("t.test", incorrect_msg="Did you use the t.test() function?")
+test_function("names", incorrect_msg="Make sure you find the names of test.")
+test_object("pval", incorrect_msg="Remember that test is just a list and there are a few ways to index from this list. ")
+test_function("print", incorrect_msg="Make sure to print pval.")
+success_msg("Great!")
+```
+
+
+
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:d60f6b5f7c
 ## Further Simulations
 
