@@ -926,13 +926,14 @@ test_mc(correct=3, feedback_msgs = c("Inorrect:Markov chain depends on the last 
 --- type:MultipleChoiceExercise lang:r xp:75 skills: key:cfc7ccc660
 ## Rejection Sampling
 
-Of the things below, which is the only we do not need in order to perform rejection sampling? 
+Of the things below, which is the least like what we discussed in the video?
 
 *** =instructions
 
-- Move up or Move down. 
-- Move up or stay in same spot. 
-- Move down or stay in same spot. 
+
+- A function that dominates our function of interest. 
+- A function which is defined over an interval and 0 elsewhere. 
+- Any function we desire. 
 
 
 
@@ -950,7 +951,7 @@ Try to remember the scope of functions.
 *** =sct
 ```{r}
 
-test_mc(correct=1, feedback_msgs = c("Correct: We can move both up and down. ",
+test_mc(correct=3, feedback_msgs = c("Inorrect: We can move both up and down. ",
                                     "Incorrect : With out definition we must make a move.  ", 
                                     "Incorrect: With our definition we must make a move."
                                     ))
