@@ -951,9 +951,9 @@ Try to remember the scope of functions.
 *** =sct
 ```{r}
 
-test_mc(correct=3, feedback_msgs = c("Inorrect: We can move both up and down. ",
-                                    "Incorrect : With out definition we must make a move.  ", 
-                                    "Incorrect: With our definition we must make a move."
+test_mc(correct=3, feedback_msgs = c("Inorrect: in order to fully sample we need a function that is awlays above ours. ",
+                                    "Incorrect : We need to know that in our interval we can see the full function. It actually needs to be in an interval we can see and 0 elswhere.  ", 
+                                    "Correct: We cannot do this with functions that do not integrate to 1 or with functions that are not 0 outside of an interval. "
                                     ))
 
 ```
