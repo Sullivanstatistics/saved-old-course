@@ -743,8 +743,7 @@ The Boostrap and Jackknife are the same method.
 *** =hint
 
 
-Try to remember the scope of functions.
-
+Recall our jackknife. Did we do the same thing as the bootstrap?
 *** =pre_exercise_code
 ```{r}
 
@@ -815,7 +814,7 @@ The `sample()` function will work as long as the object has a value for `length(
 *** =hint
 
 
-Try to remember the scope of functions.
+Look at the first part of the video where we discuss the sample function. 
 
 *** =pre_exercise_code
 ```{r}
@@ -859,8 +858,7 @@ In a simple random walk, what are the options we have.
 
 *** =hint
 
-
-Try to remember the scope of functions.
+Go back to the simple random walk and look at the probabilities. 
 
 *** =pre_exercise_code
 ```{r}
@@ -897,7 +895,7 @@ A Markov chain relies on what previous values?
 *** =hint
 
 
-Try to remember the scope of functions.
+Remember what a Markov Chain is. 
 
 *** =pre_exercise_code
 ```{r}
@@ -924,6 +922,40 @@ test_mc(correct=3, feedback_msgs = c("Inorrect:Markov chain depends on the last 
 //player.vimeo.com/video/185171914
 
 
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:cfc7ccc660
+## Rejection Sampling
+
+Of the things below, which is the only we do not need in order to perform rejection sampling? 
+
+*** =instructions
+
+- Move up or Move down. 
+- Move up or stay in same spot. 
+- Move down or stay in same spot. 
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: We can move both up and down. ",
+                                    "Incorrect : With out definition we must make a move.  ", 
+                                    "Incorrect: With our definition we must make a move."
+                                    ))
+
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:685cfa54e3
