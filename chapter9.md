@@ -312,6 +312,7 @@ The next exercises will modify this code. Start with a basic function and follow
 mean(rnorm(100,0,2))
 ```
 - Evaluate `rep_hist` with `n=25`.
+- call it with just the number and not with `n=`
 
 
 *** =hint
@@ -356,7 +357,7 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_function_result("rep_hist", incorrect_msg="Did you remember to call this with n=25?")
+test_student_typed("rep_hist(25)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
 success_msg("Great!")
 ```
 
@@ -380,8 +381,9 @@ mean(rnorm(N, 0,2))
 ```
 - Set the default value of `N` to be 100.
 
--call this function with N=90, n=25. 
+- call this function with N=90, n=25. 
 - call this function with n=25 only. 
+- Do not use `N=` or `n=` in the calls. Also put no spaces in the calls. 
 *** =hint
 
 Remember the parts of the function. This is very similar to one created during the video.
@@ -419,7 +421,7 @@ rep_hist <- function(n, N=100){
         }
 
 #Evaluate when N=90 and n=25
-rep_hist(25, 90)
+rep_hist(25,90)
 
 
 #Evaluate when n=25
@@ -431,8 +433,8 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_function_result("rep_hist", incorrect_msg="Did you remember to evaluate this with N=90 and n = 25?")
-test_function_result("rep_hist", incorrect_msg="Did you remember to evaluate this with n = 25?")
+test_student_typed("rep_hist(25,90)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25,90).")
+test_student_typed("rep_hist(25)", incorrect_msg="Did you remember to call this with n=25? Make sure to call it with (25).")
 
 success_msg("Great!")
 ```
