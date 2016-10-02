@@ -724,6 +724,115 @@ success_msg("Great!")
 //player.vimeo.com/video/185163362
 
 
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:7a9a50bad5
+## Resampling I
+
+
+The Boostrap and Jackknife are the same method. 
+
+*** =instructions
+
+- True
+- False
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: They are not the same method. Jackknife leaves out a value and bootstrap actually samples the same length as the original object. ",
+                                    "Correct: They are not the same but are 2 methods of resampling. "))
+
+```
+
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:2c64a67e71
+## Resampling II
+
+
+The Bootstrap only allows for each object to be chosen once. 
+
+*** =instructions
+
+- True
+- False
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect:The bootstrap allows drawing with replacement. Remember the first bootstrap samples in the video.",
+                                    "Correct: Bootstrap is sampling with replacement. We could actually sample the same value 1000 times even though this is unlikely.  "
+                                    ))
+
+```
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:86b4c8800f
+## Resampling III
+
+
+The `sample()` function will work as long as the object has a value for `length()`. 
+
+*** =instructions
+
+- True
+- False
+
+
+
+*** =hint
+
+
+Try to remember the scope of functions.
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Coorrect:The bootstrap allows drawing with replacement. Remember the first bootstrap samples in the video.",
+                                    "Incorrect: Bootstrap is sampling with replacement. We could actually sample the same value 1000 times even though this is unlikely.  "
+                                    ))
+
+```
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:b4f7a1bf1b
 ## Markov Chains 
 
