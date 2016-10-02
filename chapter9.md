@@ -35,7 +35,7 @@ We will start by generating data from discrete distributions.
 Your goal will be to use the discrete distribution functions in R. (A seed ahs been set do not set one)
 
 - Generate 100 random Poisson random variables with $\lambda = 0.2$, name this `x1`. 
-- Generate 100 random Poisson random variables with $\lambda=0.5$ name this `x2`. 
+- Generate 1000 random Poisson random variables with $\lambda=0.2$ name this `x2`. 
 - What is the difference in means of `x1` and `x2` name this `diff_means`.
 - Print `diff_means`.
 
@@ -60,7 +60,7 @@ set.seed(1234)
 # Generate 100 random Poisson random variables with lambda = 0.2
 x1 = 
 
-# Generate 100 random Poisson random variables with lambda = 0.5
+# Generate 1000 random Poisson random variables with lambda = 0.2
 x2= 
 
 
@@ -81,7 +81,7 @@ set.seed(1234)
 x1 = rpois(100, 0.2)
 
 # Generate 100 random Poisson random variables with lambda = 0.5
-x2 = rpois(100, 0.5)
+x2 = rpois(1000, 0.2)
 
 
 # Find the difference in means
@@ -97,8 +97,9 @@ print(diff_means)
 ```{r}
 test_object("x1", incorrect_msg="Make sure you drew 100 samples using rpois().")
 test_function("rpois", incorrect_msg="Make sure you drew 100 samples using rpois().")
-test_function("rpois", incorrect_msg="Make sure you drew 100 samples using rpois().")
-test_object("dist_means", incorrect_msg="Make sure to take the difference in means.")
+test_object("x2", incorrect_msg="Make sure you drew 1000 samples using rpois().")
+test_function("rpois", incorrect_msg="Make sure you drew 1000 samples using rpois().")
+test_object("diff_means", incorrect_msg="Make sure to take the difference in means.")
 test_function("mean", incorrect_msg="Did you use the mean function?")
 test_function("print", incorrect_msg="Did you print the difference in means?")
 success_msg("Great!")
