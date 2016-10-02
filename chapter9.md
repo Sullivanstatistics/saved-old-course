@@ -268,7 +268,7 @@ set.seed(1234)
 
 ```{r}
 # Replicate the mean calculation 10 times.
- x= replicate(3 , rnorm(100,0,2))
+ x= replicate(10 , rnorm(100,0,2))
  
  
  #Print x
