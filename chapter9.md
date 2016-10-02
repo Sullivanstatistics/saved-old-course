@@ -8,7 +8,7 @@ description : In this chapter we will cover statistical simulations.
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185149327
 
 
 
@@ -18,7 +18,7 @@ description : In this chapter we will cover statistical simulations.
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185151455
 
 
 
@@ -113,7 +113,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185152755
 
 
 
@@ -208,7 +208,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185153204
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:cb6c69d7e0
@@ -216,7 +216,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185153636
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:2111db78fe
@@ -224,7 +224,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185155969
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:d60f6b5f7c
@@ -232,7 +232,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185158276
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:d109e47bec
@@ -240,15 +240,15 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185163362
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:b4f7a1bf1b
-## Markov Chains and Monte Carlo
+## Markov Chains 
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185166932
 
 
 
@@ -258,7 +258,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185171914
 
 
 
@@ -268,7 +268,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185174478
 
 
 
@@ -278,7 +278,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185175777
 
 
 
@@ -287,7 +287,7 @@ success_msg("Great!")
 
 *** =video_link
 
-//player.vimeo.com/video/
+//player.vimeo.com/video/185177040
 
 
 
