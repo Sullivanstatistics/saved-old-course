@@ -826,8 +826,8 @@ Try to remember the scope of functions.
 *** =sct
 ```{r}
 
-test_mc(correct=1, feedback_msgs = c("Coorrect:The bootstrap allows drawing with replacement. Remember the first bootstrap samples in the video.",
-                                    "Incorrect: Bootstrap is sampling with replacement. We could actually sample the same value 1000 times even though this is unlikely.  "
+test_mc(correct=1, feedback_msgs = c("Correct",
+                                    "Incorrect  "
                                     ))
 
 ```
