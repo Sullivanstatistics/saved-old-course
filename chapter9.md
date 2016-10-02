@@ -431,8 +431,8 @@ rep_hist(25)
 ```{r}
 test_function_definition("rep_hist",
                               body_test = test_function("hist", incorrect_msg="Did you call the hist function?"))
-test_fun("rep_hist", incorrect_msg="Did you remember to evaluate this with N=100 n = 25?")
-test_fun("rep_hist", incorrect_msg="Did you remember to evaluate this with n = 25?")
+test_function_result("rep_hist", incorrect_msg="Did you remember to evaluate this with N=100 and n = 25?")
+test_function_result("rep_hist", incorrect_msg="Did you remember to evaluate this with n = 25?")
 
 success_msg("Great!")
 ```
