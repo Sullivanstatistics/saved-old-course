@@ -81,7 +81,7 @@ set.seed(1234)
 x1 = rpois(100, 0.2)
 
 # Generate 100 random Poisson random variables with lambda = 0.5
-x2 = rpois(10, 0.5)
+x2 = rpois(100, 0.5)
 
 
 # Find the difference in means
@@ -97,7 +97,6 @@ print(diff_means)
 ```{r}
 test_object("x1", incorrect_msg="Make sure you drew 100 samples using rpois().")
 test_function("rpois", incorrect_msg="Make sure you drew 100 samples using rpois().")
-test_object("x2", incorrect_msg="Make sure you drew 100 samples using rpois().")
 test_function("rpois", incorrect_msg="Make sure you drew 100 samples using rpois().")
 test_object("dist_means", incorrect_msg="Make sure to take the difference in means.")
 test_function("mean", incorrect_msg="Did you use the mean function?")
