@@ -609,7 +609,7 @@ pvals = my_test(x,y)
 test_function_definition("my_test",
                               function_test= {
                               test_expression_result("my_test(x,y)"),
-                              test_expression_result("my_test(rnorm(10), rnorm(10)")
+                              test_expression_result("my_test(rnorm(10), rnorm(10))")
                               }, 
                               body_test = test_function("t.test", incorrect_msg="Did you use t.test?"))
 test_object("pvals", incorrect_msg="Did you remember to call your function for x and y and name it pvals?")
