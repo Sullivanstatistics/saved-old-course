@@ -541,6 +541,84 @@ success_msg("Great!")
 
 
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:d9322d8ce4
+## Simulation with t-test function II
+
+Now that you know how to extract the p-value we will create a function that does this for us. 
+
+*** =instructions
+
+- Write a function that takes input `x` and `y` call this `my_test`.
+- This function should take the t-test of `x` and `y`.
+- Then it should return the p-value. 
+- Run this on `x` and `y`. (Already loaded on your system). Name this `pvals`.
+
+
+*** =hint
+
+Remember the parts of the function. This is very similar to one created during the video.
+
+
+*** =pre_exercise_code
+```{r}
+
+set.seed(1234)
+x <- rnorm(100, 0, 2)
+y <- rnorm(100,0,2)
+
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Write a function that takes input `x` and `y` call this my_test
+# This function should take the t-test of `x` and `y`.
+# Then it should return the p-value. 
+
+# Run this on `x` and `y`. (Already loaded on your system). name this pvals.
+
+```
+
+*** =solution
+
+```{r}
+# Write a function that takes input `x` and `y` call this my_test
+# This function should take the t-test of `x` and `y`.
+# Then it should return the p-value. 
+
+
+my_test = function(x,y){
+    test = t.test(x,y)
+    pval = test$p.value
+    return(pval)
+}
+    
+
+
+
+
+# Run this on `x` and `y`. (Already loaded on your system).
+
+pvals = my_test(x,y)
+```
+
+*** =sct
+```{r}
+test_function_definition("my_test",
+                              function_test= {
+                              test_expression_result("my_test(x,y)")
+                              test_expression_result("my_test(rnorm(10), rnorm(10)")
+                              }, 
+                              body_test = test_function("t.test", incorrect_msg="Did you use t.test?"))
+test_object("pvals", incorrect_msg="Did you remember to call your function for x and y and name it pvals?")
+success_msg("Great!")
+```
+
+
+
+
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:d60f6b5f7c
 ## Further Simulations
