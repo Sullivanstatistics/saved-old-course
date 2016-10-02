@@ -35,7 +35,7 @@ We will start by generating data from discrete distributions.
 Your goal will be to use the discrete distribution functions in R. (A seed ahs been set do not set one)
 
 - Generate 100 random Poisson random variables with $\lambda = 0.2$, name this `x1`. 
-- Generate 100 random Poisson random variables with $\lambda=0.2$ name this `x2`. 
+- Generate 100 random Poisson random variables with $\lambda=0.5$ name this `x2`. 
 - What is the difference in means of `x1` and `x2` name this `diff_means`.
 - Print `diff_means`.
 
@@ -60,7 +60,7 @@ set.seed(1234)
 # Generate 100 random Poisson random variables with lambda = 0.2
 x1 = 
 
-# Generate 100 random Poisson random variables with lambda = 0.2
+# Generate 100 random Poisson random variables with lambda = 0.5
 x2= 
 
 
@@ -81,7 +81,7 @@ set.seed(1234)
 x1 = rpois(100, 0.2)
 
 # Generate 100 random Poisson random variables with lambda = 0.2
-x2= rpois(100, 0.2)
+x2= rpois(100, 0.5)
 
 
 # Find the difference in means
