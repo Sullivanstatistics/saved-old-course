@@ -924,7 +924,7 @@ test_mc(correct=3, feedback_msgs = c("Inorrect:Markov chain depends on the last 
 
 
 --- type:MultipleChoiceExercise lang:r xp:75 skills: key:cfc7ccc660
-## Rejection Sampling
+## Rejection Sampling Question
 
 Of the things below, which is the least like what we discussed in the video?
 
