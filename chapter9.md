@@ -1054,7 +1054,7 @@ test_mc(correct=3, feedback_msgs = c("Incorrect: We accept our proposal give the
 
 
 --- type:MultipleChoiceExercise lang:r xp:75 skills: key:e97128d91d
-## Metropolis Hastings Question II|
+## Metropolis Hastings Question III
 
 If the density of our proposal is more than the density of our current position we will move. 
 

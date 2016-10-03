@@ -413,7 +413,8 @@ Recall how Julia uses methods (::)
 *** =sct
 ```{r}
 test_student_typed("function", not_typed_msg="Did you remember to copy the function?")
-test_student_typed("x::int, y::int", not_typed_msg="Remember to call up a method with ::")
+test_student_typed(c("x::int", "x::Int"), not_typed_msg="Remember to call up a method with ::")
+test_student_typed(c("y::int", "y::Int"), not_typed_msg="Remember to call up a method with ::")
 test_student_typed("return 2x^2 - 2y", not_typed_msg="Do not change the innards of this function.")
 test_student_typed("end", not_typed_msg="You must remember to end a function in Julia.")
 
