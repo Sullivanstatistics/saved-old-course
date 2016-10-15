@@ -40,7 +40,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:eca6dc8dfc
-## Split, Apply and Combine with *plyr*
+## Split, Apply and Combine with plyr
 
 *** =video_link
 
@@ -52,7 +52,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:3ea9bc221e
-## BRFSS with *plyr*
+## BRFSS with plyr
 
 *** =video_link
 
@@ -74,7 +74,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:f71264a59f
-## Beginning with *dplyr*
+## Beginning with dplyr
 
 *** =video_link
 
@@ -84,7 +84,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:066788f46e
-## Chaining and Pipelining with *dplyr* in R
+## Chaining and Pipelining with dplyr in R
 
 *** =video_link
 
@@ -104,7 +104,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:0b83d01480
-## Using the *summarise* verb to summarize Data in R
+## Using the summarise verb to summarize Data in R
 
 *** =video_link
 
@@ -114,7 +114,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:0d2dcd61ea
-## Choosing Columns and Rows with $dplyr$
+## Choosing Columns and Rows with dplyr
 
 *** =video_link
 
@@ -124,7 +124,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:44e9d99f39
-## Adding new variables with $dplyr$
+## Adding new variables with dplyr
 
 *** =video_link
 
@@ -134,7 +134,7 @@ description : In this chapter we will begin to explore large data in R. We will 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:9d26f88f31
-## Jenny Bryan's Cheatsheet for $dpylr$ joins
+## Jenny Bryan's Cheatsheet for dpylr joins
 
 *** =video_link
 
