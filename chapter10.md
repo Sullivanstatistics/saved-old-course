@@ -29,7 +29,7 @@ Explore the tibble in the exercise below.
 
 *** =pre_exercise_code
 ```{r}
-install.packages("tidyverse")
+
 library(tidyverse)
 tib <- tibble( x = letters, y = rank(letters))
 
@@ -85,7 +85,12 @@ x1 == x2
 *** =sct
 ```{r}
 
-test_student_typed("tib",not_typed_msg= "Make sure to call tib".)
+test_student_typed("tib",not_typed_msg= "Make sure to call tib")
+test_object("x1", incorrect_msg = "Make sure you index x from tib.")
+test_student_typed("tib$x",not_typed_msg = "Use the dollar sign to index x from tib.")
+test_object("x2", incorrect_msg = "Make sure you index x from tib.")
+test_output_contains("TRUE", incorrect_msg = "Make sure you compare x1 to x2.")
+
 
 
 ```
