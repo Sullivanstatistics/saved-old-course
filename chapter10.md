@@ -30,7 +30,7 @@ Explore the tibble in the exercise below.
 *** =pre_exercise_code
 ```{r}
 
-library(tidyverse)
+devtools::install_github("hadley/tidyverse")
 tib <- tibble( x = letters, y = rank(letters))
 
 ```
