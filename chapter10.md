@@ -30,7 +30,7 @@ Explore the tibble in the exercise below.
 *** =pre_exercise_code
 ```{r}
 library(tibble)
-tib <- tibble( x = letters, y = desc(letters))
+tib <- tibble( x = letters, y = rank(letters))
 
 ```
 
