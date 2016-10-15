@@ -11,6 +11,88 @@ description : In this chapter we will begin to explore large data in R. We will 
 //player.vimeo.com/video/187459312
 
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:e412be26b2
+## Working with tibbles in R
+
+
+Lets look at some features of tibbles in R. 
+
+*** =instructions
+
+
+Explore the tibble in the exercise below. 
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+tib <- tibble( x = letters, y = desc(letters))
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Print the tibble `tib`
+
+
+
+
+# Call up x from tib using a dollar sign name this x1
+
+
+
+
+
+# Call up x from tib using double brackets and name this x2
+
+
+
+# Are x1 and x2 equal?
+
+
+```
+
+*** =solution
+
+```{r}
+# Print the tibble `tib`
+
+tib
+
+
+# Call up x from tib using a dollar sign name this x1
+
+
+x1 = tib$x
+
+
+# Call up x from tib using double brackets and name this x2
+
+x2 = tib[[1]]
+
+# Are x1 and x2 equal?
+
+x1 == x2
+```
+
+*** =sct
+```{r}
+
+test_student_typed("tib",not_typed_msg= "Make sure to call tib".)
+test_object("x1", incorrect_msg = "Make sure you index x from tib.")
+test_student_typed(tib$x, incorrect_msg = "Use the dollar sign to index x from tib.")
+test_object("x2", incorrect_msg = "Make sure you index x from tib.")
+test_output_contains("TRUE", incorrect_msg = "Make sure you compare x1 to x2.")
+
+
+```
+test_ob
 
 
 
