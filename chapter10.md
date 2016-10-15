@@ -109,6 +109,7 @@ test_output_contains("TRUE", incorrect_msg = "Make sure you compare x1 to x2.")
 
 
 
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:3081c7aabe
 ## Split, Apply and Combine
 
@@ -116,6 +117,69 @@ test_output_contains("TRUE", incorrect_msg = "Make sure you compare x1 to x2.")
 
 //player.vimeo.com/video/187462579
 
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:2526ff8b47
+
+## Split, Apply and Combine Exercise 1
+
+Please answer the following question about split, apply and combine:
+
+With split, apply and combine a good way to complete this is to copy and paste code over and over until we complete for all splits. 
+
+*** =instructions
+
+- True
+- False
+
+
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=2, feedback_msgs = c("Incorrect: Anytime we copy and paste we run the risk of introducing error into oru analysis. ","Correct: Anytime we copy and paste we run the risk of introducing error into oru analysis. " ))
+
+```
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:d8ad3533ca
+
+## Split, Apply and Combine Exercise 2
+
+Please answer the following question about split, apply and combine:
+
+What is not a good reason to do split, apply and combine?
+
+*** =instructions
+
+- The data is naturally grouped and we wish to anaylze the data across groups. 
+- The data is large and able to be split in a way that makes sense for our analysis. 
+- This method works in all cases. 
+
+
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=3, feedback_msgs = c("Incorrect: This is an excellent situation to use the split, apply, and combine method", "Incorrect: If we can split large data and then bring it back together this is a reasonable way to analyze the data.", "Correct: This is not necessarily always a viable option. Many times there is no logical reason to split the data." ))
+
+```
 
 
 
