@@ -1,6 +1,6 @@
 ---
-title       : Data Wrangling in R with `plyr` and `dplyr`
-description : In this chapter we will begin to explore large data in R. We will learn data wrangling techniques such as split, apply and combine with `plyr` and using tibbles and `dplyr` on large data. 
+title       : Data Wrangling in R with plyr and dplyr
+description : In this chapter we will begin to explore large data in R. We will learn data wrangling techniques such as split, apply and combine with plyr and using tibbles and dplyr on large data. 
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:b330fb454f
