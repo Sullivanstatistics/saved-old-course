@@ -92,7 +92,6 @@ test_output_contains("TRUE", incorrect_msg = "Make sure you compare x1 to x2.")
 
 
 ```
-test_ob
 
 
 
