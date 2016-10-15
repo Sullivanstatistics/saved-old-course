@@ -196,7 +196,70 @@ test_mc(correct=3, feedback_msgs = c("Incorrect: This is an excellent situation 
 
 
 
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:813400786a
 
+## Split, Apply and Combine Exercise 3
+
+Please answer the following question about split, apply and combine:
+
+With the `plyr` class of functions what is not a type of data that has a specific input. 
+
+*** =instructions
+
+- Vectors
+- Lists
+- Arrays
+- Data Frames
+
+
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: plyr works with arrays, lists and data frames. " , "Incorrect:  plyr works lists. ",  "Incorrect: plyr works with arrays",  "Inccorrect: plyr works with data frames. " ))
+
+```
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:75 skills: key:a6c4ed1373
+
+## Split, Apply and Combine Exercise 4
+
+Please answer the following question about split, apply and combine:
+
+With the `plyr` class of functions what is not a type of data that has a specific output
+
+*** =instructions
+
+- Vectors
+- Lists
+- Arrays
+- Data Frames
+
+
+
+
+*** =pre_exercise_code
+```{r}
+
+
+```
+
+*** =sct
+```{r}
+
+test_mc(correct=1, feedback_msgs = c("Correct: plyr works with arrays, lists and data frames. " , "Incorrect:  plyr works lists. ",  "Incorrect: plyr works with arrays",  "Inccorrect: plyr works with data frames. " ))
+
+```
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:3ea9bc221e
 ## BRFSS with plyr
@@ -228,6 +291,80 @@ test_mc(correct=3, feedback_msgs = c("Incorrect: This is an excellent situation 
 //player.vimeo.com/video/187468101
 
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:1f5a22e759
+## dplyr Exercise 1
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+
+Explore the tibble in the exercise below. 
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+df1 = flights[flights$Month==7 & flights$DayofMonth==3, ]
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+
+df2 = filter(flights, Month==7, DayofMonth==3)
+```
+
+*** =sct
+```{r}
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Make sure to use the right call for month and day.")
+test_student_typed("flights$Month",not_typed_msg = "Make sure to index Month")
+test_student_typed("flights$DayofMonth",not_typed_msg = "Make sure to index DayofMonth")
+test_object("df2", incorrect_msg = "Make sure to use the right call for month and day.")
+test_function("filter", incorrect_msg = "Make sure you use the filter function with dplyr.")
+success_msg("Great!")
+
+
+
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:066788f46e
