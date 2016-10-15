@@ -29,6 +29,7 @@ Explore the tibble in the exercise below.
 
 *** =pre_exercise_code
 ```{r}
+install.packages("tidyverse")
 library(tidyverse)
 tib <- tibble( x = letters, y = rank(letters))
 
