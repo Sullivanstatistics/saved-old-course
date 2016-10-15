@@ -29,7 +29,7 @@ Explore the tibble in the exercise below.
 
 *** =pre_exercise_code
 ```{r}
-library(tibble)
+library(tidyverse)
 tib <- tibble( x = letters, y = rank(letters))
 
 ```
