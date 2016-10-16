@@ -646,7 +646,7 @@ test_object("df1", incorrect_msg = "Did you select the correct columns?")
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
 test_function("select", incorrect_msg = "Make sure you use the select function with dplyr.")
 test_function("filter", incorrect_msg = "Make sure you use the select function with dplyr.")
-test_student("700", not_typed_msg = "Make sure you filter with departures greater than 700.")
+test_student_typed("700", not_typed_msg = "Make sure you filter with departures greater than 700.")
 success_msg("Great!")
 
 
@@ -830,12 +830,163 @@ success_msg("Great!")
 
 
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:882ce33b21
+##  Summrise verb Exercise 1
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+# Count the flights by month
+# weight this by distance
+# Name this df1
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+# Count the flights by month
+# weight this by distance
+# Name this df1
+
+df1 = flights %>%
+        count(Month, wt = Distance)
+
+
+```
+
+*** =sct
+```{r}
+
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("count", incorrect_msg="Did you use the count function?")
+test_student_typed("wt", not_typed_msg="Did you remember to weight this?")
+success_msg("Great!")
+
+
+```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:3d4d68fe4f
+##  Summrise verb Exercise 2
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+# Group flights by month
+# tally this
+# weight this by distance
+# Name this df1
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+# Group flights by month
+# tally this
+# weight this by distance
+# Name this df1
+
+df1 = flights %>%
+        group_by(Month) %>%
+        tally( wt = Distance)
+
+
+```
+
+*** =sct
+```{r}
+
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("group_by", incorrect_msg="Did you use the group_by() function?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("tally", incorrect_msg="Did you use the tally() function?")
+test_student_typed("wt", not_typed_msg="Did you remember to weight this?")
+success_msg("Great!")
+
+
+```
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:0d2dcd61ea
 ## Choosing Columns and Rows with dplyr
 
 *** =video_link
 
 //player.vimeo.com/video/187473418
+
+
+
+
 
 
 
@@ -858,7 +1009,184 @@ success_msg("Great!")
 //player.vimeo.com/video/187487417
 
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:16f9bc9aa4
+##  Joins 1
 
+We will practice the difficult concept of joins.  
+
+*** =instructions
+
+Two data frames `a` and `b` have been stored. We will practice joins on them. 
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(dpylr)
+(a <- data_frame(color = c("green","yellow","red"), num = 1:3))
+(b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
+
+```
+
+
+*** =sample_code
+
+```{r}
+# Print out a
+
+
+# Print out b
+
+
+```
+
+*** =solution
+
+```{r}
+# Print out a
+
+print(a)
+
+
+# Print out b
+
+print(b)
+```
+
+*** =sct
+```{r}
+
+
+test_function("print", incorrect_msg="Did you use the print function to print a?")
+test_function("print", incorrect_msg="Did you use the print function to print b?")
+success_msg("Great")
+
+
+```
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:de483734fd
+##  Joins 2
+
+We will practice the difficult concept of joins.  
+
+*** =instructions
+
+Two data frames `a` and `b` have been stored. We will practice joins on them. 
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(dpylr)
+(a <- data_frame(color = c("green","yellow","red"), num = 1:3))
+(b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
+
+```
+
+
+*** =sample_code
+
+```{r}
+
+# inner join a and b
+
+
+# full join a and b
+
+
+```
+
+*** =solution
+
+```{r}
+# inner join a and b
+
+inner_join(a,b)
+
+# full join a and b
+full_join(a,b)
+
+```
+
+*** =sct
+```{r}
+
+
+test_function("inner_join", incorrect_msg="Did you use the inner_join function?")
+test_function("full_join", incorrect_msg="Did you use the full_join function?")
+success_msg("Great")
+
+
+```
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:027cb37cd9
+##  Joins 3
+
+We will practice the difficult concept of joins.  
+
+*** =instructions
+
+Two data frames `a` and `b` have been stored. We will practice joins on them. 
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(dpylr)
+(a <- data_frame(color = c("green","yellow","red"), num = 1:3))
+(b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
+
+```
+
+
+*** =sample_code
+
+```{r}
+
+# left join a and b
+
+
+# right join a and b
+
+
+```
+
+*** =solution
+
+```{r}
+# left join a and b
+
+left_join(a,b)
+
+# right join a and b
+right_join(a,b)
+
+```
+
+*** =sct
+```{r}
+
+
+test_function("left_join", incorrect_msg="Did you use the left_join function?")
+test_function("right_join", incorrect_msg="Did you use the right_join function?")
+success_msg("Great")
+
+
+```
 
 
 
