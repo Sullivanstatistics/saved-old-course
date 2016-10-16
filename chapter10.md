@@ -300,7 +300,7 @@ We will work with dplyr to analyze date.
 *** =instructions
 
 
-Explore the tibble in the exercise below. 
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
 
 *** =hint
 
@@ -367,6 +367,77 @@ success_msg("Great!")
 ```
 
 
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:b1ef41b537
+## dplyr Exercise 2
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+#select departure time, arrival time and the flight number using base R techniques
+
+
+#select departure time, arrival time and the flight number using dplyr 
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+df1 = flights[, c("DepTime", "ArrTime", "FlightNum") ]
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+df2 = select(flights, DepTime, ArrTime, FlightNum)
+```
+
+*** =sct
+```{r}
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
+test_student_typed("ArrTime",not_typed_msg = "Make sure to select Arrival Time")
+test_student_typed("DepTime",not_typed_msg = "Make sure to select Departure Time")
+test_student_typed("FlightNum",not_typed_msg = "Make sure to select flight number")
+test_object("df2", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
+test_function("select", incorrect_msg = "Make sure you use the filter function with dplyr.")
+success_msg("Great!")
+
+```
+
+
 --- type:VideoExercise lang:r xp:25 skills:1 key:066788f46e
 ## Chaining and Pipelining with dplyr in R
 
@@ -374,6 +445,155 @@ success_msg("Great!")
 
 //player.vimeo.com/video/187468763
 
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:e4736b7f66
+## Chaining and Pipelining Exercise 1
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+df1 = flights[flights$Month==7 & flights$DayofMonth==3, ]
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+
+df2 = filter(flights, Month==7, DayofMonth==3)
+```
+
+*** =sct
+```{r}
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Make sure to use the right call for month and day.")
+test_student_typed("flights$Month",not_typed_msg = "Make sure to index Month")
+test_student_typed("flights$DayofMonth",not_typed_msg = "Make sure to index DayofMonth")
+test_object("df2", incorrect_msg = "Make sure to use the right call for month and day.")
+test_function("filter", incorrect_msg = "Make sure you use the filter function with dplyr.")
+success_msg("Great!")
+
+
+
+```
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:6baaefb441
+## Chaining and Pipelining Exercise 2
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+#select departure time, arrival time and the flight number using base R techniques
+
+
+#select departure time, arrival time and the flight number using dplyr 
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+
+#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+
+df1 = flights[, c("DepTime", "ArrTime", "FlightNum") ]
+
+# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+
+df2 = select(flights, DepTime, ArrTime, FlightNum)
+```
+
+*** =sct
+```{r}
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
+test_student_typed("ArrTime",not_typed_msg = "Make sure to select Arrival Time")
+test_student_typed("DepTime",not_typed_msg = "Make sure to select Departure Time")
+test_student_typed("FlightNum",not_typed_msg = "Make sure to select flight number")
+test_object("df2", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
+test_function("select", incorrect_msg = "Make sure you use the filter function with dplyr.")
+success_msg("Great!")
+
+```
 
 
 
