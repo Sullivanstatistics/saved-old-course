@@ -662,6 +662,162 @@ success_msg("Great!")
 //player.vimeo.com/video/187469410
 
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:23dd6c039a
+## Arranging and Mutating Exercise 1
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+#select distance and air time
+# Then calculate speec as distance divided by air time multiplied by 60
+# Then arrange by speed
+
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+# call saved data flights
+
+
+#select distance and air time
+# Then calculate speec as distance divided by air time multiplied by 60
+# Then arrange by speed
+
+flights %>%
+    select(Distance, AirTime) %>%
+    mutate(Speed = Distance/AirTime*60) %>%
+    arrange(Speed)
+
+
+```
+
+*** =sct
+```{r}
+
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("select", incorrect_msg = "Make sure you use the select function with dplyr.")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("mutate", incorrect_msg = "Make sure you use the mutate function with dplyr.")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("arrange", incorrect_msg = "Make sure you use the arrange function with dplyr.")
+success_msg("Great!")
+
+
+```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:d1ef4e76e6
+## Arranging and Mutating Exercise 2
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+#select distance and air time
+# Then calculate speec as distance divided by air time multiplied by 60
+# Then arrange by descending speed
+
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+# call saved data flights
+
+
+#select distance and air time
+# Then calculate speec as distance divided by air time multiplied by 60
+# Then arrange by descending speed
+
+flights %>%
+    select(Distance, AirTime) %>%
+    mutate(Speed = Distance/AirTime*60) %>%
+    arrange(desc(Speed))
+
+
+```
+
+*** =sct
+```{r}
+
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("select", incorrect_msg = "Make sure you use the select function with dplyr.")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("mutate", incorrect_msg = "Make sure you use the mutate function with dplyr.")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("arrange", incorrect_msg = "Make sure you use the arrange function with dplyr.")
+test_function("desc", incorrect_msg = "Make sure you use the desc function with dplyr.")
+success_msg("Great!")
+
+
+```
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:0b83d01480
