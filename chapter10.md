@@ -453,7 +453,7 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:e4736b7f66
 ## Chaining and Pipelining Exercise 1
 
-We will work with dplyr to analyze date. 
+We will complete the previous tasks using chaining and pipelining. 
 
 *** =instructions
 
@@ -481,11 +481,7 @@ flights <- as_tibble(hflights)
 # call saved data flights
 
 
-#Using base R filter flights by the 7th month and 3rd day.  save this as df1
-
-
-
-# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
+# Using dplyr filter flights by the 7th month and 3rd day.  Use %>% commands to do this. 
 
 
 
@@ -496,27 +492,20 @@ flights <- as_tibble(hflights)
 ```{r}
 # call saved data flights
 
-flights
+
+# Using dplyr filter flights by the 7th month and 3rd day.  Use %>% commands to do this. call this df1
 
 
-#Using base R filter flights by the 7th month and 3rd day.  save this as df1
-
-df1 = flights[flights$Month==7 & flights$DayofMonth==3, ]
-
-# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
-
-
-df2 = filter(flights, Month==7, DayofMonth==3)
+df1 = flights %>% 
+      filter(Month==7, DayofMonth==3)
 ```
 
 *** =sct
 ```{r}
 
 test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
-test_object("df1", incorrect_msg = "Make sure to use the right call for month and day.")
-test_student_typed("flights$Month",not_typed_msg = "Make sure to index Month")
-test_student_typed("flights$DayofMonth",not_typed_msg = "Make sure to index DayofMonth")
-test_object("df2", incorrect_msg = "Make sure to use the right call for month and day.")
+test_object("df1", incorrect_msg = "Did you use the corret month and day?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
 test_function("filter", incorrect_msg = "Make sure you use the filter function with dplyr.")
 success_msg("Great!")
 
@@ -557,10 +546,9 @@ flights <- as_tibble(hflights)
 ```{r}
 # call saved data flights
 
-#select departure time, arrival time and the flight number using base R techniques
 
+#select departure time, arrival time and the flight number using dplyr and %>% name this df1.
 
-#select departure time, arrival time and the flight number using dplyr 
 
 ```
 
@@ -572,26 +560,95 @@ flights <- as_tibble(hflights)
 flights
 
 
-#Using base R filter flights by the 7th month and 3rd day.  save this as df1
+#select departure time, arrival time and the flight number using dplyr and %>% name this df1.
 
-df1 = flights[, c("DepTime", "ArrTime", "FlightNum") ]
+df1 = flights %>%
+          select(ArrTime, DepTime, FlightNum)
 
-# Using dplyr filter flights by the 7th month and 3rd day.  save this as df2
-
-df2 = select(flights, DepTime, ArrTime, FlightNum)
 ```
 
 *** =sct
 ```{r}
 
+
 test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
-test_object("df1", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
-test_student_typed("ArrTime",not_typed_msg = "Make sure to select Arrival Time")
-test_student_typed("DepTime",not_typed_msg = "Make sure to select Departure Time")
-test_student_typed("FlightNum",not_typed_msg = "Make sure to select flight number")
-test_object("df2", incorrect_msg = "Make sure to use the right call for Arrival Time, Departure Time and Flight number?")
-test_function("select", incorrect_msg = "Make sure you use the filter function with dplyr.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("select", incorrect_msg = "Make sure you use the select function with dplyr.")
 success_msg("Great!")
+
+
+```
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:085f0bc093
+## Chaining and Pipelining Exercise 3
+
+We will work with dplyr to analyze date. 
+
+*** =instructions
+
+Work with dplyr functions to explore the flights data. This is a dataset of all flights departing from Houston in 2011.  
+
+*** =hint
+
+
+
+
+*** =pre_exercise_code
+```{r}
+library(tibble)
+library(dplyr)
+library(hflights)
+flights <- as_tibble(hflights)
+
+```
+
+
+*** =sample_code
+
+```{r}
+# call saved data flights
+
+
+#select departure time, arrival time and the flight number using dplyr where departure time is greater than 700 and %>% name this df1. 
+
+
+
+```
+
+*** =solution
+
+```{r}
+# call saved data flights
+
+flights
+
+#select departure time, arrival time and the flight number using dplyr where departure time is greater than 700 and %>% name this df1. 
+
+
+
+df1 = flights %>%
+            select(ArrTime, DepTime, FlightNum) %>%
+            filter(DepTime > 700)
+
+```
+
+*** =sct
+```{r}
+
+
+test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
+test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("select", incorrect_msg = "Make sure you use the select function with dplyr.")
+test_function("filter", incorrect_msg = "Make sure you use the select function with dplyr.")
+test_student("700", not_typed_msg = "Make sure you filter with departures greater than 700.")
+success_msg("Great!")
+
 
 ```
 
