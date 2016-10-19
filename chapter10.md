@@ -1002,7 +1002,7 @@ success_msg("Great!")
 
 
 --- type:VideoExercise lang:r xp:25 skills:1 key:9d26f88f31
-## Jenny Bryan's Cheatsheet for dpylr joins
+## Jenny Bryan's Cheatsheet for dplyr joins
 
 *** =video_link
 
@@ -1025,7 +1025,7 @@ Two data frames `a` and `b` have been stored. We will practice joins on them.
 
 *** =pre_exercise_code
 ```{r}
-library(dpylr)
+library(dplyr)
 (a <- data_frame(color = c("green","yellow","red"), num = 1:3))
 (b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
 
@@ -1087,7 +1087,7 @@ Two data frames `a` and `b` have been stored. We will practice joins on them.
 
 *** =pre_exercise_code
 ```{r}
-library(dpylr)
+library(dplyr)
 (a <- data_frame(color = c("green","yellow","red"), num = 1:3))
 (b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
 
@@ -1146,7 +1146,7 @@ Two data frames `a` and `b` have been stored. We will practice joins on them.
 
 *** =pre_exercise_code
 ```{r}
-library(dpylr)
+library(dplyr)
 (a <- data_frame(color = c("green","yellow","red"), num = 1:3))
 (b <- data_frame(color = c("green","yellow","pink"), size = c("S","M","L")))
 
