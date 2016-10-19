@@ -695,6 +695,7 @@ flights <- as_tibble(hflights)
 #select distance and air time
 # Then calculate speec as distance divided by air time multiplied by 60
 # Then arrange by speed
+# name this df1
 
 
 
@@ -713,8 +714,9 @@ flights
 #select distance and air time
 # Then calculate speec as distance divided by air time multiplied by 60
 # Then arrange by speed
+#name this df1
 
-flights %>%
+df1 = flights %>%
     select(Distance, AirTime) %>%
     mutate(Speed = Distance/AirTime*60) %>%
     arrange(Speed)
@@ -774,6 +776,7 @@ flights <- as_tibble(hflights)
 #select distance and air time
 # Then calculate speec as distance divided by air time multiplied by 60
 # Then arrange by descending speed
+# name this df1
 
 
 
@@ -792,8 +795,9 @@ flights
 #select distance and air time
 # Then calculate speec as distance divided by air time multiplied by 60
 # Then arrange by descending speed
+# name this df1
 
-flights %>%
+df1= flights %>%
     select(Distance, AirTime) %>%
     mutate(Speed = Distance/AirTime*60) %>%
     arrange(desc(Speed))
