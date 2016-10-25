@@ -866,7 +866,6 @@ flights <- as_tibble(hflights)
 
 
 # Count the flights by month
-# weight this by distance
 # Name this df1
 
 
@@ -885,7 +884,8 @@ flights
 # Name this df1
 
 df1 = flights %>%
-        count(Month, wt = Distance)
+  group_by(Month) %>%
+  summarise(flight_count = n())
 
 
 ```
@@ -897,8 +897,9 @@ df1 = flights %>%
 test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
 test_object("df1", incorrect_msg = "Did you select the correct columns?")
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
-test_function("count", incorrect_msg="Did you use the count function?")
-test_student_typed("wt", not_typed_msg="Did you remember to weight this?")
+test_function("group_by", incorrect_msg="Did you use the group by function?")
+test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
+test_function("summarise", incorrect_msg="Did you use the summarise function?")
 success_msg("Great!")
 
 
@@ -938,7 +939,7 @@ flights <- as_tibble(hflights)
 
 # Group flights by month
 # tally this
-# weight this by distance
+# weight this by average (Using wt option in tally() ) 
 # Name this df1
 
 
@@ -959,7 +960,7 @@ flights
 
 df1 = flights %>%
         group_by(Month) %>%
-        tally( wt = Distance)
+        tally( wt = mean(Distance))
 
 
 ```
