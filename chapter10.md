@@ -898,7 +898,7 @@ df1 = flights %>%
 
 
 test_student_typed("flights",not_typed_msg= "Make sure to call flights.")
-test_object("df1", incorrect_msg = "Did you select the correct columns?")
+test_object("df1", incorrect_msg = "Did you select the correct columns or did you name the count to be flight_count?")
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
 test_function("group_by", incorrect_msg="Did you use the group by function?")
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
