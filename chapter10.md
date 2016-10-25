@@ -713,13 +713,13 @@ flights
 
 #select distance and air time
 # Then calculate speec as distance divided by air time multiplied by 60
-# Then arrange by speed
+# Then arrange by speed 
 #name this df1
 
 df1 = flights %>%
     select(Distance, AirTime) %>%
-    mutate(Speed = Distance/AirTime*60) %>%
-    arrange(Speed)
+    mutate(speed = Distance/AirTime*60) %>%
+    arrange(speed)
 
 
 ```
@@ -735,7 +735,7 @@ test_function("select", incorrect_msg = "Make sure you use the select function w
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
 test_function("mutate", incorrect_msg = "Make sure you use the mutate function with dplyr.")
 test_student_typed("%>%",not_typed_msg= "Make sure to use piping")
-test_function("arrange", incorrect_msg = "Make sure you use the arrange function with dplyr.")
+test_function("arrange", incorrect_msg = "Make sure you use the arrange function with dplyr also make sure to name speed in all lower case.")
 success_msg("Great!")
 
 
@@ -799,8 +799,8 @@ flights
 
 df1= flights %>%
     select(Distance, AirTime) %>%
-    mutate(Speed = Distance/AirTime*60) %>%
-    arrange(desc(Speed))
+    mutate(speed = Distance/AirTime*60) %>%
+    arrange(desc(speed))
 
 
 ```
