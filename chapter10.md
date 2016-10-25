@@ -866,7 +866,9 @@ flights <- as_tibble(hflights)
 
 
 # Count the flights by month
-# Name this df1
+# weight this by distance
+# Name the dataframe    df1
+# Name the flight count to be flight_count
 
 
 ```
@@ -881,7 +883,8 @@ flights
 
 # Count the flights by month
 # weight this by distance
-# Name this df1
+# Name the dataframe    df1
+# Name the flight count to be flight_count
 
 df1 = flights %>%
   group_by(Month) %>%
