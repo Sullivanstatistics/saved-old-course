@@ -942,7 +942,7 @@ flights <- as_tibble(hflights)
 
 # Group flights by month
 # tally this
-# weight this by average (Using wt option in tally() ) 
+# weight this by average distance (Using wt option in tally() ) 
 # Name this df1
 
 
