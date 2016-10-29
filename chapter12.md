@@ -54,3 +54,22 @@ description : Once we know how to bring data into R it is time we learn how to d
 *** =video_link
 
 //player.vimeo.com/video/188582917
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:171c5f9a04
+## MonetDBLite
+
+*** =video_link
+
+//player.vimeo.com/video/189451581
+
+
+
+
+--- type:VideoExercise lang:r xp:25 skills:1 key:390693b9db
+## Automatically Downloading Data
+
+*** =video_link
+
+//player.vimeo.com/video/189452765
